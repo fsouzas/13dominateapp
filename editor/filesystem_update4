@@ -1,4 +1,0 @@
-res://Scenes/STANDINGS.tscn
-res://shaders/halftone.gdshader
-res://shaders/text_gradient.gdshader
-res://scripts/standings_sort.gd
