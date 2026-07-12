@@ -1,0 +1,10 @@
+res://demo/demo_label_settings.tres::384b6737c178008ef6f2c87738a982c0::1778483229::res://.godot/exported/133200997/export-44603c176b9513db07ea51dfe045a5d8-demo_label_settings.res
+res://demo/demo_label_theme.tres::6c0c84a29d732b6debaf934edf431784::1778483229::res://.godot/exported/133200997/export-ed7e31d40b6983c0204eb9af3dbc26ab-demo_label_theme.res
+res://demo/in_editor_demo.tscn::1841618be6ef70917ab21654d1b2e9dd::1778483229::res://.godot/exported/133200997/export-6c0179beeae18068a2885289f43b666f-in_editor_demo.scn
+res://demo/play_scene_demo.tscn::625f58c647f759c4982b6a4dec17dbdb::1778483229::res://.godot/exported/133200997/export-7ad7667b835c7fd4f12ab5f5361d10ff-play_scene_demo.scn
+res://Scenes/prefabs/pref_destaque.tscn::022d59a3412b843c16136c4a4069d29f::1783720193::res://.godot/exported/133200997/export-793fede73cf8be76953cbf76574ed2ed-pref_destaque.scn
+res://Scenes/MAIN.tscn::fce939bd1f0ba9fc8e0553037ecb8ad5::1783723245::res://.godot/exported/133200997/export-10c231d00305df1d72e5aac6867af663-MAIN.scn
+res://Scenes/STANDINGS.tscn::02dbc9eedae21c1a952c1afe870474c2::1783816611::res://.godot/exported/133200997/export-cd15213e8bdd39db1622ea34bd8b0e62-STANDINGS.scn
+res://themes/destaques_padrao.tres::06863a58cb80ee845e34758a88b89ecb::1783720492::res://.godot/exported/133200997/export-51433b91b83e6cb25506fc5ed0818fc0-destaques_padrao.res
+res://themes/nome_destaque.tres::f4b763f35979c851850b389398285257::1783719299::res://.godot/exported/133200997/export-6a345dbed274d08344dd554988b7511b-nome_destaque.res
+res://Scenes/prefabs/standing_title.tscn::008e6b016bfd7c0200652ef53d342f6c::1783721586::res://.godot/exported/133200997/export-8c53d0566e291c27dabe29bd96571063-standing_title.scn
