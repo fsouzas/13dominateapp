@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://71i1668e0cpj"]
+
+[ext_resource type="Shader" uid="uid://n1qujb6udjfm" path="res://shaders/halftone.gdshader" id="1_naxs8"]
+[ext_resource type="Texture2D" uid="uid://u7a8i4pb1lv1" path="res://assets/standing_destaque/oscilio/oscilio_bg.png" id="1_ti6lt"]
+[ext_resource type="FontFile" uid="uid://dgkanfofqv28r" path="res://fonts/FuturaPT-Medium.ttf" id="2_ti6lt"]
+[ext_resource type="Texture2D" uid="uid://dws8kttxbucd3" path="res://assets/standing_destaque/blaze_firemind/blaze_firemind_front.png" id="3_naxs8"]
+[ext_resource type="Theme" uid="uid://pwlhx337qene" path="res://themes/nome_destaque.tres" id="4_fpoeb"]
+[ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="5_ti6lt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fpoeb"]
+shader = ExtResource("1_naxs8")
+shader_parameter/max_dots = 150
+shader_parameter/dot_size = 1.20000001788144
+shader_parameter/brightness_mult = 0.60000000894072
+shader_parameter/invert = false
+shader_parameter/primary_color = Color(0, 0, 0, 0.5882353)
+shader_parameter/secondary_color = Color(0.9019608, 0.9019608, 0.8, 0)
+
+[sub_resource type="FontVariation" id="FontVariation_vdbce"]
+base_font = ExtResource("2_ti6lt")
+spacing_glyph = -30
+
+[sub_resource type="Theme" id="Theme_4t0is"]
+default_font = SubResource("FontVariation_vdbce")
+default_font_size = 244
+
+[sub_resource type="Theme" id="Theme_xymcy"]
+default_font = ExtResource("2_ti6lt")
+default_font_size = 51
+
+[node name="Destaque" type="VBoxContainer" unique_id=282165851]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+layout_direction = 1
+theme_override_constants/separation = -73
+
+[node name="Heroi" type="AspectRatioContainer" parent="." unique_id=847171199]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Heroi_BG2" type="TextureRect" parent="Heroi" unique_id=2028365527]
+material = SubResource("ShaderMaterial_fpoeb")
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(8, 8)
+texture = ExtResource("1_ti6lt")
+
+[node name="Heroi_BG" type="TextureRect" parent="Heroi" unique_id=461476884]
+layout_mode = 2
+texture = ExtResource("1_ti6lt")
+metadata/_edit_lock_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Heroi/Heroi_BG" unique_id=955187304]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 130.0
+offset_top = 49.8
+offset_right = -162.99957
+offset_bottom = 49.799988
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Posicao2" type="RichTextLabel" parent="Heroi/Heroi_BG/MarginContainer" unique_id=1646424081]
+material = SubResource("ShaderMaterial_fpoeb")
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(5, 5)
+theme = SubResource("Theme_4t0is")
+text = "1º"
+metadata/_edit_lock_ = true
+
+[node name="Posicao" type="RichTextLabel" parent="Heroi/Heroi_BG/MarginContainer" unique_id=1376667703]
+layout_mode = 2
+theme = SubResource("Theme_4t0is")
+text = "1º"
+metadata/_edit_lock_ = true
+
+[node name="Heroi_FRONT" type="TextureRect" parent="Heroi" unique_id=76283750]
+layout_mode = 2
+texture = ExtResource("3_naxs8")
+metadata/_edit_lock_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=19910203]
+layout_mode = 2
+theme_override_constants/separation = 11
+alignment = 1
+
+[node name="Nome" type="RichTextLabel" parent="VBoxContainer" unique_id=2089568749]
+custom_minimum_size = Vector2(0, 56.89)
+clip_contents = false
+layout_mode = 2
+theme = ExtResource("4_fpoeb")
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/normal_font_size = 58
+text = "PRIMEIRO LUGAR"
+scroll_active = false
+horizontal_alignment = 1
+script = ExtResource("5_ti6lt")
+_max_size = 66
+_min_size = 58
+_outline_ratio = 0.0
+_current_font_size = 58
+_editor_defaults_set = true
+metadata/_custom_type_script = "uid://co0lo02vnu10n"
+metadata/_edit_lock_ = true
+
+[node name="Vitorias" type="RichTextLabel" parent="VBoxContainer" unique_id=1465514123]
+layout_mode = 2
+theme = SubResource("Theme_xymcy")
+bbcode_enabled = true
+text = "[b]4[/b] VITÓRIAS"
+fit_content = true
+horizontal_alignment = 1
+metadata/_edit_lock_ = true

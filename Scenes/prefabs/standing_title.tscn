@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://bk1gvfs4kvgdy"]
+
+[ext_resource type="FontFile" uid="uid://bw37uedw2ycvl" path="res://fonts/FuturaPT-ExtraBold.ttf" id="1_5fhhb"]
+[ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="2_oc8pe"]
+[ext_resource type="FontFile" uid="uid://dppb4keb4t0ml" path="res://fonts/FuturaPT-Bold.ttf" id="3_lyv5b"]
+[ext_resource type="FontFile" uid="uid://bb1hds3qu3s57" path="res://fonts/FuturaPT-Book.ttf" id="4_oc8pe"]
+
+[node name="StandingTitle" type="Control" unique_id=856678677]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=112685559]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -88
+
+[node name="AutoSizeRichTextLabel2" type="RichTextLabel" parent="VBoxContainer" unique_id=1408285383]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_5fhhb")
+theme_override_font_sizes/normal_font_size = 62
+text = "CLASSIC CONSTRUCTED"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_oc8pe")
+_max_size = 116
+_outline_ratio = 0.0
+_current_font_size = 62
+_editor_defaults_set = true
+metadata/_custom_type_script = "uid://co0lo02vnu10n"
+
+[node name="AutoSizeRichTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=851884308]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.16862746, 0.19215687, 0.24705882, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/normal_font = ExtResource("3_lyv5b")
+theme_override_font_sizes/normal_font_size = 76
+text = "CLASSIFICAÇÃO"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_oc8pe")
+_max_size = 76
+_outline_ratio = 0.0
+_current_font_size = 76
+_editor_defaults_set = true
+metadata/_custom_type_script = "uid://co0lo02vnu10n"
+
+[node name="AutoSizeRichTextLabel3" type="RichTextLabel" parent="VBoxContainer" unique_id=1915711791]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 41.355)
+theme_override_constants/outline_size = 0
+theme_override_fonts/normal_font = ExtResource("4_oc8pe")
+theme_override_font_sizes/normal_font_size = 36
+text = "LOJA"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_oc8pe")
+_max_size = 36
+_outline_ratio = 0.0
+_current_font_size = 36
+_editor_defaults_set = true
+metadata/_custom_type_script = "uid://co0lo02vnu10n"

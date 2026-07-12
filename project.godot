@@ -1,0 +1,48 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="13dominateapp"
+run/main_scene="uid://tkrlp56mt1ks"
+config/features=PackedStringArray("4.7", "Mobile")
+run/low_processor_mode=true
+boot_splash/show_image=false
+boot_splash/use_filter=false
+config/icon="res://icon.svg"
+
+[autoload]
+
+UniversalDict="*uid://c4sfw7gg6scry"
+SceneLoader="*uid://bdujg3s86gva2"
+HeroesDb="*uid://dkvluu48wwgkg"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+window/vsync/vsync_mode=0
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/CSVAccess/plugin.cfg", "res://addons/GMPShared/menu/plugin.cfg", "res://addons/SharePlugin/plugin.cfg", "res://addons/font_auto_size_labels/plugin.cfg")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

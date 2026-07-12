@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://pwlhx337qene"]
+
+[ext_resource type="FontFile" uid="uid://douxnqekj7tg3" path="res://fonts/FuturaPTCond-ExtraBold.ttf" id="1_8jn32"]
+
+[resource]
+default_font = ExtResource("1_8jn32")
+default_font_size = 60

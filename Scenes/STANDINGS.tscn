@@ -1,0 +1,278 @@
+[gd_scene format=3 uid="uid://okffs7rdeoc1"]
+
+[ext_resource type="Texture2D" uid="uid://bpy2ctexm8wen" path="res://mockup/standings_mockup.png" id="1_fo46j"]
+[ext_resource type="Script" uid="uid://bbjwb3xfv8enf" path="res://scripts/standings_sort.gd" id="1_nvwqc"]
+[ext_resource type="Texture2D" uid="uid://dyidg3tn2al1t" path="res://assets/bg.png" id="2_2msg6"]
+[ext_resource type="PackedScene" uid="uid://71i1668e0cpj" path="res://Scenes/prefabs/pref_destaque.tscn" id="2_gmp82"]
+[ext_resource type="Theme" uid="uid://xultv8aydj54" path="res://themes/destaques_padrao.tres" id="3_y5tuc"]
+[ext_resource type="PackedScene" uid="uid://bk1gvfs4kvgdy" path="res://Scenes/prefabs/standing_title.tscn" id="4_4t0is"]
+[ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="4_fo46j"]
+[ext_resource type="Theme" uid="uid://pwlhx337qene" path="res://themes/nome_destaque.tres" id="4_vdbce"]
+[ext_resource type="Script" uid="uid://btjp2l7ghiyjo" path="res://addons/SharePlugin/Share.gd" id="7_2msg6"]
+[ext_resource type="Texture2D" uid="uid://cux3o2f2ieqvh" path="res://assets/standing_destaque/unknown/unknown_standing.png" id="7_xymcy"]
+[ext_resource type="FontFile" uid="uid://yb2srsk8r8c1" path="res://fonts/FuturaPT-Heavy.ttf" id="9_4t0is"]
+[ext_resource type="Texture2D" uid="uid://dfs8p1liuii6g" path="res://assets/United_We_Stand.jpg" id="10_xymcy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bhunq"]
+
+[sub_resource type="Theme" id="Theme_bhunq"]
+default_font = ExtResource("9_4t0is")
+default_font_size = 172
+
+[node name="Standings" type="Control" unique_id=454891127 node_paths=PackedStringArray("share", "heroi_destaque1_front", "heroi_destaque1_bg", "heroi_destaque1_nome", "heroi_destaque_1_vitoria", "heroi_destaque2_front", "heroi_destaque2_bg", "heroi_destaque2_nome", "heroi_destaque_2_vitoria", "heroi_destaque3_front", "heroi_destaque3_bg", "heroi_destaque3_nome", "heroi_destaque_3_vitoria", "standing_less", "vbox")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nvwqc")
+share = NodePath("Share")
+heroi_destaque1_front = NodePath("VBoxContainer/Destaques/Destaque/Heroi/Heroi_FRONT")
+heroi_destaque1_bg = NodePath("VBoxContainer/Destaques/Destaque/Heroi/Heroi_BG")
+heroi_destaque1_nome = NodePath("VBoxContainer/Destaques/Destaque/VBoxContainer/Nome")
+heroi_destaque_1_vitoria = NodePath("VBoxContainer/Destaques/Destaque/VBoxContainer/Vitorias")
+heroi_destaque2_front = NodePath("VBoxContainer/Destaques/Destaque2/Heroi/Heroi_FRONT")
+heroi_destaque2_bg = NodePath("VBoxContainer/Destaques/Destaque2/Heroi/Heroi_BG")
+heroi_destaque2_nome = NodePath("VBoxContainer/Destaques/Destaque2/VBoxContainer/Nome")
+heroi_destaque_2_vitoria = NodePath("VBoxContainer/Destaques/Destaque2/VBoxContainer/Vitorias")
+heroi_destaque3_front = NodePath("VBoxContainer/Destaques/Destaque3/Heroi/Heroi_FRONT")
+heroi_destaque3_bg = NodePath("VBoxContainer/Destaques/Destaque3/Heroi/Heroi_BG")
+heroi_destaque3_nome = NodePath("VBoxContainer/Destaques/Destaque3/VBoxContainer/Nome")
+heroi_destaque_3_vitoria = NodePath("VBoxContainer/Destaques/Destaque3/VBoxContainer/Vitorias")
+standing_less = NodePath("VBoxContainer/VBoxContainer/standing_less")
+vbox = NodePath("VBoxContainer/VBoxContainer")
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1613979291]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.078431375, 0.12156863, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=883797109]
+modulate = Color(1, 1, 1, 0.67058825)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2msg6")
+
+[node name="StandingsMockup" type="Sprite2D" parent="." unique_id=685083685]
+visible = false
+position = Vector2(363, 543)
+scale = Vector2(1.5041667, 1.2786885)
+texture = ExtResource("1_fo46j")
+metadata/_edit_lock_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=822418311]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -783.58496
+offset_top = -20.13
+offset_right = 887.41504
+offset_bottom = 1029.87
+grow_horizontal = 2
+theme_override_constants/separation = -85
+
+[node name="StandingTitle" parent="VBoxContainer" unique_id=47154294 instance=ExtResource("4_4t0is")]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 140.865)
+offset_transform_position_ratio = Vector2(-0.03, 0)
+
+[node name="AutoSizeRichTextLabel2" parent="VBoxContainer/StandingTitle/VBoxContainer" parent_id_path=PackedInt32Array(47154294, 112685559) index="0" unique_id=1408285383]
+theme_override_font_sizes/normal_font_size = 59
+text = "SILVER AGE"
+_max_size = 59
+_min_size = 40
+_current_font_size = 59
+_size_just_modified_by_autosizer = true
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer" unique_id=217022839]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0.4, 2.53)
+theme_override_constants/separation = -5
+alignment = 2
+
+[node name="LOJA" type="RichTextLabel" parent="VBoxContainer/HBoxContainer" unique_id=1445829135]
+custom_minimum_size = Vector2(300, 40)
+layout_mode = 2
+theme = ExtResource("4_vdbce")
+text = "POKEMÃE"
+horizontal_alignment = 2
+
+[node name="DATA" type="RichTextLabel" parent="VBoxContainer/HBoxContainer" unique_id=1713549405]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+theme = ExtResource("4_vdbce")
+text = "11/08/1997"
+horizontal_alignment = 2
+
+[node name="Destaques" type="HBoxContainer" parent="VBoxContainer" unique_id=322210457]
+propagate_maximum_size = false
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(-54.14, 124)
+offset_transform_scale = Vector2(0.5, 0.5)
+theme_override_constants/separation = -207
+alignment = 1
+
+[node name="Destaque2" parent="VBoxContainer/Destaques" unique_id=1402647370 instance=ExtResource("2_gmp82")]
+z_index = 2
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, -50)
+
+[node name="Posicao2" parent="VBoxContainer/Destaques/Destaque2/Heroi/Heroi_BG/MarginContainer" parent_id_path=PackedInt32Array(1402647370, 955187304) index="0" unique_id=1646424081]
+text = "2º"
+
+[node name="Posicao" parent="VBoxContainer/Destaques/Destaque2/Heroi/Heroi_BG/MarginContainer" parent_id_path=PackedInt32Array(1402647370, 955187304) index="1" unique_id=1376667703]
+text = "2º"
+
+[node name="Destaque" parent="VBoxContainer/Destaques" unique_id=650600410 instance=ExtResource("2_gmp82")]
+z_index = 3
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, -200)
+
+[node name="Destaque3" parent="VBoxContainer/Destaques" unique_id=1927256005 instance=ExtResource("2_gmp82")]
+z_index = 1
+layout_mode = 2
+
+[node name="Posicao2" parent="VBoxContainer/Destaques/Destaque3/Heroi/Heroi_BG/MarginContainer" parent_id_path=PackedInt32Array(1927256005, 955187304) index="0" unique_id=1646424081]
+text = "3º"
+
+[node name="Posicao" parent="VBoxContainer/Destaques/Destaque3/Heroi/Heroi_BG/MarginContainer" parent_id_path=PackedInt32Array(1927256005, 955187304) index="1" unique_id=1376667703]
+text = "3º"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer" unique_id=798441732]
+layout_mode = 2
+
+[node name="standing_less" type="PanelContainer" parent="VBoxContainer/VBoxContainer" unique_id=920099888]
+visible = false
+custom_minimum_size = Vector2(-500, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bhunq")
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/VBoxContainer/standing_less" unique_id=451707350]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0.265, 0)
+texture = ExtResource("7_xymcy")
+stretch_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/standing_less" unique_id=1723467825]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position_ratio = Vector2(0.27, 0)
+
+[node name="posicao" type="RichTextLabel" parent="VBoxContainer/VBoxContainer/standing_less/HBoxContainer" unique_id=45100808]
+custom_minimum_size = Vector2(55.415, 0)
+layout_mode = 2
+theme = ExtResource("3_y5tuc")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.7764706)
+text = "4º"
+scroll_active = false
+
+[node name="nome" type="RichTextLabel" parent="VBoxContainer/VBoxContainer/standing_less/HBoxContainer" unique_id=1098301274]
+custom_minimum_size = Vector2(370.86, 0)
+clip_contents = false
+layout_mode = 2
+theme = ExtResource("3_y5tuc")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.68235296)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/normal_font_size = 1
+text = "QUARTO LUGAR"
+scroll_active = false
+script = ExtResource("4_fo46j")
+_max_size = 30
+_outline_ratio = 0.0
+_current_font_size = 1
+_editor_defaults_set = true
+metadata/_custom_type_script = "uid://co0lo02vnu10n"
+
+[node name="vitorias" type="RichTextLabel" parent="VBoxContainer/VBoxContainer/standing_less/HBoxContainer" unique_id=1185356833]
+custom_minimum_size = Vector2(226.445, 0)
+clip_contents = false
+layout_mode = 2
+theme = ExtResource("3_y5tuc")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.627451)
+text = "2 VITÓRIA(S)"
+horizontal_alignment = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=98757829]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 826.0
+offset_right = 168.0
+offset_bottom = 849.0
+text = "VERSÃO NÃO FINAL"
+
+[node name="Button" type="Button" parent="." unique_id=1697276003]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -68.5
+offset_top = -31.0
+offset_right = 68.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "COMPARTILHAR STANDINGS"
+
+[node name="Share" type="Node" parent="." unique_id=1201633601]
+unique_name_in_owner = true
+script = ExtResource("7_2msg6")
+metadata/_custom_type_script = "uid://btjp2l7ghiyjo"
+
+[node name="GAME_MODE" type="Control" parent="." unique_id=2100951815]
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 385.0
+grow_horizontal = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GAME_MODE" unique_id=707409603]
+self_modulate = Color(1, 1, 1, 0.45882353)
+clip_children = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_bhunq")
+text = "SAGE"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="TextureRect2" type="TextureRect" parent="GAME_MODE/RichTextLabel" unique_id=1326043575]
+visible = false
+layout_mode = 0
+offset_left = 248.0
+offset_top = 112.0
+offset_right = 734.0602
+offset_bottom = 377.0
+texture = ExtResource("10_xymcy")
+expand_mode = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+
+[editable path="VBoxContainer/StandingTitle"]
+[editable path="VBoxContainer/Destaques/Destaque2"]
+[editable path="VBoxContainer/Destaques/Destaque"]
+[editable path="VBoxContainer/Destaques/Destaque3"]
