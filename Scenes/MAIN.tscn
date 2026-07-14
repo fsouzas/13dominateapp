@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://tkrlp56mt1ks"]
 
-[ext_resource type="Script" uid="uid://dnwyycwrm3nf8" path="res://scripts/csv_importer.gd" id="1_8as8m"]
+[ext_resource type="Script" uid="uid://dnwyycwrm3nf8" path="res://scripts/main.gd" id="1_8as8m"]
 
 [sub_resource type="Theme" id="Theme_8as8m"]
 default_font_size = 40
@@ -68,7 +68,6 @@ horizontal_alignment = 1
 layout_mode = 2
 offset_transform_enabled = true
 theme_override_font_sizes/font_size = 50
-disabled = true
 text = "ESCOLHA STANDINGS.CSV"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="Panel/VBoxContainer" unique_id=1337752367]
@@ -81,7 +80,6 @@ horizontal_alignment = 1
 [node name="Button2" type="Button" parent="Panel/VBoxContainer" unique_id=298606858]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
-disabled = true
 text = "ESCOLHA HEROES.CSV"
 
 [node name="TextEdit" type="TextEdit" parent="Panel/VBoxContainer" unique_id=1110229630]
@@ -94,7 +92,6 @@ emoji_menu_enabled = false
 [node name="Button3" type="Button" parent="Panel/VBoxContainer" unique_id=904276183]
 layout_mode = 2
 theme_override_font_sizes/font_size = 100
-disabled = true
 text = "PRONTO"
 
 [node name="FileDialog" type="FileDialog" parent="." unique_id=764083727]

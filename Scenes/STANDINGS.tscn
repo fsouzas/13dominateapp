@@ -160,11 +160,11 @@ offset_transform_enabled = true
 offset_transform_position_ratio = Vector2(0.27, 0)
 
 [node name="posicao" type="RichTextLabel" parent="VBoxContainer/VBoxContainer/standing_less/HBoxContainer" unique_id=45100808]
-custom_minimum_size = Vector2(44.345, 0)
+custom_minimum_size = Vector2(131.135, 0)
 layout_mode = 2
 theme = ExtResource("3_y5tuc")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.7764706)
-text = "4"
+text = "DROPPED"
 scroll_active = false
 
 [node name="nome" type="RichTextLabel" parent="VBoxContainer/VBoxContainer/standing_less/HBoxContainer" unique_id=1098301274]
@@ -185,9 +185,11 @@ _editor_defaults_set = true
 metadata/_custom_type_script = "uid://co0lo02vnu10n"
 
 [node name="vitorias" type="RichTextLabel" parent="VBoxContainer/VBoxContainer/standing_less/HBoxContainer" unique_id=1185356833]
-custom_minimum_size = Vector2(76.39, 0)
+custom_minimum_size = Vector2(27.01, 0)
 clip_contents = false
 layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(-30, 0)
 theme = ExtResource("3_y5tuc")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.627451)
 text = "2"
@@ -196,7 +198,7 @@ horizontal_alignment = 2
 [node name="TextureRect2" type="TextureRect" parent="VBoxContainer/VBoxContainer/standing_less/HBoxContainer" unique_id=296289720]
 layout_mode = 2
 offset_transform_enabled = true
-offset_transform_position = Vector2(-12.49, -11.47)
+offset_transform_position = Vector2(-48, -11.47)
 offset_transform_scale = Vector2(0.415, 0.415)
 theme = SubResource("Theme_riqys")
 texture = ExtResource("9_xymcy")

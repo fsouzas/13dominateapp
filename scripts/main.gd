@@ -8,44 +8,12 @@ var heroes = {}
 @export var standings_scene: StringName
 
 func csv_importer_standings(path):
-	standings = CSVAccess.load_csv_data(path)
-	if standings.has("1"):
-		print("É standing")
-		$Panel/VBoxContainer/Button2.disabled = false
-	else:
-		print("O QUE")
-		standings = null
-		return
+	standings = CSVStanding.load_csv_to_dict(path)
 	
 
 func csv_importer_heroes(path):
-	heroes = CSVAccess.load_csv_data(path)
-	if !heroes.has("1"):
-		print("É herois")
-		$Panel/VBoxContainer/Button3.disabled = false
-	else:
-		print("O QUE")
-		heroes = null
-		return
-	
-func merge_data():
-	for rank_key in standings:
-		var ranking_data = standings[rank_key]
-		var player_id = ranking_data["Player ID"]
-		
-		var combined = ranking_data.duplicate()
-		
-		for player_name in heroes:
-			var player_data = heroes[player_name]
-			
-			if player_data["Player ID"] == player_id:
-				combined.merge(player_data)
-				break
-		UniversalDict.merge_data[player_id] = combined
-	var i = 0
-	while i < UniversalDict.merge_data.size():
-		print(UniversalDict.merge_data.values()[i]["Name"])
-		i += 1
+	heroes = CSVStanding.load_csv_to_dict(path)
+
 func _on_file_dialog_file_selected(path: String) -> void:
 	importer_path = path
 
@@ -62,9 +30,8 @@ func _on_button_2_pressed() -> void:
 
 
 func _on_button_3_pressed() -> void:
-	merge_data()
+	UniversalDict.armory_data = CSVStanding.merge_dicts_keep_first_order(standings, heroes)
 	UniversalDict.store_name = str($Panel/VBoxContainer/TextEdit.text)
-	await merge_data()
 	SceneLoader.load_scene(standings_scene)
 	
 
