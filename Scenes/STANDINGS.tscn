@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://bbjwb3xfv8enf" path="res://scripts/_standings.gd" id="1_nvwqc"]
 [ext_resource type="Texture2D" uid="uid://dyidg3tn2al1t" path="res://assets/bg.png" id="2_2msg6"]
-[ext_resource type="PackedScene" uid="uid://71i1668e0cpj" path="res://Scenes/prefabs/pref_destaque.tscn" id="2_gmp82"]
+[ext_resource type="PackedScene" uid="uid://71i1668e0cpj" path="res://scenes/prefabs/pref_destaque.tscn" id="2_gmp82"]
 [ext_resource type="Theme" uid="uid://xultv8aydj54" path="res://themes/destaques_padrao.tres" id="3_y5tuc"]
-[ext_resource type="PackedScene" uid="uid://bk1gvfs4kvgdy" path="res://Scenes/prefabs/standing_title.tscn" id="4_4t0is"]
+[ext_resource type="PackedScene" uid="uid://bk1gvfs4kvgdy" path="res://scenes/prefabs/standing_title.tscn" id="4_4t0is"]
 [ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="4_fo46j"]
 [ext_resource type="Script" uid="uid://c61h1elerxacy" path="res://addons/SharePlugin/Share.gd" id="7_2msg6"]
 [ext_resource type="Texture2D" uid="uid://cux3o2f2ieqvh" path="res://assets/standing_destaque/unknown/unknown_standing.png" id="7_xymcy"]
