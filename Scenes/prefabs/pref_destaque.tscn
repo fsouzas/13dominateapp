@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://dws8kttxbucd3" path="res://assets/standing_destaque/blaze_firemind/blaze_firemind_front.png" id="3_naxs8"]
 [ext_resource type="Theme" uid="uid://pwlhx337qene" path="res://themes/nome_destaque.tres" id="4_fpoeb"]
 [ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="5_ti6lt"]
+[ext_resource type="FontFile" uid="uid://cs4q7katbp27d" path="res://fonts/FuturaPT-Demi.ttf" id="7_al2t0"]
+[ext_resource type="Texture2D" uid="uid://jibj143v0076" path="res://assets/icons/iconmonstr-trophy-13-64.png" id="8_e6eb6"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fpoeb"]
 shader = ExtResource("1_naxs8")
@@ -25,8 +27,8 @@ default_font = SubResource("FontVariation_vdbce")
 default_font_size = 244
 
 [sub_resource type="Theme" id="Theme_xymcy"]
-default_font = ExtResource("2_ti6lt")
-default_font_size = 51
+default_font = ExtResource("7_al2t0")
+default_font_size = 61
 
 [node name="Destaque" type="VBoxContainer" unique_id=282165851]
 anchors_preset = 15
@@ -111,11 +113,26 @@ _editor_defaults_set = true
 metadata/_custom_type_script = "uid://co0lo02vnu10n"
 metadata/_edit_lock_ = true
 
-[node name="Vitorias" type="RichTextLabel" parent="VBoxContainer" unique_id=1465514123]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=250736762]
+custom_maximum_size = Vector2(-1, 73.055)
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Vitorias" type="RichTextLabel" parent="VBoxContainer/HBoxContainer" unique_id=1465514123]
+clip_contents = false
 layout_mode = 2
 theme = SubResource("Theme_xymcy")
 bbcode_enabled = true
-text = "[b]4[/b] VITÓRIAS"
+text = "4"
 fit_content = true
 horizontal_alignment = 1
 metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=656785521]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 8.09)
+offset_transform_scale = Vector2(0.8, 0.8)
+texture = ExtResource("8_e6eb6")
+stretch_mode = 2

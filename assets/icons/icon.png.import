@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpy2ctexm8wen"
-path="res://.godot/imported/standings_mockup.png-39f5f7ad831e5702a7457b7574a1b9c3.ctex"
+uid="uid://cxb2nsyv525hj"
+path="res://.godot/imported/icon.png-816117353ba57afc3af521f78eedcc3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mockup/standings_mockup.png"
-dest_files=["res://.godot/imported/standings_mockup.png-39f5f7ad831e5702a7457b7574a1b9c3.ctex"]
+source_file="res://assets/icons/icon.png"
+dest_files=["res://.godot/imported/icon.png-816117353ba57afc3af521f78eedcc3c.ctex"]
 
 [params]
 

@@ -10,13 +10,13 @@ config_version=5
 
 [application]
 
-config/name="13dominateapp"
+config/name="13 Dominate APP (ALPHA)"
 run/main_scene="uid://tkrlp56mt1ks"
 config/features=PackedStringArray("4.7", "Mobile")
 run/low_processor_mode=true
 boot_splash/show_image=false
 boot_splash/use_filter=false
-config/icon="res://icon.svg"
+config/icon="uid://cxb2nsyv525hj"
 
 [autoload]
 
