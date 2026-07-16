@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://dpio5dtimtemt"]
+
+[ext_resource type="Theme" uid="uid://xultv8aydj54" path="res://themes/destaques_padrao.tres" id="1_5haqy"]
+[ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="2_awjuo"]
+[ext_resource type="Texture2D" uid="uid://jibj143v0076" path="res://assets/icons/iconmonstr-trophy-13-64.png" id="3_scmjo"]
+[ext_resource type="Texture2D" uid="uid://v1cg17fn64ny" path="res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_front.png" id="4_6d8k6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6f8o3"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Theme" id="Theme_sn0t7"]
+Panel/styles/panel = SubResource("StyleBoxFlat_6f8o3")
+
+[node name="Standing" type="Control" unique_id=620729908]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -64.0
+offset_bottom = -1018.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Container2" type="HBoxContainer" parent="." unique_id=1619224100]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 687.0
+offset_bottom = 56.0
+
+[node name="Panel2" type="Panel" parent="Container2" unique_id=492569976]
+custom_minimum_size = Vector2(46, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_sn0t7")
+
+[node name="Panel" type="Panel" parent="Container2" unique_id=565965636]
+clip_children = 2
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+theme = SubResource("Theme_sn0t7")
+
+[node name="Container" type="HBoxContainer" parent="." unique_id=673214633]
+layout_mode = 0
+offset_right = 684.0
+offset_bottom = 53.0
+
+[node name="Panel2" type="Panel" parent="Container" unique_id=433096892]
+custom_minimum_size = Vector2(46, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_sn0t7")
+
+[node name="pos" type="RichTextLabel" parent="Container/Panel2" unique_id=45665403]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_5haqy")
+theme_override_colors/default_color = Color(1, 0.078431375, 0.12156863, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/normal_font_size = 33
+text = "10"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="Container" unique_id=1730896966]
+clip_children = 2
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+theme = SubResource("Theme_sn0t7")
+
+[node name="nome" type="RichTextLabel" parent="Container/Panel" unique_id=1666338186]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 77.0
+offset_top = 7.0
+offset_right = 77.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_5haqy")
+theme_override_colors/default_color = Color(1, 0.078431375, 0.12156863, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/normal_font_size = 28
+text = "FELIPE SOUZA"
+scroll_active = false
+script = ExtResource("2_awjuo")
+_max_size = 28
+_outline_ratio = 0.0
+_current_font_size = 28
+_editor_defaults_set = true
+metadata/_custom_type_script = "uid://co0lo02vnu10n"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Panel" unique_id=1410517470]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -14
+alignment = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Container/Panel/HBoxContainer" unique_id=578787623]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 10)
+theme = ExtResource("1_5haqy")
+theme_override_colors/default_color = Color(1, 0.078431375, 0.12156863, 1)
+theme_override_font_sizes/normal_font_size = 28
+text = "2"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Container/Panel/HBoxContainer" unique_id=136269693]
+modulate = Color(1, 0.078431375, 0.12156863, 1)
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, -2)
+offset_transform_scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_scmjo")
+
+[node name="TextureRect" type="TextureRect" parent="Container/Panel" unique_id=2010213389]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = -132.225
+offset_top = -69.0
+offset_right = 562.775
+offset_bottom = 840.0
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("4_6d8k6")
+
+[node name="TextureRect2" type="TextureRect" parent="Container/Panel" unique_id=1800367272]
+layout_mode = 0
+offset_left = -135.0
+offset_top = -69.0
+offset_right = 560.0
+offset_bottom = 840.0
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("4_6d8k6")

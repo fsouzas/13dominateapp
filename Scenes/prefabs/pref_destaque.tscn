@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://71i1668e0cpj"]
 
-[ext_resource type="Shader" uid="uid://n1qujb6udjfm" path="res://shaders/halftone.gdshader" id="1_naxs8"]
 [ext_resource type="Texture2D" uid="uid://u7a8i4pb1lv1" path="res://assets/standing_destaque/oscilio/oscilio_bg.png" id="1_ti6lt"]
 [ext_resource type="FontFile" uid="uid://dgkanfofqv28r" path="res://fonts/FuturaPT-Medium.ttf" id="2_ti6lt"]
 [ext_resource type="Texture2D" uid="uid://dws8kttxbucd3" path="res://assets/standing_destaque/blaze_firemind/blaze_firemind_front.png" id="3_naxs8"]
@@ -8,15 +7,6 @@
 [ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="5_ti6lt"]
 [ext_resource type="FontFile" uid="uid://cs4q7katbp27d" path="res://fonts/FuturaPT-Demi.ttf" id="7_al2t0"]
 [ext_resource type="Texture2D" uid="uid://jibj143v0076" path="res://assets/icons/iconmonstr-trophy-13-64.png" id="8_e6eb6"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_fpoeb"]
-shader = ExtResource("1_naxs8")
-shader_parameter/max_dots = 150
-shader_parameter/dot_size = 1.20000001788144
-shader_parameter/brightness_mult = 0.60000000894072
-shader_parameter/invert = false
-shader_parameter/primary_color = Color(0, 0, 0, 0.5882353)
-shader_parameter/secondary_color = Color(0.9019608, 0.9019608, 0.8, 0)
 
 [sub_resource type="FontVariation" id="FontVariation_vdbce"]
 base_font = ExtResource("2_ti6lt")
@@ -45,7 +35,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="Heroi_BG2" type="TextureRect" parent="Heroi" unique_id=2028365527]
-material = SubResource("ShaderMaterial_fpoeb")
+modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 offset_transform_enabled = true
 offset_transform_position = Vector2(8, 8)
@@ -70,7 +60,7 @@ grow_vertical = 2
 metadata/_edit_lock_ = true
 
 [node name="Posicao2" type="RichTextLabel" parent="Heroi/Heroi_BG/MarginContainer" unique_id=1646424081]
-material = SubResource("ShaderMaterial_fpoeb")
+modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 offset_transform_enabled = true
 offset_transform_position = Vector2(5, 5)

@@ -1,7 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://xultv8aydj54"]
 
-[ext_resource type="FontFile" uid="uid://dgkanfofqv28r" path="res://fonts/FuturaPT-Medium.ttf" id="1_fb2qm"]
+[ext_resource type="FontFile" uid="uid://cs4q7katbp27d" path="res://fonts/FuturaPT-Demi.ttf" id="1_fb2qm"]
 
 [resource]
 default_font = ExtResource("1_fb2qm")
-default_font_size = 30
