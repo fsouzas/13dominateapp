@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://okffs7rdeoc1"]
 
 [ext_resource type="Script" uid="uid://bbjwb3xfv8enf" path="res://scripts/_standings.gd" id="1_nvwqc"]
-[ext_resource type="Texture2D" uid="uid://dyidg3tn2al1t" path="res://assets/bg.png" id="2_2msg6"]
 [ext_resource type="PackedScene" uid="uid://71i1668e0cpj" path="res://scenes/prefabs/pref_destaque.tscn" id="2_gmp82"]
+[ext_resource type="Texture2D" uid="uid://b4f8t4lmnidwq" path="res://assets/United_We_Stand.png" id="2_tnwf4"]
 [ext_resource type="Theme" uid="uid://xultv8aydj54" path="res://themes/destaques_padrao.tres" id="3_y5tuc"]
 [ext_resource type="PackedScene" uid="uid://bk1gvfs4kvgdy" path="res://scenes/prefabs/standing_title.tscn" id="4_4t0is"]
 [ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="4_fo46j"]
@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://cux3o2f2ieqvh" path="res://assets/standing_destaque/unknown/unknown_standing.png" id="7_xymcy"]
 [ext_resource type="Texture2D" uid="uid://jibj143v0076" path="res://assets/icons/iconmonstr-trophy-13-64.png" id="9_xymcy"]
 [ext_resource type="PackedScene" uid="uid://dpio5dtimtemt" path="res://scenes/prefabs/standing.tscn" id="10_2iuw1"]
-[ext_resource type="Texture2D" uid="uid://dfs8p1liuii6g" path="res://assets/United_We_Stand.jpg" id="10_xymcy"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bhunq"]
 
@@ -37,11 +36,28 @@ heroi_destaque3_front = NodePath("VBoxContainer/Destaques/Destaque3/Heroi/Heroi_
 heroi_destaque3_bg = NodePath("VBoxContainer/Destaques/Destaque3/Heroi/Heroi_BG")
 heroi_destaque3_nome = NodePath("VBoxContainer/Destaques/Destaque3/VBoxContainer/Nome")
 heroi_destaque_3_vitoria = NodePath("VBoxContainer/Destaques/Destaque3/VBoxContainer/HBoxContainer/Vitorias")
-standing_less = NodePath("VBoxContainer/VBoxContainer/standing_less")
+standing_less = NodePath("VBoxContainer/VBoxContainer/Standing")
 vbox = NodePath("VBoxContainer/VBoxContainer")
 metadata/_edit_use_anchors_ = true
 
+[node name="UnitedWeStand" type="TextureRect" parent="." unique_id=1383488353]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -22.000122
+offset_top = -4.0000153
+offset_right = 1758.0
+offset_bottom = 279.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2483492, 1.2483492)
+texture = ExtResource("2_tnwf4")
+stretch_mode = 2
+
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1613979291]
+modulate = Color(1, 1, 1, 0.38039216)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -49,25 +65,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 0.078431375, 0.12156863, 1)
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=883797109]
-modulate = Color(1, 1, 1, 0.67058825)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_2msg6")
-
-[node name="TextureRect2" type="TextureRect" parent="." unique_id=1815566865]
-modulate = Color(1, 1, 1, 0.67058825)
-self_modulate = Color(1, 1, 1, 0.34901962)
-layout_mode = 1
-offset_right = 3385.9136
-offset_bottom = 1846.0
-offset_transform_enabled = true
-texture = ExtResource("10_xymcy")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=822418311]
 layout_mode = 1
@@ -79,7 +76,7 @@ offset_top = -20.13
 offset_right = 887.41504
 offset_bottom = 1029.87
 grow_horizontal = 2
-theme_override_constants/separation = -85
+theme_override_constants/separation = -86
 
 [node name="StandingTitle" parent="VBoxContainer" unique_id=47154294 instance=ExtResource("4_4t0is")]
 layout_mode = 2
@@ -110,6 +107,9 @@ layout_mode = 2
 offset_transform_enabled = true
 offset_transform_position = Vector2(0, -50)
 
+[node name="Heroi_BG2" parent="VBoxContainer/Destaques/Destaque2/Heroi" parent_id_path=PackedInt32Array(1402647370, 847171199) index="0" unique_id=2028365527]
+stretch_mode = 2
+
 [node name="Posicao2" parent="VBoxContainer/Destaques/Destaque2/Heroi/Heroi_BG/MarginContainer" parent_id_path=PackedInt32Array(1402647370, 955187304) index="0" unique_id=1646424081]
 text = "2º"
 
@@ -125,6 +125,8 @@ offset_transform_position = Vector2(0, -200)
 [node name="Destaque3" parent="VBoxContainer/Destaques" unique_id=1927256005 instance=ExtResource("2_gmp82")]
 z_index = 1
 layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, -48.85)
 
 [node name="Posicao2" parent="VBoxContainer/Destaques/Destaque3/Heroi/Heroi_BG/MarginContainer" parent_id_path=PackedInt32Array(1927256005, 955187304) index="0" unique_id=1646424081]
 text = "3º"
@@ -133,10 +135,14 @@ text = "3º"
 text = "3º"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer" unique_id=798441732]
+propagate_maximum_size = false
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 offset_transform_enabled = true
-offset_transform_position = Vector2(0, -24.34)
-theme_override_constants/separation = -11
+offset_transform_position = Vector2(-370, 0)
+theme_override_constants/separation = 60
+alignment = 1
 
 [node name="standing_less" type="PanelContainer" parent="VBoxContainer/VBoxContainer" unique_id=920099888]
 visible = false
@@ -171,13 +177,13 @@ layout_mode = 2
 theme = ExtResource("3_y5tuc")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.68235296)
 theme_override_constants/outline_size = 0
-theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/normal_font_size = 1
 text = "QUARTO LUGAR"
 scroll_active = false
 script = ExtResource("4_fo46j")
 _max_size = 30
 _outline_ratio = 0.0
-_current_font_size = 30
+_current_font_size = 1
 _editor_defaults_set = true
 metadata/_custom_type_script = "uid://co0lo02vnu10n"
 
@@ -204,6 +210,11 @@ stretch_mode = 2
 [node name="Standing" parent="VBoxContainer/VBoxContainer" unique_id=620729908 instance=ExtResource("10_2iuw1")]
 visible = false
 layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(-6, -32)
+
+[node name="dropped" parent="VBoxContainer/VBoxContainer/Standing" index="2" unique_id=170816315]
+visible = false
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=98757829]
 layout_mode = 0
@@ -240,3 +251,4 @@ text = "COMPARTILHAR STANDINGS"
 [editable path="VBoxContainer/Destaques/Destaque2"]
 [editable path="VBoxContainer/Destaques/Destaque"]
 [editable path="VBoxContainer/Destaques/Destaque3"]
+[editable path="VBoxContainer/VBoxContainer/Standing"]

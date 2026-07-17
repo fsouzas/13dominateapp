@@ -4,9 +4,10 @@
 [ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="2_awjuo"]
 [ext_resource type="Texture2D" uid="uid://jibj143v0076" path="res://assets/icons/iconmonstr-trophy-13-64.png" id="3_scmjo"]
 [ext_resource type="Texture2D" uid="uid://v1cg17fn64ny" path="res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_front.png" id="4_6d8k6"]
+[ext_resource type="Texture2D" uid="uid://bqnlx6k84j2sp" path="res://assets/icons/iconmonstr-x-mark-1-240(1).png" id="5_awjuo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6f8o3"]
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(0.16862746, 0.19215687, 0.24705882, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
@@ -64,7 +65,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_5haqy")
-theme_override_colors/default_color = Color(1, 0.078431375, 0.12156863, 1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 0
 theme_override_font_sizes/normal_font_size = 33
 text = "10"
@@ -85,18 +86,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 77.0
 offset_top = 7.0
-offset_right = 77.0
+offset_right = -85.0
 offset_bottom = -7.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_5haqy")
-theme_override_colors/default_color = Color(1, 0.078431375, 0.12156863, 1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 0
 theme_override_font_sizes/normal_font_size = 28
 text = "FELIPE SOUZA"
 scroll_active = false
 script = ExtResource("2_awjuo")
 _max_size = 28
+_min_size = 28
 _outline_ratio = 0.0
 _current_font_size = 28
 _editor_defaults_set = true
@@ -115,19 +117,18 @@ grow_vertical = 2
 theme_override_constants/separation = -14
 alignment = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Container/Panel/HBoxContainer" unique_id=578787623]
+[node name="wins" type="RichTextLabel" parent="Container/Panel/HBoxContainer" unique_id=578787623]
 custom_minimum_size = Vector2(30, 0)
 layout_mode = 2
 offset_transform_enabled = true
 offset_transform_position = Vector2(0, 10)
 theme = ExtResource("1_5haqy")
-theme_override_colors/default_color = Color(1, 0.078431375, 0.12156863, 1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/normal_font_size = 28
 text = "2"
 horizontal_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="Container/Panel/HBoxContainer" unique_id=136269693]
-modulate = Color(1, 0.078431375, 0.12156863, 1)
 layout_mode = 2
 offset_transform_enabled = true
 offset_transform_position = Vector2(0, -2)
@@ -135,7 +136,7 @@ offset_transform_scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_scmjo")
 
 [node name="TextureRect" type="TextureRect" parent="Container/Panel" unique_id=2010213389]
-modulate = Color(0, 0, 0, 1)
+visible = false
 layout_mode = 0
 offset_left = -132.225
 offset_top = -69.0
@@ -145,6 +146,7 @@ scale = Vector2(0.35, 0.35)
 texture = ExtResource("4_6d8k6")
 
 [node name="TextureRect2" type="TextureRect" parent="Container/Panel" unique_id=1800367272]
+visible = false
 layout_mode = 0
 offset_left = -135.0
 offset_top = -69.0
@@ -152,3 +154,13 @@ offset_right = 560.0
 offset_bottom = 840.0
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("4_6d8k6")
+
+[node name="dropped" type="TextureRect" parent="." unique_id=170816315]
+modulate = Color(0.73192114, 0, 0.05826991, 1)
+layout_mode = 0
+offset_left = -1.0
+offset_top = 2.0
+offset_right = 239.0
+offset_bottom = 242.0
+scale = Vector2(0.205, 0.205)
+texture = ExtResource("5_awjuo")
