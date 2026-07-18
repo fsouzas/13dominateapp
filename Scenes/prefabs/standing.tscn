@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://xultv8aydj54" path="res://themes/destaques_padrao.tres" id="1_5haqy"]
 [ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="2_awjuo"]
 [ext_resource type="Texture2D" uid="uid://jibj143v0076" path="res://assets/icons/iconmonstr-trophy-13-64.png" id="3_scmjo"]
-[ext_resource type="Texture2D" uid="uid://v1cg17fn64ny" path="res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_front.png" id="4_6d8k6"]
+[ext_resource type="Texture2D" uid="uid://bmgwn3b0ugk06" path="res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_standing.png" id="4_awjuo"]
 [ext_resource type="Texture2D" uid="uid://bqnlx6k84j2sp" path="res://assets/icons/iconmonstr-x-mark-1-240(1).png" id="5_awjuo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6f8o3"]
@@ -84,7 +84,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 77.0
+offset_left = 89.0
 offset_top = 7.0
 offset_right = -85.0
 offset_bottom = -7.0
@@ -135,25 +135,13 @@ offset_transform_position = Vector2(0, -2)
 offset_transform_scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_scmjo")
 
-[node name="TextureRect" type="TextureRect" parent="Container/Panel" unique_id=2010213389]
-visible = false
+[node name="hero" type="TextureRect" parent="Container/Panel" unique_id=1406535703]
 layout_mode = 0
-offset_left = -132.225
-offset_top = -69.0
-offset_right = 562.775
-offset_bottom = 840.0
-scale = Vector2(0.35, 0.35)
-texture = ExtResource("4_6d8k6")
-
-[node name="TextureRect2" type="TextureRect" parent="Container/Panel" unique_id=1800367272]
-visible = false
-layout_mode = 0
-offset_left = -135.0
-offset_top = -69.0
-offset_right = 560.0
-offset_bottom = 840.0
-scale = Vector2(0.35, 0.35)
-texture = ExtResource("4_6d8k6")
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 74.0
+offset_bottom = 53.0
+texture = ExtResource("4_awjuo")
 
 [node name="dropped" type="TextureRect" parent="." unique_id=170816315]
 modulate = Color(0.73192114, 0, 0.05826991, 1)
