@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bqnlx6k84j2sp" path="res://assets/icons/iconmonstr-x-mark-1-240(1).png" id="5_awjuo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6f8o3"]
-bg_color = Color(0.16862746, 0.19215687, 0.24705882, 1)
+bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10

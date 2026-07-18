@@ -87,6 +87,8 @@ func sort_standing():
 		temp_standing_less.get_child(1).get_child(0).get_child(0).text = str(i + 1)
 		temp_standing_less.get_child(1).get_child(1).get_child(1).text = UniversalDict.armory_data.values()[i]["Name"].to_upper()
 		temp_standing_less.get_child(1).get_child(1).get_child(2).get_child(0).text = UniversalDict.armory_data.values()[i]["Wins"].to_upper()
+		temp_standing_less.get_child(1).get_child(0).self_modulate = Color.from_string(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["color"], Color.MIDNIGHT_BLUE)
+		temp_standing_less.get_child(1).get_child(1).self_modulate = Color.from_string(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["color"], Color.MIDNIGHT_BLUE)
 		temp_standing_less.visible = true
 		temp_standing_less.show()
 

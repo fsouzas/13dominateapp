@@ -2,711 +2,853 @@
   "unknown": {
 	"background": "res://assets/standing_destaque/unknown/unknown_bg.png",
 	"front": "res://assets/standing_destaque/unknown/unknown_front.png",
-	"standing": ""
+	"standing": "res://assets/standing_destaque/unknown/unknown_standing.png",
+	"color": "2b313f"
   },
   "Arakni": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Arakni, Solitary Confinement": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Arakni, Web of Deceit": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Aurora": {
 	"background": "res://assets/standing_destaque/aurora/aurora_bg.png",
 	"front": "res://assets/standing_destaque/aurora/aurora_front.png",
-	"standing": "res://assets/standing_destaque/aurora/aurora_standing.png"
+	"standing": "res://assets/standing_destaque/aurora/aurora_standing.png",
+	"color": "40477b"
   },
   "Aurora, Emissary of Lightning": {
 	"background": "res://assets/standing_destaque/aurora_emissary/aurora_emissary_bg.png",
 	"front": "res://assets/standing_destaque/aurora_emissary/aurora_emissary_front.png",
-	"standing": ""
+	"standing": "res://assets/standing_destaque/aurora_emissary/aurora_emissary.png",
+	"color": "2b3370"
   },
   "Azalea": {
 	"background": "res://assets/standing_destaque/azalea/azalea_bg.png",
 	"front": "res://assets/standing_destaque/azalea/azalea_front.png",
-	"standing": "res://assets/standing_destaque/azalea/azalea_standing.png"
+	"standing": "res://assets/standing_destaque/azalea/azalea_standing.png",
+	"color": "3a1a1a"
   },
   "Benji,the Piercing Wind": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Betsy": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Blaze, Firemind": {
 	"background": "res://assets/standing_destaque/blaze_firemind/blaze_firemind_bg.png",
 	"front": "res://assets/standing_destaque/blaze_firemind/blaze_firemind_front.png",
-	"standing": "res://assets/standing_destaque/blaze_firemind/blaze_firemind_standing.png"
+	"standing": "res://assets/standing_destaque/blaze_firemind/blaze_firemind_standing.png",
+	"color": "710b04"
   },
   "Bolfar, Bear Hands": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Boltyn": {
-	"background": "",
-	"front": "",
-	"standing": ""
+	"background": "res://assets/standing_destaque/boltyn/boltyn_bg.png",
+	"front": "res://assets/standing_destaque/boltyn/boltyn_front.png",
+	"standing": "res://assets/standing_destaque/boltyn/boltyn_standing.png",
+	"color": "733d2e"
   },
   "Bravo": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Bravo, Flattering Showman": {
 	"background": "res://assets/standing_destaque/bravo_flattering/bravo_flattering_bg.png",
 	"front": "res://assets/standing_destaque/bravo_flattering/bravo_flattering_front.png",
-	"standing": "res://assets/standing_destaque/bravo_flattering/bravo_flattering_standing.png"
+	"standing": "res://assets/standing_destaque/bravo_flattering/bravo_flattering_standing.png",
+	"color": "3c0101"
   },
   "Briar (LL)": {
 	"background": "res://assets/standing_destaque/briar/briar_bg.png",
 	"front": "res://assets/standing_destaque/briar/briar_front.png",
-	"standing": "res://assets/standing_destaque/briar/briar_standing.png"
+	"standing": "res://assets/standing_destaque/briar/briar_standing.png",
+	"color": "122010"
   },
   "Brutus, Summa Rudis": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Chane (LL)": {
 	"background": "res://assets/standing_destaque/chane/chane_bg.png",
 	"front": "res://assets/standing_destaque/chane/chane_front.png",
-	"standing": "res://assets/standing_destaque/chane/chane_standing.png"
+	"standing": "res://assets/standing_destaque/chane/chane_standing.png",
+	"color": "593054"
   },
   "Cindra": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Dash (LL)": {
 	"background": "res://assets/standing_destaque/dash/dash_bg.png",
 	"front": "res://assets/standing_destaque/dash/dash_front.png",
-	"standing": "res://assets/standing_destaque/dash/dash_standing.png"
+	"standing": "res://assets/standing_destaque/dash/dash_standing.png",
+	"color": "8b5a41"
   },
   "Dash, Database": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Data Doll MKII": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Dorinthea": {
 	"background": "res://assets/standing_destaque/dorinthea/dorinthea_bg.png",
 	"front": "res://assets/standing_destaque/dorinthea/dorinthea_front.png",
-	"standing": "res://assets/standing_destaque/dorinthea/dorinthea_standing.png"
+	"standing": "res://assets/standing_destaque/dorinthea/dorinthea_standing.png",
+	"color": "72471c"
   },
   "Dorinthea, Quicksilver Prodigy": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Dromai": {
 	"background": "res://assets/standing_destaque/dromai/dromai_bg.png",
 	"front": "res://assets/standing_destaque/dromai/dromai_front.png",
-	"standing": "res://assets/standing_destaque/dromai/dromai_standing.png"
+	"standing": "res://assets/standing_destaque/dromai/dromai_standing.png",
+	"color": "431412"
   },
   "Emperor, Dracai of Aesir": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Enigma": {
 	"background": "res://assets/standing_destaque/enigma/enigma_bg.png",
 	"front": "res://assets/standing_destaque/enigma/enigma_front.png",
-	"standing": "res://assets/standing_destaque/enigma/enigma_standing.png"
+	"standing": "res://assets/standing_destaque/enigma/enigma_standing.png",
+	"color": "2e2a7c"
   },
   "Enigma, New Moon": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Fai": {
 	"background": "res://assets/standing_destaque/fai/fai_bg.png",
 	"front": "res://assets/standing_destaque/fai/fai_front.png",
-	"standing": "res://assets/standing_destaque/fai/fai_standing.png"
+	"standing": "res://assets/standing_destaque/fai/fai_standing.png",
+	"color": "4a171e"
   },
   "Fang": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Fightmaster Kox": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Florian": {
 	"background": "res://assets/standing_destaque/florian/florian_bg.png",
 	"front": "res://assets/standing_destaque/florian/florian_front.png",
-	"standing": ""
+	"standing": "res://assets/standing_destaque/florian/florian_stainding.png",
+	"color": "622308"
   },
   "Genis Wotchuneed": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Gravy Bones": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Groundbreaker Crix": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Terra": {
 	"background": "res://assets/standing_destaque/terra/terra_bg.png",
 	"front": "res://assets/standing_destaque/terra/terra_front.png",
-	"standing": "res://assets/standing_destaque/terra/terra_standing.png"
+	"standing": "res://assets/standing_destaque/terra/terra_standing.png",
+	"color": "324716"
   },
   "Hala": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Ira, Crimson Haze (LL)": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Iyslander (LL)": {
 	"background": "res://assets/standing_destaque/iyslander/iyslander_bg.png",
 	"front": "res://assets/standing_destaque/iyslander/iyslander_front.png",
-	"standing": "res://assets/standing_destaque/iyslander/iyslander_standing.png"
+	"standing": "res://assets/standing_destaque/iyslander/iyslander_standing.png",
+	"color": "30276d"
   },
   "Kano (LL)": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Kassai": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Kassai, Cintari Sellsword (LL)": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Katsu": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Kavdaen, Trader of Skins": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Kayo": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Kayo, Berserker Runt": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Kayo, Strong-arm": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Levia": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Lexi": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Lyath Goldmane": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Marlynn": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Maxx Nitro": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Melody, Sing-along": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Nuu": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Oldhim (LL)": {
 	"background": "res://assets/standing_destaque/oldhim/oldhim_bg.png",
 	"front": "res://assets/standing_destaque/oldhim/oldhim_front.png",
-	"standing": "res://assets/standing_destaque/oldhim/oldhim_standing.png"
+	"standing": "res://assets/standing_destaque/oldhim/oldhim_standing.png",
+	"color": "5b6781"
   },
   "Olympia": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Oscilio": {
 	"background": "res://assets/standing_destaque/oscilio/oscilio_bg.png",
 	"front": "res://assets/standing_destaque/oscilio/oscilio_front.png",
-	"standing": "res://assets/standing_destaque/oscilio/oscilio_standing.png"
+	"standing": "res://assets/standing_destaque/oscilio/oscilio_standing.png",
+	"color": "2a4f8a"
   },
   "Oscilio, Scion of the Thrid Age": {
 	"background": "res://assets/standing_destaque/oscilio_scion/oscilio_scion_bg.png",
 	"front": "res://assets/standing_destaque/oscilio_scion/ocilio_scion_front.png",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Pleiades": {
 	"background": "res://assets/standing_destaque/pleiades/pleiades_bg.png",
 	"front": "res://assets/standing_destaque/pleiades/pleiades_front.png",
-	"standing": "res://assets/standing_destaque/pleiades/pleiades_standing.png"
+	"standing": "res://assets/standing_destaque/pleiades/pleiades_standing.png",
+	"color": "d3442f"
   },
   "Prism": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Prism, Advent of Thrones": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Professor Teklovossen": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Puffin": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Reya, the Unyielding": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Rhinar (LL)": {
 	"background": "res://assets/standing_destaque/rhinar/rhinar_bg.png",
 	"front": "res://assets/standing_destaque/rhinar/rhinar_front.png",
-	"standing": "res://assets/standing_destaque/rhinar/rhinar_standing.png"
+	"standing": "res://assets/standing_destaque/rhinar/rhinar_standing.png",
+	"color": "24150e"
   },
   "Riptide": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Ruu'di, Gem Keeper": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Scurv, Stowaway": {
 	"background": "res://assets/standing_destaque/scurv/scurv_bg.png",
 	"front": "res://assets/standing_destaque/scurv/scurv_front.png",
-	"standing": "res://assets/standing_destaque/scurv/scurv_standing.png"
+	"standing": "res://assets/standing_destaque/scurv/scurv_standing.png",
+	"color": "1e1928"
   },
   "Shiyana, Diamond Gemini": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Squizzy & Floof": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Taipanis, Dracai of Judgement": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Taylor": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Teklovossen": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Theryon, Magister of Justice": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Tuffnut": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Uzuri": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Valda Brightaxe": {
 	"background": "res://assets/standing_destaque/valda_brightaxe/valda_brightaxe_bg.png",
 	"front": "res://assets/standing_destaque/valda_brightaxe/valda_brightaxe_front.png",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Verdance": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Victor Goldmane (LL)": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Victor Goldmane, Match Fixer": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Viserai (LL)": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Vynnset": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Yoji, Royal Protector": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Yorick, Weaver of Tales": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Zen": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Zyggy": {
 	"background": "res://assets/standing_destaque/zyggy/zyggy_bg.png",
 	"front": "res://assets/standing_destaque/zyggy/zyggy_front.png",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Arakni, 5L!p3d 7hRu 7h3 cR4X": {
 	"background": "res://assets/standing_destaque/arakni_slippery/arakni_slippery_bg.png",
 	"front": "res://assets/standing_destaque/arakni_slippery/arakni_slippery_front.png",
-	"standing": "res://assets/standing_destaque/arakni_slippery/arakni_slippery_standing.png"
+	"standing": "res://assets/standing_destaque/arakni_slippery/arakni_slippery_standing.png",
+	"color": "900349"
   },
   "Arakni, Huntsman": {
 	"background": "res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_bg.png",
 	"front": "res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_front.png",
-	"standing": "res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_standing.png"
+	"standing": "res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_standing.png",
+	"color": "190725"
   },
   "Arakni, Marionette": {
 	"background": "res://assets/standing_destaque/arakni_marionette/arakni_marionette_bg.png",
 	"front": "res://assets/standing_destaque/arakni_marionette/arakni_marionette_front.png",
-	"standing": "res://assets/standing_destaque/arakni_marionette/arakni_marionette_standing.png"
+	"standing": "res://assets/standing_destaque/arakni_marionette/arakni_marionette_standing.png",
+	"color": "360f10"
   },
   "Aurora, Legacy of Tempest": {
 	"background": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_bg.png",
 	"front": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_front.png",
-	"standing": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_standing.png"
+	"standing": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_standing.png",
+	"color": "432887"
   },
   "Betsy, Skin in the Game": {
 	"background": "res://assets/standing_destaque/betsy_skin/betsy_skin_bg.png",
 	"front": "res://assets/standing_destaque/betsy_skin/betsy_skin_front.png",
-	"standing": "res://assets/standing_destaque/betsy_skin/betsy_skin_standing.png"
+	"standing": "res://assets/standing_destaque/betsy_skin/betsy_skin_standing.png",
+	"color": "42311f"
   },
   "Bravo, Showstopper": {
 	"background": "res://assets/standing_destaque/bravo_showstopper/bravo_showstopper_bg.png",
 	"front": "res://assets/standing_destaque/bravo_showstopper/bravo_showstopper_front.png",
-	"standing": "res://assets/standing_destaque/bravo_showstopper/bravo_showstopper_standing.png"
+	"standing": "res://assets/standing_destaque/bravo_showstopper/bravo_showstopper_standing.png",
+	"color": "521208"
   },
   "Cindra, Dracai of Retribution": {
 	"background": "res://assets/standing_destaque/cindra_dracai/cindra_dracai_bg.png",
 	"front": "res://assets/standing_destaque/cindra_dracai/cindra_dracai_front.png",
-	"standing": "res://assets/standing_destaque/cindra_dracai/cindra_dracai_standing.png"
+	"standing": "res://assets/standing_destaque/cindra_dracai/cindra_dracai_standing.png",
+	"color": "3f0d0a"
   },
   "Dash I/O": {
 	"background": "res://assets/standing_destaque/dash_io/dash_io_bg.png",
 	"front": "res://assets/standing_destaque/dash_io/dash_io_front.png",
-	"standing": "res://assets/standing_destaque/dash_io/dash_io_standing.png"
+	"standing": "res://assets/standing_destaque/dash_io/dash_io_standing.png",
+	"color": "2f3554"
   },
   "Dorinthea Ironsong": {
 	"background": "res://assets/standing_destaque/dorinthea_ironsong/dorinthea_ironsong_bg.png",
 	"front": "res://assets/standing_destaque/dorinthea_ironsong/dorinthea_ironsong_front.png",
-	"standing": "res://assets/standing_destaque/dorinthea_ironsong/dorinthea_ironsong_standing.png"
+	"standing": "res://assets/standing_destaque/dorinthea_ironsong/dorinthea_ironsong_standing.png",
+	"color": "480510"
   },
   "Fai, Rising Rebellion": {
 	"background": "res://assets/standing_destaque/fai_rising/fai_rising_bg.png",
 	"front": "res://assets/standing_destaque/fai_rising/fai_rising_front.png",
-	"standing": "res://assets/standing_destaque/fai_rising/fai_rising_standing.png"
+	"standing": "res://assets/standing_destaque/fai_rising/fai_rising_standing.png",
+	"color": "472323"
   },
   "Fang, Dracai of Blades": {
 	"background": "res://assets/standing_destaque/fang_dracai/fang_dracai_bg.png",
 	"front": "res://assets/standing_destaque/fang_dracai/fang_dracai_front.png",
-	"standing": "res://assets/standing_destaque/fang_dracai/fang_dracai_standing.png"
+	"standing": "res://assets/standing_destaque/fang_dracai/fang_dracai_standing.png",
+	"color": "704926"
   },
   "Gravy Bones, Shipwrecked Looter": {
 	"background": "res://assets/standing_destaque/grave_bones_ship/grave_bones_ship_bg.png",
 	"front": "res://assets/standing_destaque/grave_bones_ship/grave_bones_ship_front.png",
-	"standing": "res://assets/standing_destaque/grave_bones_ship/grave_bones_ship_standing.png"
+	"standing": "res://assets/standing_destaque/grave_bones_ship/grave_bones_ship_standing.png",
+	"color": "04141b"
   },
   "Hala, Bladesaint of the Vow": {
 	"background": "res://assets/standing_destaque/hala_bladesaint/hala_bladesaint_bg.png",
 	"front": "res://assets/standing_destaque/hala_bladesaint/hala_bladesaint_front.png",
-	"standing": "res://assets/standing_destaque/hala_bladesaint/hala_bladesaint_standing.png"
+	"standing": "res://assets/standing_destaque/hala_bladesaint/hala_bladesaint_standing.png",
+	"color": "634E29"
   },
   "Ira, Scarlet Revenger": {
 	"background": "res://assets/standing_destaque/ira_scarlet/ira_scarlet_bg.png",
 	"front": "res://assets/standing_destaque/ira_scarlet/ira_scarlet_front.png",
-	"standing": "res://assets/standing_destaque/ira_scarlet/ira_scarlet_standing.png"
+	"standing": "res://assets/standing_destaque/ira_scarlet/ira_scarlet_standing.png",
+	"color": "51040a"
   },
   "Jarl Vetreiði": {
 	"background": "res://assets/standing_destaque/jarl_vet/jarl_vet_bg.png",
 	"front": "res://assets/standing_destaque/jarl_vet/jarl_vet_front.png",
-	"standing": "res://assets/standing_destaque/jarl_vet/jarl_vet_standing.png"
+	"standing": "res://assets/standing_destaque/jarl_vet/jarl_vet_standing.png",
+	"color": "152a41"
   },
   "Kassai of the Golden Sand": {
 	"background": "res://assets/standing_destaque/kassai_golden/kassai_golden_bg.png",
 	"front": "res://assets/standing_destaque/kassai_golden/kassai_golden_front.png",
-	"standing": "res://assets/standing_destaque/kassai_golden/kassai_golden_standing.png"
+	"standing": "res://assets/standing_destaque/kassai_golden/kassai_golden_standing.png",
+	"color": "4e2114"
   },
   "Katsu, the Wanderer": {
 	"background": "res://assets/standing_destaque/katsu_wanderer/katsu_wanderer_bg.png",
 	"front": "res://assets/standing_destaque/katsu_wanderer/katsu_wanderer_front.png",
-	"standing": "res://assets/standing_destaque/katsu_wanderer/katsu_wanderer_standing.png"
+	"standing": "res://assets/standing_destaque/katsu_wanderer/katsu_wanderer_standing.png",
+	"color": "315c6a"
   },
   "Kayo, Underhanded Cheat": {
 	"background": "res://assets/standing_destaque/kayo_underhanded/kayo_underhanded_bg.png",
 	"front": "res://assets/standing_destaque/kayo_underhanded/kayo_underhanded_front.png",
-	"standing": "res://assets/standing_destaque/kayo_underhanded/kayo_underhanded_standing.png"
+	"standing": "res://assets/standing_destaque/kayo_underhanded/kayo_underhanded_standing.png",
+	"color": "5a510a"
   },
   "Levia, Shadowborn Abomination": {
 	"background": "res://assets/standing_destaque/levia_shadownborn/levia_shadowborn_bg.png",
 	"front": "res://assets/standing_destaque/levia_shadownborn/levia_shadowborn_front.png",
-	"standing": "res://assets/standing_destaque/levia_shadownborn/levia_shadowborn_standing.png"
+	"standing": "res://assets/standing_destaque/levia_shadownborn/levia_shadowborn_standing.png",
+	"color": "4c1e34"
   },
   "Lyath Goldmane, Vile Savant": {
 	"background": "res://assets/standing_destaque/lyath_goldmane_vile/lyath_goldmane_vile_bg.png",
 	"front": "res://assets/standing_destaque/lyath_goldmane_vile/lyath_goldmane_vile_front.png",
-	"standing": "res://assets/standing_destaque/lyath_goldmane_vile/lyath_goldmane_vile_standing.png"
+	"standing": "res://assets/standing_destaque/lyath_goldmane_vile/lyath_goldmane_vile_standing.png",
+	"color": "500512"
   },
   "Marlynn, Treasure Hunter": {
 	"background": "res://assets/standing_destaque/marlynn_treasure/marlynn_treasure_bg.png",
 	"front": "res://assets/standing_destaque/marlynn_treasure/marlynn_treasure_front.png",
-	"standing": "res://assets/standing_destaque/marlynn_treasure/marlynn_treasure_standing.png"
+	"standing": "res://assets/standing_destaque/marlynn_treasure/marlynn_treasure_standing.png",
+	"color": "252036"
   },
   "Maxx 'The Hype' Nitro": {
 	"background": "res://assets/standing_destaque/max_the_hype/max_the_hype_bg.png",
 	"front": "res://assets/standing_destaque/max_the_hype/max_the_hype_front.png",
-	"standing": "res://assets/standing_destaque/max_the_hype/max_the_hype_standing.png"
+	"standing": "res://assets/standing_destaque/max_the_hype/max_the_hype_standing.png",
+	"color": "2b2648"
   },
   "Olympia, Prized Fighter": {
 	"background": "res://assets/standing_destaque/olympia_prized/olyimpia_prized_bg.png",
 	"front": "res://assets/standing_destaque/olympia_prized/olyimpia_prized_front.png",
-	"standing": "res://assets/standing_destaque/olympia_prized/olyimpia_prized_standing.png"
+	"standing": "res://assets/standing_destaque/olympia_prized/olyimpia_prized_standing.png",
+	"color": "2a0602"
   },
   "Oscilio, Constella Intelligence": {
 	"background": "res://assets/standing_destaque/oscilio_constella/oscilio_constella_bg.png",
 	"front": "res://assets/standing_destaque/oscilio_constella/oscilio_constella_front.png",
-	"standing": "res://assets/standing_destaque/oscilio_constella/oscilio_constella_standing.png"
+	"standing": "res://assets/standing_destaque/oscilio_constella/oscilio_constella_standing.png",
+	"color": "456285"
   },
   "Oscilio, Forked Continuum": {
 	"background": "res://assets/standing_destaque/oscilio_forked/oscilio_forked_bg.png",
 	"front": "res://assets/standing_destaque/oscilio_forked/oscilio_forked_front.png",
-	"standing": "res://assets/standing_destaque/oscilio_forked/oscilio_forked_standing.png"
+	"standing": "res://assets/standing_destaque/oscilio_forked/oscilio_forked_standing.png",
+	"color": "1a1738"
   },
   "Pleiades, Superstar": {
 	"background": "res://assets/standing_destaque/pleiades_superstar/pleiades_superstar_bg.png",
 	"front": "res://assets/standing_destaque/pleiades_superstar/pleiades_superstar_front.png",
-	"standing": "res://assets/standing_destaque/pleiades_superstar/pleiades_superstar_standing.png"
+	"standing": "res://assets/standing_destaque/pleiades_superstar/pleiades_superstar_standing.png",
+	"color": "51192d"
   },
   "Puffin, Hightail": {
 	"background": "res://assets/standing_destaque/puffin_hightail/puffin_hightail_bg.png",
 	"front": "res://assets/standing_destaque/puffin_hightail/puffin_hightail_front.png",
-	"standing": "res://assets/standing_destaque/puffin_hightail/puffin_hightail_standing.png"
+	"standing": "res://assets/standing_destaque/puffin_hightail/puffin_hightail_standing.png",
+	"color": "284459"
   },
   "Rhinar, Reckless Rampage": {
 	"background": "res://assets/standing_destaque/rhinar_reckless/rhinar_reckless_bg.png",
 	"front": "res://assets/standing_destaque/rhinar_reckless/rhinar_reckless_front.png",
-	"standing": "res://assets/standing_destaque/rhinar_reckless/rhinar_reckless_standing.png"
+	"standing": "res://assets/standing_destaque/rhinar_reckless/rhinar_reckless_standing.png",
+	"color": "31180b"
   },
   "Riptide, Lurker of the Deep": {
 	"background": "res://assets/standing_destaque/riptide_lurker/riptide_lurker_bg.png",
 	"front": "res://assets/standing_destaque/riptide_lurker/riptide_lurker_front.png",
-	"standing": "res://assets/standing_destaque/riptide_lurker/riptide_lurker_standing.png"
+	"standing": "res://assets/standing_destaque/riptide_lurker/riptide_lurker_standing.png",
+	"color": "363a24"
   },
   "Ser Boltyn, Breaker of Dawn": {
 	"background": "res://assets/standing_destaque/boltyn_breaker/boltyn_breaker_bg.png",
 	"front": "res://assets/standing_destaque/boltyn_breaker/boltyn_breaker_front.png",
-	"standing": "res://assets/standing_destaque/boltyn_breaker/boltyn_breaker_standing.png"
+	"standing": "res://assets/standing_destaque/boltyn_breaker/boltyn_breaker_standing.png",
+	"color": "583d36"
   },
   "Teklovossen, Esteemed Magnate": {
 	"background": "res://assets/standing_destaque/teklovossen_esteemed/teklovossen_esteemed_bg.png",
 	"front": "res://assets/standing_destaque/teklovossen_esteemed/teklovossen_esteemed_front.png",
-	"standing": "res://assets/standing_destaque/teklovossen_esteemed/teklovossen_esteemed_standing.png"
+	"standing": "res://assets/standing_destaque/teklovossen_esteemed/teklovossen_esteemed_standing.png",
+	"color": "6293ad"
   },
   "Tuffnut, Bumbling Hulkster": {
 	"background": "res://assets/standing_destaque/tuffnut_bumbling/tuffnut_bumbling_bg.png",
 	"front": "res://assets/standing_destaque/tuffnut_bumbling/tuffnut_bumbling_front.png",
-	"standing": "res://assets/standing_destaque/tuffnut_bumbling/tuffnut_bumbling_standing.png"
+	"standing": "res://assets/standing_destaque/tuffnut_bumbling/tuffnut_bumbling_standing.png",
+	"color": "363001"
   },
   "Uzuri, Switchblade": {
 	"background": "res://assets/standing_destaque/uzuri_switchblade/uzuri_switchblade_bg.png",
 	"front": "res://assets/standing_destaque/uzuri_switchblade/uzuri_switchblade_front.png",
-	"standing": "res://assets/standing_destaque/uzuri_switchblade/uzuri_switchblade_standing.png"
+	"standing": "res://assets/standing_destaque/uzuri_switchblade/uzuri_switchblade_standing.png",
+	"color": "185440"
   },
   "Valda, Seismic Impact": {
 	"background": "res://assets/standing_destaque/valda_seismic/valda_seismic_bg.png",
 	"front": "res://assets/standing_destaque/valda_seismic/valda_seismic_front.png",
-	"standing": "res://assets/standing_destaque/valda_seismic/valda_seismic_standing.png"
+	"standing": "res://assets/standing_destaque/valda_seismic/valda_seismic_standing.png",
+	"color": "4c2b25"
   },
   "Vynnset, Iron Maiden": {
 	"background": "res://assets/standing_destaque/vynnset_iron/vynnset_iron_bg.png",
 	"front": "res://assets/standing_destaque/vynnset_iron/vynnset_iron_front.png",
-	"standing": "res://assets/standing_destaque/vynnset_iron/vynnset_iron_standing.png"
+	"standing": "res://assets/standing_destaque/vynnset_iron/vynnset_iron_standing.png",
+	"color": "2e4552"
   },
   "Zyggy Starlight": {
 	"background": "res://assets/standing_destaque/zyggy_starlight/zyggy_starlight_bg.png",
 	"front": "res://assets/standing_destaque/zyggy_starlight/zyggy_starlight_front.png",
-	"standing": "res://assets/standing_destaque/zyggy_starlight/zyggy_starlight_standing.png"
+	"standing": "res://assets/standing_destaque/zyggy_starlight/zyggy_starlight_standing.png",
+	"color": "554E99"
   },
   "Aurora, Shooting Star": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Azalea, Ace in the Hole": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Bravo, Star of the Show": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Briar, Warden of Thorns": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Chane, Bound by Shadow": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Dash, Inventor Extraordinaire": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Dromai, Ash Artist": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Enigma, Ledger of Ancestry": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Florian, Rotwood Harbinger": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Iyslander, Stormbind": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Kano, Dracai of Aether": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Kayo, Armed and Dangerous": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Lexi, Livewire": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Nuu, Alluring Desire": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Oldhim, Grandfather of Eternity": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Prism, Awakener of Sol": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Prism, Sculptor of Arc Light": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Verdance, Thorn of the Rose": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Victor Goldmane, High and Mighty": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Viserai, Rune Blood": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   },
   "Zen, Tamer of Purpose": {
 	"background": "",
 	"front": "",
-	"standing": ""
+	"standing": "",
+	"color": ""
   }
 }
