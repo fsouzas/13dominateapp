@@ -208,7 +208,6 @@ texture = ExtResource("9_xymcy")
 stretch_mode = 2
 
 [node name="Standing" parent="VBoxContainer/VBoxContainer" unique_id=620729908 instance=ExtResource("10_2iuw1")]
-visible = false
 layout_mode = 2
 offset_transform_enabled = true
 offset_transform_position = Vector2(-6, -32)

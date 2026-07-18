@@ -79,6 +79,15 @@ custom_minimum_size = Vector2(600, 0)
 layout_mode = 2
 theme = SubResource("Theme_sn0t7")
 
+[node name="hero" type="TextureRect" parent="Container/Panel" unique_id=1406535703]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 601.0
+offset_bottom = 54.0
+texture = ExtResource("4_awjuo")
+stretch_mode = 2
+
 [node name="nome" type="RichTextLabel" parent="Container/Panel" unique_id=1666338186]
 layout_mode = 1
 anchors_preset = 15
@@ -134,14 +143,6 @@ offset_transform_enabled = true
 offset_transform_position = Vector2(0, -2)
 offset_transform_scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_scmjo")
-
-[node name="hero" type="TextureRect" parent="Container/Panel" unique_id=1406535703]
-layout_mode = 0
-offset_left = -1.0
-offset_top = 1.0
-offset_right = 74.0
-offset_bottom = 53.0
-texture = ExtResource("4_awjuo")
 
 [node name="dropped" type="TextureRect" parent="." unique_id=170816315]
 modulate = Color(0.73192114, 0, 0.05826991, 1)
