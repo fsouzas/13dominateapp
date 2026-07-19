@@ -76,17 +76,19 @@ func sort_standing():
 		var temp_standing_less = standing_less.duplicate()
 		vbox.add_child(temp_standing_less)
 		if HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["standing"] == "":
-			temp_standing_less.get_child(1).get_child(1).get_child(0).texture = load("res://assets/standing_destaque/unknown/unknown_standing.png")
+			temp_standing_less.get_child(1).get_child(1).get_child(1).texture = load("res://assets/standing_destaque/unknown/unknown_standing.png")
 			pass
 		else:
-			temp_standing_less.get_child(1).get_child(1).get_child(0).texture = load(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["standing"])
+			temp_standing_less.get_child(1).get_child(1).get_child(1).texture = load(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["standing"])
 			pass
 		if UniversalDict.armory_data.values()[i]["Rank"] == "Dropped":
 			temp_standing_less.get_child(2).show()
 		
-		temp_standing_less.get_child(1).get_child(0).get_child(0).text = str(i + 1)
-		temp_standing_less.get_child(1).get_child(1).get_child(1).text = UniversalDict.armory_data.values()[i]["Name"].to_upper()
-		temp_standing_less.get_child(1).get_child(1).get_child(2).get_child(0).text = UniversalDict.armory_data.values()[i]["Wins"].to_upper()
+		temp_standing_less.get_child(1).get_child(0).get_child(0).texture = load("res://assets/textures/grunge_"+str(randi_range(1,6))+".png")
+		temp_standing_less.get_child(1).get_child(1).get_child(0).texture = load("res://assets/textures/grunge_"+str(randi_range(1,6))+".png")
+		temp_standing_less.get_child(1).get_child(0).get_child(1).text = str(i + 1)
+		temp_standing_less.get_child(1).get_child(1).get_child(2).text = UniversalDict.armory_data.values()[i]["Name"].to_upper()
+		temp_standing_less.get_child(1).get_child(1).get_child(3).get_child(0).text = UniversalDict.armory_data.values()[i]["Wins"].to_upper()
 		temp_standing_less.get_child(1).get_child(0).self_modulate = Color.from_string(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["color"], Color.MIDNIGHT_BLUE)
 		temp_standing_less.get_child(1).get_child(1).self_modulate = Color.from_string(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["color"], Color.MIDNIGHT_BLUE)
 		temp_standing_less.visible = true

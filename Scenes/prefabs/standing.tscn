@@ -2,8 +2,11 @@
 
 [ext_resource type="Theme" uid="uid://xultv8aydj54" path="res://themes/destaques_padrao.tres" id="1_5haqy"]
 [ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="2_awjuo"]
+[ext_resource type="Shader" uid="uid://cse26vfcpuapa" path="res://shaders/difference.gdshader" id="2_oatrf"]
 [ext_resource type="Texture2D" uid="uid://jibj143v0076" path="res://assets/icons/iconmonstr-trophy-13-64.png" id="3_scmjo"]
+[ext_resource type="Texture2D" uid="uid://b7llhey7nmxlx" path="res://assets/textures/grunge_1.png" id="3_uruv1"]
 [ext_resource type="Texture2D" uid="uid://bmgwn3b0ugk06" path="res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_standing.png" id="4_awjuo"]
+[ext_resource type="Texture2D" uid="uid://iu0fw8306w3k" path="res://assets/textures/grunge_2.png" id="4_b73jd"]
 [ext_resource type="Texture2D" uid="uid://bqnlx6k84j2sp" path="res://assets/icons/iconmonstr-x-mark-1-240(1).png" id="5_awjuo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6f8o3"]
@@ -15,6 +18,9 @@ corner_radius_bottom_left = 10
 
 [sub_resource type="Theme" id="Theme_sn0t7"]
 Panel/styles/panel = SubResource("StyleBoxFlat_6f8o3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6x4rr"]
+shader = ExtResource("2_oatrf")
 
 [node name="Standing" type="Control" unique_id=620729908]
 layout_mode = 3
@@ -52,10 +58,19 @@ offset_right = 684.0
 offset_bottom = 53.0
 
 [node name="Panel2" type="Panel" parent="Container" unique_id=433096892]
+clip_children = 2
 custom_minimum_size = Vector2(46, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 theme = SubResource("Theme_sn0t7")
+
+[node name="grunge" type="TextureRect" parent="Container/Panel2" unique_id=1660002797]
+layout_mode = 0
+offset_left = -46.0
+offset_top = -36.0
+offset_right = 693.0
+offset_bottom = 72.0
+texture = ExtResource("3_uruv1")
 
 [node name="pos" type="RichTextLabel" parent="Container/Panel2" unique_id=45665403]
 layout_mode = 1
@@ -78,6 +93,15 @@ clip_children = 2
 custom_minimum_size = Vector2(600, 0)
 layout_mode = 2
 theme = SubResource("Theme_sn0t7")
+
+[node name="grunge" type="TextureRect" parent="Container/Panel" unique_id=1602531478]
+material = SubResource("ShaderMaterial_6x4rr")
+layout_mode = 0
+offset_left = -96.0
+offset_top = -36.0
+offset_right = 643.0
+offset_bottom = 72.0
+texture = ExtResource("4_b73jd")
 
 [node name="hero" type="TextureRect" parent="Container/Panel" unique_id=1406535703]
 layout_mode = 0

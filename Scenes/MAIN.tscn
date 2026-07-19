@@ -13,7 +13,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_vxwnn")
-standings_scene = &"res://Scenes/STANDINGS.tscn"
+standings_scene = &"res://scenes/STANDINGS.tscn"
 
 [node name="Panel" type="Panel" parent="." unique_id=1463610035]
 layout_mode = 1
