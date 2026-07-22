@@ -35,7 +35,7 @@ window/vsync/vsync_mode=0
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/GMPShared/menu/plugin.cfg", "res://addons/SharePlugin/plugin.cfg", "res://addons/font_auto_size_labels/plugin.cfg")
+enabled=PackedStringArray("res://addons/GMPShared/menu/plugin.cfg", "res://addons/SharePlugin/plugin.cfg", "res://addons/font_auto_size_labels/plugin.cfg", "res://addons/rider-plugin/plugin.cfg")
 
 [physics]
 

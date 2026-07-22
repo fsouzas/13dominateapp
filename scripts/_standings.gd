@@ -2,6 +2,9 @@ extends Node
 
 @export var share : Share
 
+@export var mode_name : Node
+@export var store_name : Node
+
 @export var heroi_destaque1_front : TextureRect
 @export var heroi_destaque1_bg : TextureRect
 @export var heroi_destaque1_nome : AutoSizeRichTextLabel
@@ -19,18 +22,25 @@ extends Node
 
 
 @export var standing_less : Node
-@export var vbox : VBoxContainer
+@export var standing_results_1 : VBoxContainer
+@export var standings_extra :VBoxContainer
+
+@onready var standing_size : int = 3
+@onready var num_standings : int = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	share.set_share_target(true)
-	#$VBoxContainer/HBoxContainer/DATA.text = Time. get_date_string_from_system()
-	$VBoxContainer/StandingTitle/VBoxContainer/AutoSizeRichTextLabel2.text = UniversalDict.mode_selected
-	$VBoxContainer/StandingTitle/VBoxContainer/AutoSizeRichTextLabel3.text = UniversalDict.store_name.to_upper() +" "+ Time.get_date_string_from_system()
+	
+	mode_name.text = UniversalDict.mode_selected
+	store_name.text = UniversalDict.store_name.to_upper() +" "+ Time.get_date_string_from_system()
+	
 	var name_1_full = UniversalDict.armory_data.values()[0]["Name"].to_upper()
 	var name_1_parts = name_1_full.split(" ")
+	
 	heroi_destaque1_nome.text = name_1_parts[0] + " " + name_1_parts[1]
 	heroi_destaque_1_vitoria.text = UniversalDict.armory_data.values()[0]["Wins"].to_upper()
+	
 	if not HeroesDb.young_heroes[UniversalDict.armory_data.values()[0]["Hero"]]["background"]:
 		heroi_destaque1_bg.texture = load("res://assets/standing_destaque/unknown/unknown_bg.png")
 	else:
@@ -42,8 +52,10 @@ func _ready() -> void:
 	
 	var name_2_full = UniversalDict.armory_data.values()[1]["Name"].to_upper()
 	var name_2_parts = name_2_full.split(" ")
+	
 	heroi_destaque2_nome.text = name_2_parts[0] + " " + name_2_parts[1]
 	heroi_destaque_2_vitoria.text = UniversalDict.armory_data.values()[1]["Wins"].to_upper()
+	
 	if HeroesDb.young_heroes[UniversalDict.armory_data.values()[1]["Hero"]]["background"] == "":
 		heroi_destaque2_bg.texture = load("res://assets/standing_destaque/unknown/unknown_bg.png")
 	else:
@@ -55,8 +67,10 @@ func _ready() -> void:
 	
 	var name_3_full = UniversalDict.armory_data.values()[2]["Name"].to_upper()
 	var name_3_parts = name_3_full.split(" ")
+	
 	heroi_destaque3_nome.text = name_3_parts[0] + " " + name_3_parts[1]
 	heroi_destaque_3_vitoria.text = UniversalDict.armory_data.values()[2]["Wins"].to_upper()
+	
 	if HeroesDb.young_heroes[UniversalDict.armory_data.values()[2]["Hero"]]["background"] == "":
 		heroi_destaque3_bg.texture = load("res://assets/standing_destaque/unknown/unknown_bg.png")
 	else:
@@ -66,35 +80,10 @@ func _ready() -> void:
 	else:
 		heroi_destaque3_front.texture = load(HeroesDb.young_heroes[UniversalDict.armory_data.values()[2]["Hero"]]["front"])
 	
+	SortStanding.sort_standing(self, standing_less, standings_extra, standing_results_1)
 	
-	sort_standing()
+
 	
-func _process(delta: float) -> void:
-	pass
-func sort_standing():
-	for i in range(3, UniversalDict.armory_data.size()):
-		var temp_standing_less = standing_less.duplicate()
-		vbox.add_child(temp_standing_less)
-		if HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["standing"] == "":
-			temp_standing_less.get_child(1).get_child(1).get_child(1).texture = load("res://assets/standing_destaque/unknown/unknown_standing.png")
-			pass
-		else:
-			temp_standing_less.get_child(1).get_child(1).get_child(1).texture = load(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["standing"])
-			pass
-		if UniversalDict.armory_data.values()[i]["Rank"] == "Dropped":
-			temp_standing_less.get_child(2).show()
-		
-		temp_standing_less.get_child(1).get_child(0).get_child(0).texture = load("res://assets/textures/grunge_"+str(randi_range(1,6))+".png")
-		temp_standing_less.get_child(1).get_child(1).get_child(0).texture = load("res://assets/textures/grunge_"+str(randi_range(1,6))+".png")
-		temp_standing_less.get_child(1).get_child(0).get_child(1).text = str(i + 1)
-		temp_standing_less.get_child(1).get_child(1).get_child(2).text = UniversalDict.armory_data.values()[i]["Name"].to_upper()
-		temp_standing_less.get_child(1).get_child(1).get_child(3).get_child(0).text = UniversalDict.armory_data.values()[i]["Wins"].to_upper()
-		temp_standing_less.get_child(1).get_child(0).self_modulate = Color.from_string(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["color"], Color.MIDNIGHT_BLUE)
-		temp_standing_less.get_child(1).get_child(1).self_modulate = Color.from_string(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["color"], Color.MIDNIGHT_BLUE)
-		temp_standing_less.visible = true
-		temp_standing_less.show()
-
-
 func _on_button_pressed() -> void:
 	%Button.visible = false
 	await RenderingServer.frame_post_draw
