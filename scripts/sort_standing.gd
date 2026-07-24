@@ -1,26 +1,25 @@
-﻿class_name SortStanding
+class_name SortStanding
 
 static func sort_standing(main: Node, standing : Node, standings_extra : VBoxContainer, main_standings_result : VBoxContainer):
-	var standings_size
 	var standing_last_size: int = 3
 	if UniversalDict.armory_data.size() <= 13:
-		standings_size = UniversalDict.armory_data.size()
-		add_standing(standing_last_size,standings_size, standing, main_standings_result)
+		UniversalDict.standing_size = UniversalDict.armory_data.size()
+		add_standing(standing_last_size,UniversalDict.standing_size, standing, main_standings_result)
 	else:
-		standings_size = 13
-		add_standing(standing_last_size, standings_size, standing, main_standings_result)
-		while UniversalDict.armory_data.size() >= standings_size:
-			standing_last_size = standings_size
-			if UniversalDict.armory_data.size() > (standings_size + 10):
-				standings_size += 10 
+		UniversalDict.standing_size = 13
+		add_standing(standing_last_size, UniversalDict.standing_size, standing, main_standings_result)
+		while UniversalDict.standing_size <= UniversalDict.armory_data.size() :
+			standing_last_size = UniversalDict.standing_size
+			if UniversalDict.armory_data.size() > (UniversalDict.standing_size + 19):
+				UniversalDict.standing_size += 19 
 			else:
-				standings_size = UniversalDict.armory_data.size()
+				UniversalDict.standing_size = UniversalDict.armory_data.size()
 			
 			var standings_extra_temp: Node = standings_extra.duplicate()
 			main.add_child(standings_extra_temp)
-			add_standing(standing_last_size,standings_size, standing, standings_extra_temp)
+			add_standing(standing_last_size,UniversalDict.standing_size, standing, standings_extra_temp)
 			#Por algum motivo só saí do loop se eu fizer isso senão ele vai criar standings vazios até o fim dos tempos.
-			if UniversalDict.armory_data.size() >= standings_size:
+			if UniversalDict.standing_size >= UniversalDict.armory_data.size():
 				break
 	
 
