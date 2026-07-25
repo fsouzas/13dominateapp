@@ -6,18 +6,50 @@
 [ext_resource type="PackedScene" uid="uid://bk1gvfs4kvgdy" path="res://scenes/prefabs/standing_title.tscn" id="4_4t0is"]
 [ext_resource type="Theme" uid="uid://rb0objr2ayom" path="res://themes/ui_default.tres" id="7_2iuw1"]
 [ext_resource type="Script" uid="uid://c61h1elerxacy" path="res://addons/SharePlugin/Share.gd" id="7_2msg6"]
-[ext_resource type="Texture2D" uid="uid://dqfdlhukjjwl2" path="res://assets/icons/iconmonstr-arrow-left-alt-filled-48.png" id="8_kgckr"]
-[ext_resource type="Texture2D" uid="uid://65o1opt0ky23" path="res://assets/icons/iconmonstr-share-3-48.png" id="9_ogjdc"]
+[ext_resource type="Texture2D" uid="uid://v4slq6ga8xmo" path="res://assets/icons/Visible--Streamline-Core.png" id="7_dslth"]
+[ext_resource type="Theme" uid="uid://do4bchbu8sfxc" path="res://themes/ui_box.tres" id="7_kgckr"]
+[ext_resource type="Texture2D" uid="uid://b3sdf8aa0lbd4" path="res://assets/icons/Move-Left--Streamline-Core.png" id="9_ogjdc"]
 [ext_resource type="PackedScene" uid="uid://dpio5dtimtemt" path="res://scenes/prefabs/standing.tscn" id="10_2iuw1"]
-[ext_resource type="Texture2D" uid="uid://bdrkifx1qb35c" path="res://assets/icons/iconmonstr-download-19-48.png" id="10_dslth"]
-[ext_resource type="Texture2D" uid="uid://d0kdf33ajfy4b" path="res://assets/icons/iconmonstr-arrow-right-alt-filled-48.png" id="11_d4mms"]
+[ext_resource type="Texture2D" uid="uid://b4s7qgh16ivoe" path="res://assets/icons/Share-Link--Streamline-Core.png" id="10_dslth"]
+[ext_resource type="Texture2D" uid="uid://bapxoo6ohh47b" path="res://assets/icons/Arrow-Down-2--Streamline-Core.png" id="11_d4mms"]
+[ext_resource type="Texture2D" uid="uid://diajhvhici0nx" path="res://assets/icons/Move-Right--Streamline-Core.png" id="12_t0yhn"]
+[ext_resource type="Texture2D" uid="uid://dfr4mlpfaoo5q" path="res://assets/textures/Light-Halftone-Screen-Medium.png" id="13_ogjdc"]
+[ext_resource type="Theme" uid="uid://pwlhx337qene" path="res://themes/nome_destaque.tres" id="15_d4mms"]
+[ext_resource type="Texture2D" uid="uid://ce62bosh1c4sv" path="res://assets/icons/Home-4--Streamline-Core.png" id="16_t0yhn"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_riqys"]
 
 [sub_resource type="Theme" id="Theme_bhunq"]
 TabContainer/styles/panel = SubResource("StyleBoxEmpty_riqys")
 
-[node name="Standings" type="Control" unique_id=454891127 node_paths=PackedStringArray("share", "mode_name", "store_name", "heroi_destaque1_front", "heroi_destaque1_bg", "heroi_destaque1_nome", "heroi_destaque_1_vitoria", "heroi_destaque2_front", "heroi_destaque2_bg", "heroi_destaque2_nome", "heroi_destaque_2_vitoria", "heroi_destaque3_front", "heroi_destaque3_bg", "heroi_destaque3_nome", "heroi_destaque_3_vitoria", "standing_less", "standing_results_1", "standings_extra", "tab", "menu", "voltar_button", "share_button", "save_button", "proximo_button")]
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ogjdc"]
+blend_mode = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e4oeb"]
+bg_color = Color(0.7411765, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w1nnr"]
+bg_color = Color(0.7411765, 0, 0, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="Standings" type="Control" unique_id=454891127 node_paths=PackedStringArray("share", "mode_name", "store_name", "heroi_destaque1_front", "heroi_destaque1_bg", "heroi_destaque1_nome", "heroi_destaque_1_vitoria", "heroi_destaque2_front", "heroi_destaque2_bg", "heroi_destaque2_nome", "heroi_destaque_2_vitoria", "heroi_destaque3_front", "heroi_destaque3_bg", "heroi_destaque3_nome", "heroi_destaque_3_vitoria", "standing_less", "standing_results_1", "standings_extra", "tab", "page_numb", "menu", "voltar_button", "share_button", "save_button", "proximo_button", "home")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -26,6 +58,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_nvwqc")
 share = NodePath("Share")
+home_scene = &"res://scenes/MAIN.tscn"
 mode_name = NodePath("StandingTitle/VBoxContainer/mode_name")
 store_name = NodePath("StandingTitle/VBoxContainer/store_name")
 heroi_destaque1_front = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/Heroi/Heroi_FRONT")
@@ -44,11 +77,13 @@ standing_less = NodePath("TabContainer/Standings_Result_1/standings_results/Stan
 standing_results_1 = NodePath("TabContainer/Standings_Result_1/standings_results")
 standings_extra = NodePath("Standings_extra")
 tab = NodePath("TabContainer")
-menu = NodePath("AspectRatioContainer/menu")
-voltar_button = NodePath("AspectRatioContainer/menu/voltar")
-share_button = NodePath("AspectRatioContainer/menu/share")
-save_button = NodePath("AspectRatioContainer/menu/salvar")
-proximo_button = NodePath("AspectRatioContainer/menu/proximo")
+page_numb = NodePath("pages")
+menu = NodePath("Panel")
+voltar_button = NodePath("Panel/menu/voltar")
+share_button = NodePath("Panel/menu/share")
+save_button = NodePath("Panel/menu/salvar")
+proximo_button = NodePath("Panel/menu/proximo")
+home = NodePath("Home")
 metadata/_edit_use_anchors_ = true
 
 [node name="UnitedWeStand" type="TextureRect" parent="." unique_id=1383488353]
@@ -88,14 +123,6 @@ _max_size = 59
 _min_size = 40
 _current_font_size = 59
 _size_just_modified_by_autosizer = true
-
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=98757829]
-layout_mode = 0
-offset_left = 4.0
-offset_top = 826.0
-offset_right = 168.0
-offset_bottom = 849.0
-text = "VERSÃO NÃO FINAL"
 
 [node name="Share" type="Node" parent="." unique_id=1201633601]
 unique_name_in_owner = true
@@ -200,69 +227,153 @@ offset_transform_enabled = true
 offset_transform_position = Vector2(520, 250)
 theme_override_constants/separation = 60
 
-[node name="AspectRatioContainer" type="MarginContainer" parent="." unique_id=394685564]
+[node name="Panel" type="Panel" parent="." unique_id=1887514952]
+clip_children = 2
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = -152.0
+offset_right = 300.0
+offset_bottom = -74.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 4
+theme = ExtResource("7_kgckr")
+
+[node name="menu" type="HBoxContainer" parent="Panel" unique_id=670787054]
+propagate_maximum_size = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 60
-theme_override_constants/margin_right = 60
-theme_override_constants/margin_bottom = 31
-
-[node name="Button" type="Button" parent="AspectRatioContainer" unique_id=1697276003]
-visible = false
-layout_mode = 2
 size_flags_vertical = 8
-text = "COMPARTILHAR STANDINGS"
-
-[node name="menu" type="HBoxContainer" parent="AspectRatioContainer" unique_id=670787054]
-layout_mode = 2
-size_flags_vertical = 8
-offset_transform_enabled = true
 offset_transform_position = Vector2(0, -23.69)
 offset_transform_scale = Vector2(1.555, 1.555)
 offset_transform_visual_only = false
-theme_override_constants/separation = 20
+theme_override_constants/separation = 34
 alignment = 1
+metadata/_edit_lock_ = true
 
-[node name="voltar" type="Button" parent="AspectRatioContainer/menu" unique_id=1333709565]
-propagate_maximum_size = true
-layout_mode = 2
-offset_transform_enabled = true
-theme = ExtResource("7_2iuw1")
-icon = ExtResource("8_kgckr")
-icon_alignment = 1
-
-[node name="share" type="Button" parent="AspectRatioContainer/menu" unique_id=293174948]
+[node name="voltar" type="Button" parent="Panel/menu" unique_id=1061180452]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+offset_transform_enabled = true
+offset_transform_visual_only = false
 theme = ExtResource("7_2iuw1")
 icon = ExtResource("9_ogjdc")
+icon_alignment = 1
 
-[node name="salvar" type="Button" parent="AspectRatioContainer/menu" unique_id=1148442656]
+[node name="share" type="Button" parent="Panel/menu" unique_id=293174948]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+offset_transform_enabled = true
+offset_transform_visual_only = false
+theme = ExtResource("7_2iuw1")
+icon = ExtResource("10_dslth")
+icon_alignment = 1
+
+[node name="salvar" type="Button" parent="Panel/menu" unique_id=1148442656]
 visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+offset_transform_enabled = true
+offset_transform_visual_only = false
 theme = ExtResource("7_2iuw1")
-icon = ExtResource("10_dslth")
+disabled = true
+icon = ExtResource("11_d4mms")
+icon_alignment = 1
 
-[node name="proximo" type="Button" parent="AspectRatioContainer/menu" unique_id=213882354]
+[node name="proximo" type="Button" parent="Panel/menu" unique_id=213882354]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 offset_transform_enabled = true
+offset_transform_visual_only = false
 theme = ExtResource("7_2iuw1")
-icon = ExtResource("11_d4mms")
+icon = ExtResource("12_t0yhn")
+icon_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel" unique_id=1122711710]
+self_modulate = Color(1, 1, 1, 0.33333334)
+material = SubResource("CanvasItemMaterial_ogjdc")
+layout_mode = 0
+offset_left = -212.0
+offset_top = -278.0
+offset_right = 788.0
+offset_bottom = 722.0
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.65, 0.65)
+mouse_filter = 2
+texture = ExtResource("13_ogjdc")
+metadata/_edit_lock_ = true
+
+[node name="hide" type="TextureButton" parent="." unique_id=1779400698]
+visible = false
+z_index = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 268.0
+offset_top = -143.0
+offset_right = 310.0
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 0
+offset_transform_position = Vector2(53.795, 0)
+offset_transform_visual_only = false
+action_mode = 0
+texture_normal = ExtResource("7_dslth")
+
+[node name="pages" type="RichTextLabel" parent="." unique_id=1628164675]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -86.0
+offset_top = -69.0
+offset_right = 78.0
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("15_d4mms")
+theme_override_font_sizes/normal_font_size = 30
+text = "1/1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Home" type="Button" parent="." unique_id=1069471099]
+layout_mode = 1
+offset_left = 19.0
+offset_top = 12.0
+offset_right = 99.0
+offset_bottom = 85.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_e4oeb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_w1nnr")
+toggle_mode = true
+icon = ExtResource("16_t0yhn")
+icon_alignment = 1
 
 [connection signal="share_canceled" from="Share" to="." method="_on_share_share_canceled"]
 [connection signal="share_completed" from="Share" to="." method="_on_share_share_completed"]
-[connection signal="pressed" from="AspectRatioContainer/menu/voltar" to="." method="_on_voltar_pressed"]
-[connection signal="pressed" from="AspectRatioContainer/menu/share" to="." method="_on_share_pressed"]
-[connection signal="pressed" from="AspectRatioContainer/menu/proximo" to="." method="_on_proximo_pressed"]
+[connection signal="pressed" from="Panel/menu/voltar" to="." method="_on_voltar_pressed"]
+[connection signal="pressed" from="Panel/menu/share" to="." method="_on_share_pressed"]
+[connection signal="pressed" from="Panel/menu/proximo" to="." method="_on_proximo_pressed"]
+[connection signal="pressed" from="hide" to="." method="_on_hide_pressed"]
+[connection signal="pressed" from="Home" to="." method="_on_home_pressed"]
 
 [editable path="StandingTitle"]
 [editable path="TabContainer/Standings_Result_1/Destaques/Destaque2"]

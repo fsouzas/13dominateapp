@@ -2,6 +2,8 @@ extends Node
 
 @export var share : Share
 
+@export var home_scene: StringName
+
 @export var mode_name : Node
 @export var store_name : Node
 
@@ -26,6 +28,7 @@ extends Node
 @export var standings_extra :VBoxContainer
 
 @export var tab : TabContainer
+@export var page_numb : RichTextLabel
 
 @onready var standing_size : int = 3
 @onready var num_standings : int = 1
@@ -35,10 +38,12 @@ extends Node
 @export var share_button : Button
 @export var save_button : Button 
 @export var proximo_button : Button 
+@export var home : Button
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
 	share.set_share_target(true)
 	
 	#voltar_button.self_modulate.a = 0
@@ -98,8 +103,7 @@ func _ready() -> void:
 	
 	SortStanding.sort_standing(tab, standing_less, standings_extra, standing_results_1)
 	
-
-	
+	page_numb.text = str(tab.current_tab + 1) + "/" + str(tab.get_tab_count())
 
 func share_screenshot():
 	share.share_viewport(get_viewport(), "shared_title", "shared_subject", "Standings de hoje!")
@@ -108,21 +112,25 @@ func share_screenshot():
 
 func _on_share_share_canceled() -> void:
 	menu.visible = true
+	home.visible = true
 
 func _on_share_share_completed(activity_type: String) -> void:
 	menu.visible = true
+	home.visible = true
 
 func _on_share_pressed() -> void:
 	menu.visible = false
+	home.visible = false
 	await RenderingServer.frame_post_draw
 	share_screenshot()
 	menu.visible = true
+	home.visible = true
 
 
 func _on_voltar_pressed() -> void:
 	voltar_button.disabled = true
 	share_button.disabled = true
-	save_button.disabled = true
+	#save_button.disabled = true
 	proximo_button.disabled = true
 	
 	var last_node_pos = tab.get_child(tab.current_tab).offset_transform_position
@@ -158,17 +166,18 @@ func _on_voltar_pressed() -> void:
 		tween.set_ease(tween.EASE_IN_OUT)
 		tween.set_trans(tween.TRANS_EXPO)                                                                                  
 		tween.tween_property(voltar_button,"offset_transform_position",Vector2(0,100), 1.0)
-		tween.tween_property(voltar_button,"self_modulate", 0, 1.0)
+		tween.tween_property(voltar_button,"self_modulate:a", 0, 1.0)
 	if (tab.get_tab_count() > 0):
 		var tween: Tween = create_tween().set_parallel()                                                                              
 		tween.set_ease(tween.EASE_IN_OUT)
 		tween.set_trans(tween.TRANS_EXPO)                                                                                  
 		tween.tween_property(proximo_button,"offset_transform_position",Vector2(0,0), 1.0)
-		tween.tween_property(proximo_button,"self_modulate",1, 1.0)
+		tween.tween_property(proximo_button,"self_modulate:a",1, 1.0)
 	voltar_button.disabled = false
 	share_button.disabled = false
-	save_button.disabled = false
+	#save_button.disabled = false
 	proximo_button.disabled = false
+	page_numb.text = str(tab.current_tab + 1) + "/" + str(tab.get_tab_count())
 
 
 
@@ -177,7 +186,7 @@ func _on_voltar_pressed() -> void:
 func _on_proximo_pressed() -> void:
 	voltar_button.disabled = true
 	share_button.disabled = true
-	save_button.disabled = true
+	#save_button.disabled = true
 	proximo_button.disabled = true
 	
 	var last_node_pos = tab.get_child(tab.current_tab).offset_transform_position
@@ -212,16 +221,36 @@ func _on_proximo_pressed() -> void:
 	tween_main.set_ease(tween_main.EASE_IN_OUT)
 	tween_main.set_trans(tween_main.TRANS_EXPO)                                                                                  
 	tween_main.tween_property(voltar_button,"offset_transform_position",Vector2(0,0), 1.0)
-	tween_main.tween_property(voltar_button,"self_modulate",1, 1.0)
+	tween_main.tween_property(voltar_button,"self_modulate:a",1, 1.0)
 	
 	if(tab.current_tab == tab.get_tab_count()- 1):
 		var tween: Tween = create_tween().set_parallel()                                                                              
 		tween.set_ease(tween.EASE_IN_OUT)
 		tween.set_trans(tween.TRANS_EXPO)                                                                                  
 		tween.tween_property(proximo_button,"offset_transform_position",Vector2(0,100), 1.0)
-		tween.tween_property(proximo_button,"self_modulate", 0, 1.0)
+		tween.tween_property(proximo_button,"self_modulate:a", 0, 1.0)
 	
 	voltar_button.disabled = false
 	share_button.disabled = false
-	save_button.disabled = false
+	#save_button.disabled = false
 	proximo_button.disabled = false
+	page_numb.text = str(tab.current_tab + 1) + "/" + str(tab.get_tab_count())
+
+
+func _on_hide_pressed() -> void:
+	print("pressionado")
+	menu.visible = false
+	if menu.visible == true:
+		menu.visible = false
+		$hide.texture_normal = load("res://assets/icons/Invisible-1--Streamline-Core.png")
+	if menu.visible == false:
+		menu.visible = true
+		$hide.texture_normal = load("res://assets/icons/Visible--Streamline-Core.png")
+
+
+func _on_home_pressed() -> void:
+	SceneLoader.load_scene(home_scene)
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_GO_BACK_REQUEST:
+		SceneLoader.load_scene(home_scene)
