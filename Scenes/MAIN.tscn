@@ -148,6 +148,18 @@ theme_override_font_sizes/font_size = 35
 placeholder_text = "Nome da Loja"
 emoji_menu_enabled = false
 
+[node name="ColorPickerButton" type="ColorPicker" parent="Panel/VBoxContainer" unique_id=2025072030]
+layout_mode = 2
+theme = ExtResource("3_imghw")
+alignment = 1
+edit_alpha = false
+edit_intensity = false
+picker_shape = 2
+can_add_swatches = false
+color_modes_visible = false
+sliders_visible = false
+hex_visible = false
+
 [node name="Button3" type="Button" parent="Panel/VBoxContainer" unique_id=904276183]
 clip_children = 2
 layout_mode = 2
@@ -179,5 +191,6 @@ use_native_dialog = true
 [connection signal="pressed" from="Panel/VBoxContainer/Button" to="." method="_on_button_pressed" binds= [true]]
 [connection signal="pressed" from="Panel/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="text_changed" from="Panel/VBoxContainer/TextEdit" to="." method="_on_text_edit_text_changed"]
+[connection signal="color_changed" from="Panel/VBoxContainer/ColorPickerButton" to="." method="_on_color_picker_button_color_changed"]
 [connection signal="pressed" from="Panel/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]

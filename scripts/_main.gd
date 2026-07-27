@@ -47,3 +47,7 @@ func _on_menu_bar_item_selected(index: int) -> void:
 		2:
 			$Panel/VBoxContainer/Button.disabled = false
 			UniversalDict.mode_selected = "CLASSIC CONSTRUCTED"
+
+
+func _on_color_picker_button_color_changed(color: Color) -> void:
+	UniversalDict.main_color = color

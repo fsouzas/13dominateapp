@@ -40,11 +40,17 @@ extends Node
 @export var proximo_button : Button 
 @export var home : Button
 
+@export var background_img : TextureRect
+@export var color_transparent : ColorRect
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	
 	share.set_share_target(true)
+	
+	background_img.material.set_shader_parameter("replace_color", UniversalDict.main_color)
+	$StandingTitle/VBoxContainer/AutoSizeRichTextLabel4.add_theme_color_override("default_color", UniversalDict.main_color)
+	color_transparent.color = UniversalDict.main_color
 	
 	#voltar_button.self_modulate.a = 0
 	voltar_button.disabled = true
