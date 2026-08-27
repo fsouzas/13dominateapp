@@ -3,852 +3,994 @@
 	"background": "res://assets/standing_destaque/unknown/unknown_bg.png",
 	"front": "res://assets/standing_destaque/unknown/unknown_front.png",
 	"standing": "res://assets/standing_destaque/unknown/unknown_standing.png",
-	"color": "2b313f"
+	"color": "2b313f",
+	"video": "res://assets/videos/heroes/Shiyana - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Arakni": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/arakni/arakni_bg.png",
+	"front": "res://assets/standing_destaque/arakni/arakni_front.png",
+	"standing": "res://assets/standing_destaque/arakni/arakni_standing.png",
+	"color": "241f3f",
+	"video": "res://assets/videos/heroes/Arakni Huntsman- Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Arakni, Solitary Confinement": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/arakni_solitary/arakni_solitary_bg.png",
+	"front": "res://assets/standing_destaque/arakni_solitary/arakni_solitary_front.png",
+	"standing": "res://assets/standing_destaque/arakni_solitary/arakni_solitary_standing.png",
+	"color": "321d2f",
+	"video": "res://assets/videos/heroes/Arakni-Solitary-Confinement Waifu2x 2X Mp4.mp4"
   },
   "Arakni, Web of Deceit": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/arakni_web/arakni_web_bg.png",
+	"front": "res://assets/standing_destaque/arakni_web/arakni_web_front.png",
+	"standing": "res://assets/standing_destaque/arakni_web/arakni_web_standing.png",
+	"color": "8e2327",
+	"video": "res://assets/videos/heroes/Arakni Marionette- Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Aurora": {
 	"background": "res://assets/standing_destaque/aurora/aurora_bg.png",
 	"front": "res://assets/standing_destaque/aurora/aurora_front.png",
 	"standing": "res://assets/standing_destaque/aurora/aurora_standing.png",
-	"color": "40477b"
+	"color": "40477b",
+	"video": "res://assets/videos/heroes/Aurora - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Aurora, Emissary of Lightning": {
 	"background": "res://assets/standing_destaque/aurora_emissary/aurora_emissary_bg.png",
 	"front": "res://assets/standing_destaque/aurora_emissary/aurora_emissary_front.png",
 	"standing": "res://assets/standing_destaque/aurora_emissary/aurora_emissary.png",
-	"color": "2b3370"
+	"color": "2b3370",
+	"video": "res://assets/videos/heroes/Aurora-Legacy-Of-Tempest Waifu2x 2X Mov.mp4"
   },
   "Azalea": {
 	"background": "res://assets/standing_destaque/azalea/azalea_bg.png",
 	"front": "res://assets/standing_destaque/azalea/azalea_front.png",
 	"standing": "res://assets/standing_destaque/azalea/azalea_standing.png",
-	"color": "3a1a1a"
+	"color": "3a1a1a",
+	"video": "res://assets/videos/heroes/Azalea - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Benji,the Piercing Wind": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/benji/benji_bg.png",
+	"front": "res://assets/standing_destaque/benji/benji_front.png",
+	"standing": "res://assets/standing_destaque/benji/benji_standing.png",
+	"color": "27366d",
+	"video": "res://assets/videos/heroes/Benji - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Betsy": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/betsy/betsy_bg.png",
+	"front": "res://assets/standing_destaque/betsy/betsy_front.png",
+	"standing": "res://assets/standing_destaque/betsy/betsy_standing.png",
+	"color": "81615f",
+	"video": "res://assets/videos/heroes/Betsy - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Blaze, Firemind": {
 	"background": "res://assets/standing_destaque/blaze_firemind/blaze_firemind_bg.png",
 	"front": "res://assets/standing_destaque/blaze_firemind/blaze_firemind_front.png",
 	"standing": "res://assets/standing_destaque/blaze_firemind/blaze_firemind_standing.png",
-	"color": "710b04"
+	"color": "710b04",
+	"video": "res://assets/videos/heroes/Blaze-Firemind Waifu2x 2X Mov.mp4"
   },
   "Bolfar, Bear Hands": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Boltyn": {
 	"background": "res://assets/standing_destaque/boltyn/boltyn_bg.png",
 	"front": "res://assets/standing_destaque/boltyn/boltyn_front.png",
 	"standing": "res://assets/standing_destaque/boltyn/boltyn_standing.png",
-	"color": "733d2e"
+	"color": "733d2e",
+	"video": "res://assets/videos/heroes/Boltyn - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Bravo": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/bravo/bravo_bg.png",
+	"front": "res://assets/standing_destaque/bravo/bravo_front.png",
+	"standing": "res://assets/standing_destaque/bravo/bravo_standing.png",
+	"color": "602835",
+	"video": "res://assets/videos/heroes/Bravo - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Bravo, Flattering Showman": {
 	"background": "res://assets/standing_destaque/bravo_flattering/bravo_flattering_bg.png",
 	"front": "res://assets/standing_destaque/bravo_flattering/bravo_flattering_front.png",
 	"standing": "res://assets/standing_destaque/bravo_flattering/bravo_flattering_standing.png",
-	"color": "3c0101"
+	"color": "3c0101",
+	"video": "res://assets/videos/heroes/Bravo-Flattering-Showman Waifu2x 2X Mp4.mp4"
   },
   "Briar (LL)": {
 	"background": "res://assets/standing_destaque/briar/briar_bg.png",
 	"front": "res://assets/standing_destaque/briar/briar_front.png",
 	"standing": "res://assets/standing_destaque/briar/briar_standing.png",
-	"color": "122010"
+	"color": "122010",
+	"video": "res://assets/videos/heroes/Briar - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Brutus, Summa Rudis": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Chane (LL)": {
 	"background": "res://assets/standing_destaque/chane/chane_bg.png",
 	"front": "res://assets/standing_destaque/chane/chane_front.png",
 	"standing": "res://assets/standing_destaque/chane/chane_standing.png",
-	"color": "593054"
+	"color": "593054",
+	"video": "res://assets/videos/heroes/Chane - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Cindra": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/cindra/cindra_bg.png",
+	"front": "res://assets/standing_destaque/cindra/cindra_front.png",
+	"standing": "res://assets/standing_destaque/cindra/cindra_standing.png",
+	"color": "541617",
+	"video": "res://assets/videos/heroes/Cindra - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Dash (LL)": {
 	"background": "res://assets/standing_destaque/dash/dash_bg.png",
 	"front": "res://assets/standing_destaque/dash/dash_front.png",
 	"standing": "res://assets/standing_destaque/dash/dash_standing.png",
-	"color": "8b5a41"
+	"color": "8b5a41",
+	"video": "res://assets/videos/heroes/Dash - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Dash, Database": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/dash_database/dash_database_bg.png",
+	"front": "res://assets/standing_destaque/dash_database/dash_database_front.png",
+	"standing": "res://assets/standing_destaque/dash_database/dash_database_standing.png",
+	"color": "223489",
+	"video": "res://assets/videos/heroes/Dash Io - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Data Doll MKII": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/datadoll/datadoll_bg.png",
+	"front": "res://assets/standing_destaque/datadoll/datadoll_front.png",
+	"standing": "res://assets/standing_destaque/datadoll/datadoll_standing.png",
+	"color": "81483d",
+	"video": "res://assets/videos/heroes/Data Doll - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Dorinthea": {
 	"background": "res://assets/standing_destaque/dorinthea/dorinthea_bg.png",
 	"front": "res://assets/standing_destaque/dorinthea/dorinthea_front.png",
 	"standing": "res://assets/standing_destaque/dorinthea/dorinthea_standing.png",
-	"color": "72471c"
+	"color": "72471c",
+	"video": "res://assets/videos/heroes/Dorinthea - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Dorinthea, Quicksilver Prodigy": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/dorinthea_quicksilver/dorinthea_quicksilver_bg.png",
+	"front": "res://assets/standing_destaque/dorinthea_quicksilver/dorinthea_quicksilver_front.png",
+	"standing": "res://assets/standing_destaque/dorinthea_quicksilver/dorinthea_quicksilver_standing.png",
+	"color": "422f24",
+	"video": "res://assets/videos/heroes/Dorinthea - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Dromai": {
 	"background": "res://assets/standing_destaque/dromai/dromai_bg.png",
 	"front": "res://assets/standing_destaque/dromai/dromai_front.png",
 	"standing": "res://assets/standing_destaque/dromai/dromai_standing.png",
-	"color": "431412"
+	"color": "431412",
+	"video": "res://assets/videos/heroes/Dromai - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Emperor, Dracai of Aesir": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Enigma": {
 	"background": "res://assets/standing_destaque/enigma/enigma_bg.png",
 	"front": "res://assets/standing_destaque/enigma/enigma_front.png",
 	"standing": "res://assets/standing_destaque/enigma/enigma_standing.png",
-	"color": "2e2a7c"
+	"color": "2e2a7c",
+	"video": "res://assets/videos/heroes/Enigma - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Enigma, New Moon": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Fai": {
 	"background": "res://assets/standing_destaque/fai/fai_bg.png",
 	"front": "res://assets/standing_destaque/fai/fai_front.png",
 	"standing": "res://assets/standing_destaque/fai/fai_standing.png",
-	"color": "4a171e"
+	"color": "4a171e",
+	"video": "res://assets/videos/heroes/Fai - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Fang": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/fang/fang_bg.png",
+	"front": "res://assets/standing_destaque/fang/fang_front.png",
+	"standing": "res://assets/standing_destaque/fang/fang_standing.png",
+	"color": "4d281d",
+	"video": "res://assets/videos/heroes/Fang - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Fightmaster Kox": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Florian": {
 	"background": "res://assets/standing_destaque/florian/florian_bg.png",
 	"front": "res://assets/standing_destaque/florian/florian_front.png",
 	"standing": "res://assets/standing_destaque/florian/florian_stainding.png",
-	"color": "622308"
+	"color": "622308",
+	"video": "res://assets/videos/heroes/Florian - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Genis Wotchuneed": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Gravy Bones": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/gravy_bones/gravy_bones_bg.png",
+	"front": "res://assets/standing_destaque/gravy_bones/gravy_bones_front.png",
+	"standing": "res://assets/standing_destaque/gravy_bones/gravy_bones_standing.png",
+	"color": "182a34",
+	"video": "res://assets/videos/heroes/Gravy Bones - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Groundbreaker Crix": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Terra": {
 	"background": "res://assets/standing_destaque/terra/terra_bg.png",
 	"front": "res://assets/standing_destaque/terra/terra_front.png",
 	"standing": "res://assets/standing_destaque/terra/terra_standing.png",
-	"color": "324716"
+	"color": "324716",
+	"video": "res://assets/videos/heroes/Terra - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Hala": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/hala/hala_bg.png",
+	"front": "res://assets/standing_destaque/hala/hala_front.png",
+	"standing": "res://assets/standing_destaque/hala/hala_standing.png",
+	"color": "8d5d2c",
+	"video": "res://assets/videos/heroes/Hala-Bladesaint-Of-The-Vow Waifu2x 2X Mov.mp4"
   },
   "Ira, Crimson Haze (LL)": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Iyslander (LL)": {
 	"background": "res://assets/standing_destaque/iyslander/iyslander_bg.png",
 	"front": "res://assets/standing_destaque/iyslander/iyslander_front.png",
 	"standing": "res://assets/standing_destaque/iyslander/iyslander_standing.png",
-	"color": "30276d"
+	"color": "30276d",
+	"video": "res://assets/videos/heroes/Iyslander - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Kano (LL)": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Kassai": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/kassai/kassai_bg.png",
+	"front": "res://assets/standing_destaque/kassai/kassai_front.png",
+	"standing": "res://assets/standing_destaque/kassai/kassai_standing.png",
+	"color": "56291a",
+	"video": "res://assets/videos/heroes/Kassai - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Kassai, Cintari Sellsword (LL)": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/kassai_cintari/kassai_cintari_bg.png",
+	"front": "res://assets/standing_destaque/kassai_cintari/kassai_cintari_front.png",
+	"standing": "res://assets/standing_destaque/kassai_cintari/kassai_cintari_standing.png",
+	"color": "370d04",
+	"video": "res://assets/videos/heroes/Kassai Cintari - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Katsu": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/katsu/katsu_bg.png",
+	"front": "res://assets/standing_destaque/katsu/katsu_front.png",
+	"standing": "res://assets/standing_destaque/katsu/katsu_standing.png",
+	"color": "2d303b",
+	"video": "res://assets/videos/heroes/Katsu - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Kavdaen, Trader of Skins": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/kavdaen/kavdaen_bg.png",
+	"front": "res://assets/standing_destaque/kavdaen/kavdaen_front.png",
+	"standing": "res://assets/standing_destaque/kavdaen/kavdaen_standing.png",
+	"color": "4a574f",
+	"video": "res://assets/videos/heroes/Kavdaen - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Kayo": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Kayo, Berserker Runt": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/kayo_berserk/kayo_berserk_bg.png",
+	"front": "res://assets/standing_destaque/kayo_berserk/kayo_berserk_front.png",
+	"standing": "res://assets/standing_destaque/kayo_berserk/kayo_berserk_standing.png",
+	"color": "4c3928",
+	"video": "res://assets/videos/heroes/Kayo Berserker - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Kayo, Strong-arm": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/kayo_strong/kayo_strong_bg.png",
+	"front": "res://assets/standing_destaque/kayo_strong/kayo_strong_front.png",
+	"standing": "res://assets/standing_destaque/kayo_strong/kayo_strong_standing.png",
+	"color": "656524",
+	"video": "res://assets/videos/heroes/Kayo Armed - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Levia": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/levia/levia_bg.png",
+	"front": "res://assets/standing_destaque/levia/levia_front.png",
+	"standing": "res://assets/standing_destaque/levia/levia_standing.png",
+	"color": "384c68",
+	"video": "res://assets/videos/heroes/Levia - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Lexi": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/lexi/lexi_bg.png",
+	"front": "res://assets/standing_destaque/lexi/lexi_front.png",
+	"standing": "res://assets/standing_destaque/lexi/lexi_standing.png",
+	"color": "0b3d60",
+	"video": "res://assets/videos/heroes/Lexi - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Lyath Goldmane": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/lyath/lyath_bg.png",
+	"front": "res://assets/standing_destaque/lyath/lyath_front.png",
+	"standing": "res://assets/standing_destaque/lyath/lyath_standing.png",
+	"color": "6d060e",
+	"video": "res://assets/videos/heroes/Lyath Goldmane - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Marlynn": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/marlynn/marlynn_bg.png",
+	"front": "res://assets/standing_destaque/marlynn/marlynn_front.png",
+	"standing": "res://assets/standing_destaque/marlynn/marlynn_standing.png",
+	"color": "3b2c2b",
+	"video": "res://assets/videos/heroes/Marlynn - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Maxx Nitro": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/maxx/maxx_bg.png",
+	"front": "res://assets/standing_destaque/maxx/maxx_front.png",
+	"standing": "res://assets/standing_destaque/maxx/maxx_standing.png",
+	"color": "541940",
+	"video": "res://assets/videos/heroes/Maxx - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Melody, Sing-along": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Nuu": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/nuu/nuu_bg.png",
+	"front": "res://assets/standing_destaque/nuu/nuu_front.png",
+	"standing": "res://assets/standing_destaque/nuu/nuu_standing.png",
+	"color": "6f0c04",
+	"video": "res://assets/videos/heroes/Nuu - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Oldhim (LL)": {
 	"background": "res://assets/standing_destaque/oldhim/oldhim_bg.png",
 	"front": "res://assets/standing_destaque/oldhim/oldhim_front.png",
 	"standing": "res://assets/standing_destaque/oldhim/oldhim_standing.png",
-	"color": "5b6781"
+	"color": "5b6781",
+	"video": "res://assets/videos/heroes/Oldhim - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Olympia": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/olympia/olympia_bg.png",
+	"front": "res://assets/standing_destaque/olympia/olympia_front.png",
+	"standing": "res://assets/standing_destaque/olympia/olympia_standing.png",
+	"color": "46190a",
+	"video": "res://assets/videos/heroes/Olympia - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Oscilio": {
 	"background": "res://assets/standing_destaque/oscilio/oscilio_bg.png",
 	"front": "res://assets/standing_destaque/oscilio/oscilio_front.png",
 	"standing": "res://assets/standing_destaque/oscilio/oscilio_standing.png",
-	"color": "2a4f8a"
+	"color": "2a4f8a",
+	"video": "res://assets/videos/heroes/Oscilio - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Oscilio, Scion of the Thrid Age": {
 	"background": "res://assets/standing_destaque/oscilio_scion/oscilio_scion_bg.png",
 	"front": "res://assets/standing_destaque/oscilio_scion/ocilio_scion_front.png",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": "res://assets/videos/heroes/Oscilio-Forked-Continuum Waifu2x 2X Mov.mp4"
   },
   "Pleiades": {
 	"background": "res://assets/standing_destaque/pleiades/pleiades_bg.png",
 	"front": "res://assets/standing_destaque/pleiades/pleiades_front.png",
 	"standing": "res://assets/standing_destaque/pleiades/pleiades_standing.png",
-	"color": "d3442f"
+	"color": "d3442f",
+	"video": "res://assets/videos/heroes/Pleiades - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Prism": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/prism/prism_bg.png",
+	"front": "res://assets/standing_destaque/prism/prism_front.png",
+	"standing": "res://assets/standing_destaque/prism/prism_standing.png",
+	"color": "ac9b7e",
+	"video": "res://assets/videos/heroes/Prism - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Prism, Advent of Thrones": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/prism_advent/prism_advent_bg.png",
+	"front": "res://assets/standing_destaque/prism_advent/prism_advent_front.png",
+	"standing": "res://assets/standing_destaque/prism_advent/prism_advent_standing.png",
+	"color": "762f17",
+	"video": "res://assets/videos/heroes/Prism Awakener - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Professor Teklovossen": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Puffin": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/puffin/puffin_bg.png",
+	"front": "res://assets/standing_destaque/puffin/puffin_front.png",
+	"standing": "res://assets/standing_destaque/puffin/puffin_standing.png",
+	"color": "508b7f",
+	"video": "res://assets/videos/heroes/Puffin - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Reya, the Unyielding": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Rhinar (LL)": {
 	"background": "res://assets/standing_destaque/rhinar/rhinar_bg.png",
 	"front": "res://assets/standing_destaque/rhinar/rhinar_front.png",
 	"standing": "res://assets/standing_destaque/rhinar/rhinar_standing.png",
-	"color": "24150e"
+	"color": "24150e",
+	"video": "res://assets/videos/heroes/Rhinar Waifu2x 2X Mp4.mp4"
   },
   "Riptide": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/riptide/riptide_bg.png",
+	"front": "res://assets/standing_destaque/riptide/riptide_front.png",
+	"standing": "res://assets/standing_destaque/riptide/riptide_standing.png",
+	"color": "00324d",
+	"video": "res://assets/videos/heroes/Riptide - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Ruu'di, Gem Keeper": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Scurv, Stowaway": {
 	"background": "res://assets/standing_destaque/scurv/scurv_bg.png",
 	"front": "res://assets/standing_destaque/scurv/scurv_front.png",
 	"standing": "res://assets/standing_destaque/scurv/scurv_standing.png",
-	"color": "1e1928"
+	"color": "1e1928",
+	"video": "res://assets/videos/heroes/Scurv - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Shiyana, Diamond Gemini": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Squizzy & Floof": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Taipanis, Dracai of Judgement": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Taylor": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Teklovossen": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/teklovossen/teklovossen_bg.png",
+	"front": "res://assets/standing_destaque/teklovossen/teklovossen_front.png",
+	"standing": "res://assets/standing_destaque/teklovossen/teklovossen_standing.png",
+	"color": "4f5058",
+	"video": "res://assets/videos/heroes/Teklovossen - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Theryon, Magister of Justice": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Tuffnut": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/tuffnut/tuffnut_bg.png",
+	"front": "res://assets/standing_destaque/tuffnut/tuffnut_front.png",
+	"standing": "res://assets/standing_destaque/tuffnut/tuffnut_standing.png",
+	"color": "634601",
+	"video": "res://assets/videos/heroes/Tuffnut - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Uzuri": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/uzuri/uzuri_bg.png",
+	"front": "res://assets/standing_destaque/uzuri/uzuri_front.png",
+	"standing": "res://assets/standing_destaque/uzuri/uzuri_standing.png",
+	"color": "350007",
+	"video": "res://assets/videos/heroes/Uzuri - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Valda Brightaxe": {
 	"background": "res://assets/standing_destaque/valda_brightaxe/valda_brightaxe_bg.png",
 	"front": "res://assets/standing_destaque/valda_brightaxe/valda_brightaxe_front.png",
-	"standing": "",
-	"color": ""
+	"standing": "res://assets/standing_destaque/valda_brightaxe/valda_brightaxe_standing.png",
+	"color": "451c07",
+	"video": "res://assets/videos/heroes/Valda Waifu2x 2X Mp4.mp4"
   },
   "Verdance": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/verdance/verdance_bg.png",
+	"front": "res://assets/standing_destaque/verdance/verdance_front.png",
+	"standing": "res://assets/standing_destaque/verdance/verdance_standing.png",
+	"color": "6f2422",
+	"video": "res://assets/videos/heroes/Verdance - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Victor Goldmane (LL)": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/victor_goldmane/victor_goldmane_bg.png",
+	"front": "res://assets/standing_destaque/victor_goldmane/victor_goldmane_front.png",
+	"standing": "res://assets/standing_destaque/victor_goldmane/victor_goldmane_standing.png",
+	"color": "a1733f",
+	"video": "res://assets/videos/heroes/Victor Goldmane - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Victor Goldmane, Match Fixer": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Viserai (LL)": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/viserai/viserai_bg.png",
+	"front": "res://assets/standing_destaque/viserai/viserai_front.png",
+	"standing": "res://assets/standing_destaque/viserai/viserai_standing.png",
+	"color": "381343",
+	"video": "res://assets/videos/heroes/Viserai - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Vynnset": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/vynnset/vynnset_bg.png",
+	"front": "res://assets/standing_destaque/vynnset/vynnset_front.png",
+	"standing": "res://assets/standing_destaque/vynnset/vynnset_standing.png",
+	"color": "885046",
+	"video": "res://assets/videos/heroes/Vynnset - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Yoji, Royal Protector": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Yorick, Weaver of Tales": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Zen": {
-	"background": "",
-	"front": "",
-	"standing": "",
-	"color": ""
+	"background": "res://assets/standing_destaque/zen/zen_bg.png",
+	"front": "res://assets/standing_destaque/zen/zen_front.png",
+	"standing": "res://assets/standing_destaque/zen/zen_standing.png",
+	"color": "99a8ba",
+	"video": "res://assets/videos/heroes/Zen - Flesh And Blood Tcg Waifu2x 2X Mp4.mp4"
   },
   "Zyggy": {
 	"background": "res://assets/standing_destaque/zyggy/zyggy_bg.png",
 	"front": "res://assets/standing_destaque/zyggy/zyggy_front.png",
-	"standing": "",
-	"color": ""
+	"standing": "res://assets/standing_destaque/zyggy/zyggy_standing.png",
+	"color": "38539d",
+	"video": "res://assets/videos/heroes/Zyggy-Starlight Waifu2x 2X Mov.mp4"
   },
   "Arakni, 5L!p3d 7hRu 7h3 cR4X": {
 	"background": "res://assets/standing_destaque/arakni_slippery/arakni_slippery_bg.png",
 	"front": "res://assets/standing_destaque/arakni_slippery/arakni_slippery_front.png",
 	"standing": "res://assets/standing_destaque/arakni_slippery/arakni_slippery_standing.png",
-	"color": "900349"
+	"color": "900349",
+	"video": ""
   },
   "Arakni, Huntsman": {
 	"background": "res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_bg.png",
 	"front": "res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_front.png",
 	"standing": "res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_standing.png",
-	"color": "190725"
+	"color": "190725",
+	"video": ""
   },
   "Arakni, Marionette": {
 	"background": "res://assets/standing_destaque/arakni_marionette/arakni_marionette_bg.png",
 	"front": "res://assets/standing_destaque/arakni_marionette/arakni_marionette_front.png",
 	"standing": "res://assets/standing_destaque/arakni_marionette/arakni_marionette_standing.png",
-	"color": "360f10"
+	"color": "2e1924",
+	"video": ""
   },
   "Aurora, Legacy of Tempest": {
 	"background": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_bg.png",
 	"front": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_front.png",
 	"standing": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_standing.png",
-	"color": "432887"
+	"color": "432887",
+	"video": ""
   },
   "Betsy, Skin in the Game": {
 	"background": "res://assets/standing_destaque/betsy_skin/betsy_skin_bg.png",
 	"front": "res://assets/standing_destaque/betsy_skin/betsy_skin_front.png",
 	"standing": "res://assets/standing_destaque/betsy_skin/betsy_skin_standing.png",
-	"color": "42311f"
+	"color": "42311f",
+	"video": ""
   },
   "Bravo, Showstopper": {
 	"background": "res://assets/standing_destaque/bravo_showstopper/bravo_showstopper_bg.png",
 	"front": "res://assets/standing_destaque/bravo_showstopper/bravo_showstopper_front.png",
 	"standing": "res://assets/standing_destaque/bravo_showstopper/bravo_showstopper_standing.png",
-	"color": "521208"
+	"color": "521208",
+	"video": ""
   },
   "Cindra, Dracai of Retribution": {
 	"background": "res://assets/standing_destaque/cindra_dracai/cindra_dracai_bg.png",
 	"front": "res://assets/standing_destaque/cindra_dracai/cindra_dracai_front.png",
 	"standing": "res://assets/standing_destaque/cindra_dracai/cindra_dracai_standing.png",
-	"color": "3f0d0a"
+	"color": "3f0d0a",
+	"video": ""
   },
   "Dash I/O": {
 	"background": "res://assets/standing_destaque/dash_io/dash_io_bg.png",
 	"front": "res://assets/standing_destaque/dash_io/dash_io_front.png",
 	"standing": "res://assets/standing_destaque/dash_io/dash_io_standing.png",
-	"color": "2f3554"
+	"color": "2f3554",
+	"video": ""
   },
   "Dorinthea Ironsong": {
 	"background": "res://assets/standing_destaque/dorinthea_ironsong/dorinthea_ironsong_bg.png",
 	"front": "res://assets/standing_destaque/dorinthea_ironsong/dorinthea_ironsong_front.png",
 	"standing": "res://assets/standing_destaque/dorinthea_ironsong/dorinthea_ironsong_standing.png",
-	"color": "480510"
+	"color": "480510",
+	"video": ""
   },
   "Fai, Rising Rebellion": {
 	"background": "res://assets/standing_destaque/fai_rising/fai_rising_bg.png",
 	"front": "res://assets/standing_destaque/fai_rising/fai_rising_front.png",
 	"standing": "res://assets/standing_destaque/fai_rising/fai_rising_standing.png",
-	"color": "472323"
+	"color": "472323",
+	"video": ""
   },
   "Fang, Dracai of Blades": {
 	"background": "res://assets/standing_destaque/fang_dracai/fang_dracai_bg.png",
 	"front": "res://assets/standing_destaque/fang_dracai/fang_dracai_front.png",
 	"standing": "res://assets/standing_destaque/fang_dracai/fang_dracai_standing.png",
-	"color": "704926"
+	"color": "704926",
+	"video": ""
   },
   "Gravy Bones, Shipwrecked Looter": {
 	"background": "res://assets/standing_destaque/grave_bones_ship/grave_bones_ship_bg.png",
 	"front": "res://assets/standing_destaque/grave_bones_ship/grave_bones_ship_front.png",
 	"standing": "res://assets/standing_destaque/grave_bones_ship/grave_bones_ship_standing.png",
-	"color": "04141b"
+	"color": "04141b",
+	"video": ""
   },
   "Hala, Bladesaint of the Vow": {
 	"background": "res://assets/standing_destaque/hala_bladesaint/hala_bladesaint_bg.png",
 	"front": "res://assets/standing_destaque/hala_bladesaint/hala_bladesaint_front.png",
 	"standing": "res://assets/standing_destaque/hala_bladesaint/hala_bladesaint_standing.png",
-	"color": "634E29"
+	"color": "6,34E+29",
+	"video": ""
   },
   "Ira, Scarlet Revenger": {
 	"background": "res://assets/standing_destaque/ira_scarlet/ira_scarlet_bg.png",
 	"front": "res://assets/standing_destaque/ira_scarlet/ira_scarlet_front.png",
 	"standing": "res://assets/standing_destaque/ira_scarlet/ira_scarlet_standing.png",
-	"color": "51040a"
+	"color": "51040a",
+	"video": ""
   },
   "Jarl Vetreiði": {
 	"background": "res://assets/standing_destaque/jarl_vet/jarl_vet_bg.png",
 	"front": "res://assets/standing_destaque/jarl_vet/jarl_vet_front.png",
 	"standing": "res://assets/standing_destaque/jarl_vet/jarl_vet_standing.png",
-	"color": "152a41"
+	"color": "152a41",
+	"video": ""
   },
   "Kassai of the Golden Sand": {
 	"background": "res://assets/standing_destaque/kassai_golden/kassai_golden_bg.png",
 	"front": "res://assets/standing_destaque/kassai_golden/kassai_golden_front.png",
 	"standing": "res://assets/standing_destaque/kassai_golden/kassai_golden_standing.png",
-	"color": "4e2114"
+	"color": "4e2114",
+	"video": ""
   },
   "Katsu, the Wanderer": {
 	"background": "res://assets/standing_destaque/katsu_wanderer/katsu_wanderer_bg.png",
 	"front": "res://assets/standing_destaque/katsu_wanderer/katsu_wanderer_front.png",
 	"standing": "res://assets/standing_destaque/katsu_wanderer/katsu_wanderer_standing.png",
-	"color": "315c6a"
+	"color": "315c6a",
+	"video": ""
   },
   "Kayo, Underhanded Cheat": {
 	"background": "res://assets/standing_destaque/kayo_underhanded/kayo_underhanded_bg.png",
 	"front": "res://assets/standing_destaque/kayo_underhanded/kayo_underhanded_front.png",
 	"standing": "res://assets/standing_destaque/kayo_underhanded/kayo_underhanded_standing.png",
-	"color": "5a510a"
+	"color": "5a510a",
+	"video": ""
   },
   "Levia, Shadowborn Abomination": {
 	"background": "res://assets/standing_destaque/levia_shadownborn/levia_shadowborn_bg.png",
 	"front": "res://assets/standing_destaque/levia_shadownborn/levia_shadowborn_front.png",
 	"standing": "res://assets/standing_destaque/levia_shadownborn/levia_shadowborn_standing.png",
-	"color": "4c1e34"
+	"color": "4c1e34",
+	"video": ""
   },
   "Lyath Goldmane, Vile Savant": {
 	"background": "res://assets/standing_destaque/lyath_goldmane_vile/lyath_goldmane_vile_bg.png",
 	"front": "res://assets/standing_destaque/lyath_goldmane_vile/lyath_goldmane_vile_front.png",
 	"standing": "res://assets/standing_destaque/lyath_goldmane_vile/lyath_goldmane_vile_standing.png",
-	"color": "500512"
+	"color": "500512",
+	"video": ""
   },
   "Marlynn, Treasure Hunter": {
 	"background": "res://assets/standing_destaque/marlynn_treasure/marlynn_treasure_bg.png",
 	"front": "res://assets/standing_destaque/marlynn_treasure/marlynn_treasure_front.png",
 	"standing": "res://assets/standing_destaque/marlynn_treasure/marlynn_treasure_standing.png",
-	"color": "252036"
+	"color": "252036",
+	"video": ""
   },
   "Maxx 'The Hype' Nitro": {
 	"background": "res://assets/standing_destaque/max_the_hype/max_the_hype_bg.png",
 	"front": "res://assets/standing_destaque/max_the_hype/max_the_hype_front.png",
 	"standing": "res://assets/standing_destaque/max_the_hype/max_the_hype_standing.png",
-	"color": "2b2648"
+	"color": "2b2648",
+	"video": ""
   },
   "Olympia, Prized Fighter": {
 	"background": "res://assets/standing_destaque/olympia_prized/olyimpia_prized_bg.png",
 	"front": "res://assets/standing_destaque/olympia_prized/olyimpia_prized_front.png",
 	"standing": "res://assets/standing_destaque/olympia_prized/olyimpia_prized_standing.png",
-	"color": "2a0602"
+	"color": "2a0602",
+	"video": ""
   },
   "Oscilio, Constella Intelligence": {
 	"background": "res://assets/standing_destaque/oscilio_constella/oscilio_constella_bg.png",
 	"front": "res://assets/standing_destaque/oscilio_constella/oscilio_constella_front.png",
 	"standing": "res://assets/standing_destaque/oscilio_constella/oscilio_constella_standing.png",
-	"color": "456285"
+	"color": "456285",
+	"video": ""
   },
   "Oscilio, Forked Continuum": {
 	"background": "res://assets/standing_destaque/oscilio_forked/oscilio_forked_bg.png",
 	"front": "res://assets/standing_destaque/oscilio_forked/oscilio_forked_front.png",
 	"standing": "res://assets/standing_destaque/oscilio_forked/oscilio_forked_standing.png",
-	"color": "1a1738"
+	"color": "1a1738",
+	"video": ""
   },
   "Pleiades, Superstar": {
 	"background": "res://assets/standing_destaque/pleiades_superstar/pleiades_superstar_bg.png",
 	"front": "res://assets/standing_destaque/pleiades_superstar/pleiades_superstar_front.png",
 	"standing": "res://assets/standing_destaque/pleiades_superstar/pleiades_superstar_standing.png",
-	"color": "51192d"
+	"color": "51192d",
+	"video": ""
   },
   "Puffin, Hightail": {
 	"background": "res://assets/standing_destaque/puffin_hightail/puffin_hightail_bg.png",
 	"front": "res://assets/standing_destaque/puffin_hightail/puffin_hightail_front.png",
 	"standing": "res://assets/standing_destaque/puffin_hightail/puffin_hightail_standing.png",
-	"color": "284459"
+	"color": "284459",
+	"video": ""
   },
   "Rhinar, Reckless Rampage": {
 	"background": "res://assets/standing_destaque/rhinar_reckless/rhinar_reckless_bg.png",
 	"front": "res://assets/standing_destaque/rhinar_reckless/rhinar_reckless_front.png",
 	"standing": "res://assets/standing_destaque/rhinar_reckless/rhinar_reckless_standing.png",
-	"color": "31180b"
+	"color": "31180b",
+	"video": ""
   },
   "Riptide, Lurker of the Deep": {
 	"background": "res://assets/standing_destaque/riptide_lurker/riptide_lurker_bg.png",
 	"front": "res://assets/standing_destaque/riptide_lurker/riptide_lurker_front.png",
 	"standing": "res://assets/standing_destaque/riptide_lurker/riptide_lurker_standing.png",
-	"color": "363a24"
+	"color": "363a24",
+	"video": ""
   },
   "Ser Boltyn, Breaker of Dawn": {
 	"background": "res://assets/standing_destaque/boltyn_breaker/boltyn_breaker_bg.png",
 	"front": "res://assets/standing_destaque/boltyn_breaker/boltyn_breaker_front.png",
 	"standing": "res://assets/standing_destaque/boltyn_breaker/boltyn_breaker_standing.png",
-	"color": "583d36"
+	"color": "583d36",
+	"video": ""
   },
   "Teklovossen, Esteemed Magnate": {
 	"background": "res://assets/standing_destaque/teklovossen_esteemed/teklovossen_esteemed_bg.png",
 	"front": "res://assets/standing_destaque/teklovossen_esteemed/teklovossen_esteemed_front.png",
 	"standing": "res://assets/standing_destaque/teklovossen_esteemed/teklovossen_esteemed_standing.png",
-	"color": "6293ad"
+	"color": "6293ad",
+	"video": ""
   },
   "Tuffnut, Bumbling Hulkster": {
 	"background": "res://assets/standing_destaque/tuffnut_bumbling/tuffnut_bumbling_bg.png",
 	"front": "res://assets/standing_destaque/tuffnut_bumbling/tuffnut_bumbling_front.png",
 	"standing": "res://assets/standing_destaque/tuffnut_bumbling/tuffnut_bumbling_standing.png",
-	"color": "363001"
+	"color": "363001",
+	"video": ""
   },
   "Uzuri, Switchblade": {
 	"background": "res://assets/standing_destaque/uzuri_switchblade/uzuri_switchblade_bg.png",
 	"front": "res://assets/standing_destaque/uzuri_switchblade/uzuri_switchblade_front.png",
 	"standing": "res://assets/standing_destaque/uzuri_switchblade/uzuri_switchblade_standing.png",
-	"color": "185440"
+	"color": "185440",
+	"video": ""
   },
   "Valda, Seismic Impact": {
 	"background": "res://assets/standing_destaque/valda_seismic/valda_seismic_bg.png",
 	"front": "res://assets/standing_destaque/valda_seismic/valda_seismic_front.png",
 	"standing": "res://assets/standing_destaque/valda_seismic/valda_seismic_standing.png",
-	"color": "4c2b25"
+	"color": "4c2b25",
+	"video": ""
   },
   "Vynnset, Iron Maiden": {
 	"background": "res://assets/standing_destaque/vynnset_iron/vynnset_iron_bg.png",
 	"front": "res://assets/standing_destaque/vynnset_iron/vynnset_iron_front.png",
 	"standing": "res://assets/standing_destaque/vynnset_iron/vynnset_iron_standing.png",
-	"color": "2e4552"
+	"color": "2e4552",
+	"video": ""
   },
   "Zyggy Starlight": {
 	"background": "res://assets/standing_destaque/zyggy_starlight/zyggy_starlight_bg.png",
 	"front": "res://assets/standing_destaque/zyggy_starlight/zyggy_starlight_front.png",
 	"standing": "res://assets/standing_destaque/zyggy_starlight/zyggy_starlight_standing.png",
-	"color": "554E99"
+	"color": "554e99",
+	"video": ""
   },
   "Aurora, Shooting Star": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Azalea, Ace in the Hole": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Bravo, Star of the Show": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Briar, Warden of Thorns": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Chane, Bound by Shadow": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Dash, Inventor Extraordinaire": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Dromai, Ash Artist": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Enigma, Ledger of Ancestry": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Florian, Rotwood Harbinger": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Iyslander, Stormbind": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Kano, Dracai of Aether": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Kayo, Armed and Dangerous": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Lexi, Livewire": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Nuu, Alluring Desire": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Oldhim, Grandfather of Eternity": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Prism, Awakener of Sol": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Prism, Sculptor of Arc Light": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Verdance, Thorn of the Rose": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Victor Goldmane, High and Mighty": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Viserai, Rune Blood": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   },
   "Zen, Tamer of Purpose": {
 	"background": "",
 	"front": "",
 	"standing": "",
-	"color": ""
+	"color": "",
+	"video": ""
   }
 }

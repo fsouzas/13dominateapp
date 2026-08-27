@@ -38,6 +38,18 @@ window/vsync/vsync_mode=0
 
 enabled=PackedStringArray("res://addons/GMPShared/menu/plugin.cfg", "res://addons/SharePlugin/plugin.cfg", "res://addons/font_auto_size_labels/plugin.cfg", "res://addons/rider-plugin/plugin.cfg")
 
+[gui]
+
+theme/custom_font="uid://biqb8n4fdg554"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://localization/localization.en.translation", "res://localization/localization.ja.translation", "res://localization/localization.pt_BR.translation")
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

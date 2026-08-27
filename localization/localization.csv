@@ -1,0 +1,12 @@
+id,en,pt_BR,ja
+mode_str,Mode,Modo,モード
+chose_mode_str,Choose Mode,Escolha o Modo,モードを選択
+standings_str,Standings,Classificações,総合優勝
+choose_standings_csv_str,Choose a STANDINGS.CSV,ESCOLHA UM STANDINGS.CSV,「STANDINGS.CSV」ファイルを選択してください
+heroes_str,Heroes,Heróis,ヒーロー
+choose_heroes_csv_str,Choose a HEROES.CSV,ESCOLHA UM HEROES.CSV,「HEROES.CSV」ファイルを選択してください
+store_name_str,Store name,Nome da loja,店舗名
+ready_str,Ready!,Pronto!,準備OK！
+cc_str,Classic Constructed,Classic Constructed,クラシック
+standings_title_str,STANDINGS,CLASSIFICAÇÕES,総合優勝
+sage_str,Silver Age,Silver Age,シルバーエイジ

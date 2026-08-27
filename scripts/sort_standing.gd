@@ -28,13 +28,17 @@ static func add_standing(standing_last_size_temp, standings_result_size, standin
 		var temp_standing_less: Node = standing_temp.duplicate()
 		main_standings_result_temp.add_child(temp_standing_less)
 		if HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["standing"] == "":
-			temp_standing_less.get_child(1).get_child(1).get_child(1).texture = load("res://assets/standing_destaque/unknown/unknown_standing.png")
+			temp_standing_less.get_child(1).get_child(1).get_child(1).texture = HeroesDb.hero_textures["unknown"]["standing"]
 			pass
 		else:
-			temp_standing_less.get_child(1).get_child(1).get_child(1).texture = load(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["standing"])
+			temp_standing_less.get_child(1).get_child(1).get_child(1).texture =HeroesDb.hero_textures[UniversalDict.armory_data.values()[i]["Hero"]]["standing"]
 			pass
 		if UniversalDict.armory_data.values()[i]["Rank"] == "Dropped":
 			temp_standing_less.get_child(2).show()
+			var shader_main_mat = temp_standing_less.get_child(1).get_child(1).get_child(1).material as ShaderMaterial
+			var shader_mat = shader_main_mat.duplicate()
+			temp_standing_less.get_child(1).get_child(1).get_child(1).material = shader_mat
+			shader_mat.set_shader_parameter("percentage", 0)
 			
 		temp_standing_less.get_child(1).get_child(0).get_child(0).texture = load("res://assets/textures/grunge_"+str(randi_range(1,6))+".png")
 		temp_standing_less.get_child(1).get_child(1).get_child(0).texture = load("res://assets/textures/grunge_"+str(randi_range(1,6))+".png")

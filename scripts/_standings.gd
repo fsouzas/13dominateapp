@@ -43,7 +43,12 @@ extends Node
 @export var background_img : TextureRect
 @export var color_transparent : ColorRect
 
-# Called when the node enters the scene tree for the first time.
+@export var fileDialog : FileDialog
+var save_path
+
+var swipe_start_pos : Vector2 = Vector2.ZERO
+var min_swipe_dist: float = 60.0
+
 func _ready() -> void:
 	
 	share.set_share_target(true)
@@ -59,8 +64,15 @@ func _ready() -> void:
 		proximo_button.self_modulate.a = 0
 		proximo_button.disabled = true
 	
-	mode_name.text = UniversalDict.mode_selected
-	store_name.text = UniversalDict.store_name.to_upper() +" "+ Time.get_date_string_from_system()
+	mode_name.text = UniversalDict.mode_selected.to_upper()
+	var date = Time.get_date_dict_from_system()
+	match UniversalDict.locale:
+		"en":
+			store_name.text = UniversalDict.store_name.to_upper() + " %02d/%02d/%d" % [date.month, date.day, date.year]
+		"ja":
+			store_name.text = UniversalDict.store_name.to_upper() + " %02d年%02d月%d" % [date.year, date.month, date.day]
+		_:
+			store_name.text = UniversalDict.store_name.to_upper() + " %02d/%02d/%d" % [date.day, date.month, date.year]
 	
 	var name_1_full = UniversalDict.armory_data.values()[0]["Name"].to_upper()
 	var name_1_parts = name_1_full.split(" ")
@@ -69,13 +81,13 @@ func _ready() -> void:
 	heroi_destaque_1_vitoria.text = UniversalDict.armory_data.values()[0]["Wins"].to_upper()
 	
 	if not HeroesDb.young_heroes[UniversalDict.armory_data.values()[0]["Hero"]]["background"]:
-		heroi_destaque1_bg.texture = load("res://assets/standing_destaque/unknown/unknown_bg.png")
+		heroi_destaque1_bg.texture = HeroesDb.hero_textures["unknown"]["background"]
 	else:
-		heroi_destaque1_bg.texture = load(HeroesDb.young_heroes[UniversalDict.armory_data.values()[0]["Hero"]]["background"])
+		heroi_destaque1_bg.texture = HeroesDb.hero_textures[UniversalDict.armory_data.values()[0]["Hero"]]["background"]
 	if HeroesDb.young_heroes[UniversalDict.armory_data.values()[0]["Hero"]]["front"] == "":
-		heroi_destaque1_front.texture = load("res://assets/standing_destaque/unknown/unknown_front.png")
+		heroi_destaque1_front.texture = HeroesDb.hero_textures["unknown"]["front"]
 	else:
-		heroi_destaque1_front.texture = load(HeroesDb.young_heroes[UniversalDict.armory_data.values()[0]["Hero"]]["front"])
+		heroi_destaque1_front.texture = HeroesDb.hero_textures[UniversalDict.armory_data.values()[0]["Hero"]]["front"]
 	
 	var name_2_full = UniversalDict.armory_data.values()[1]["Name"].to_upper()
 	var name_2_parts = name_2_full.split(" ")
@@ -84,13 +96,13 @@ func _ready() -> void:
 	heroi_destaque_2_vitoria.text = UniversalDict.armory_data.values()[1]["Wins"].to_upper()
 	
 	if HeroesDb.young_heroes[UniversalDict.armory_data.values()[1]["Hero"]]["background"] == "":
-		heroi_destaque2_bg.texture = load("res://assets/standing_destaque/unknown/unknown_bg.png")
+		heroi_destaque2_bg.texture = HeroesDb.hero_textures["unknown"]["background"]
 	else:
-		heroi_destaque2_bg.texture = load(HeroesDb.young_heroes[UniversalDict.armory_data.values()[1]["Hero"]]["background"])
+		heroi_destaque2_bg.texture = HeroesDb.hero_textures[UniversalDict.armory_data.values()[1]["Hero"]]["background"]
 	if HeroesDb.young_heroes[UniversalDict.armory_data.values()[1]["Hero"]]["front"] == "":
-		heroi_destaque2_front.texture = load("res://assets/standing_destaque/unknown/unknown_front.png")
+		heroi_destaque2_front.texture = HeroesDb.hero_textures["unknown"]["front"]
 	else:
-		heroi_destaque2_front.texture = load(HeroesDb.young_heroes[UniversalDict.armory_data.values()[1]["Hero"]]["front"])
+		heroi_destaque2_front.texture = HeroesDb.hero_textures[UniversalDict.armory_data.values()[1]["Hero"]]["front"]
 	
 	var name_3_full = UniversalDict.armory_data.values()[2]["Name"].to_upper()
 	var name_3_parts = name_3_full.split(" ")
@@ -99,13 +111,13 @@ func _ready() -> void:
 	heroi_destaque_3_vitoria.text = UniversalDict.armory_data.values()[2]["Wins"].to_upper()
 	
 	if HeroesDb.young_heroes[UniversalDict.armory_data.values()[2]["Hero"]]["background"] == "":
-		heroi_destaque3_bg.texture = load("res://assets/standing_destaque/unknown/unknown_bg.png")
+		heroi_destaque3_bg.texture = HeroesDb.hero_textures["unknown"]["background"]
 	else:
-		heroi_destaque3_bg.texture = load(HeroesDb.young_heroes[UniversalDict.armory_data.values()[2]["Hero"]]["background"])
+		heroi_destaque3_bg.texture = HeroesDb.hero_textures[UniversalDict.armory_data.values()[2]["Hero"]]["background"]
 	if HeroesDb.young_heroes[UniversalDict.armory_data.values()[2]["Hero"]]["front"] == "":
-		heroi_destaque3_front.texture = load("res://assets/standing_destaque/unknown/unknown_front.png")
+		heroi_destaque3_front.texture = HeroesDb.hero_textures["unknown"]["front"]
 	else:
-		heroi_destaque3_front.texture = load(HeroesDb.young_heroes[UniversalDict.armory_data.values()[2]["Hero"]]["front"])
+		heroi_destaque3_front.texture = HeroesDb.hero_textures[UniversalDict.armory_data.values()[2]["Hero"]]["front"]
 	
 	SortStanding.sort_standing(tab, standing_less, standings_extra, standing_results_1)
 	
@@ -136,7 +148,7 @@ func _on_share_pressed() -> void:
 func _on_voltar_pressed() -> void:
 	voltar_button.disabled = true
 	share_button.disabled = true
-	#save_button.disabled = true
+	save_button.disabled = true
 	proximo_button.disabled = true
 	
 	var last_node_pos = tab.get_child(tab.current_tab).offset_transform_position
@@ -181,7 +193,7 @@ func _on_voltar_pressed() -> void:
 		tween.tween_property(proximo_button,"self_modulate:a",1, 1.0)
 	voltar_button.disabled = false
 	share_button.disabled = false
-	#save_button.disabled = false
+	save_button.disabled = false
 	proximo_button.disabled = false
 	page_numb.text = str(tab.current_tab + 1) + "/" + str(tab.get_tab_count())
 
@@ -192,7 +204,7 @@ func _on_voltar_pressed() -> void:
 func _on_proximo_pressed() -> void:
 	voltar_button.disabled = true
 	share_button.disabled = true
-	#save_button.disabled = true
+	save_button.disabled = true
 	proximo_button.disabled = true
 	
 	var last_node_pos = tab.get_child(tab.current_tab).offset_transform_position
@@ -238,7 +250,7 @@ func _on_proximo_pressed() -> void:
 	
 	voltar_button.disabled = false
 	share_button.disabled = false
-	#save_button.disabled = false
+	save_button.disabled = false
 	proximo_button.disabled = false
 	page_numb.text = str(tab.current_tab + 1) + "/" + str(tab.get_tab_count())
 
@@ -260,3 +272,37 @@ func _on_home_pressed() -> void:
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_GO_BACK_REQUEST:
 		SceneLoader.load_scene(home_scene)
+
+
+func _on_salvar_pressed() -> void:
+	taking_screenshot()
+
+
+func _on_file_dialog_file_selected(path: String) -> void:
+	save_path = path
+
+func taking_screenshot():
+	menu.visible = false
+	home.visible = false
+	await RenderingServer.frame_post_draw
+	var image = get_viewport().get_texture().get_image()
+	var image_name = str(UniversalDict.mode_selected + Time.get_date_string_from_system())
+	fileDialog.current_file = image_name
+	fileDialog.show()
+	await fileDialog.file_selected
+	image.save_png(save_path)
+	menu.visible = true
+	home.visible = true
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventScreenTouch:
+		if event.pressed:
+			swipe_start_pos = event.position
+		else:
+			var swipe_vector = event.position - swipe_start_pos
+			
+			if swipe_vector.length() >= min_swipe_dist and abs(swipe_vector.x) > abs(swipe_vector.y):
+				if swipe_vector.x < 0:
+					_on_proximo_pressed()
+				else:
+					_on_voltar_pressed()

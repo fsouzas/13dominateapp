@@ -2,15 +2,114 @@
 
 [ext_resource type="Script" uid="uid://dnwyycwrm3nf8" path="res://scripts/_main.gd" id="1_vxwnn"]
 [ext_resource type="Texture2D" uid="uid://b4f8t4lmnidwq" path="res://assets/United_We_Stand.png" id="2_dfr2a"]
+[ext_resource type="Shader" uid="uid://b84bfd7p0bkli" path="res://shaders/color_replacement.gdshader" id="2_rl6xj"]
 [ext_resource type="Theme" uid="uid://clp285uwx2shj" path="res://themes/ui_default_menu.tres" id="3_imghw"]
 [ext_resource type="Theme" uid="uid://pwlhx337qene" path="res://themes/nome_destaque.tres" id="3_rl6xj"]
 [ext_resource type="Texture2D" uid="uid://dfr4mlpfaoo5q" path="res://assets/textures/Light-Halftone-Screen-Medium.png" id="5_0xo7i"]
+[ext_resource type="Texture2D" uid="uid://bgxrc20606b54" path="res://assets/spinner/1.png" id="7_0xo7i"]
+[ext_resource type="FontFile" uid="uid://dj52lmjnrrbpe" path="res://fonts/FuturaPT-ExtraBoldObl.ttf" id="7_5snkx"]
+[ext_resource type="Texture2D" uid="uid://dqcbrybwk2lg8" path="res://assets/spinner/2.png" id="8_sskcy"]
+[ext_resource type="Texture2D" uid="uid://5e3m1867am73" path="res://assets/spinner/11.png" id="9_5snkx"]
+[ext_resource type="Texture2D" uid="uid://dualppwdgwq8q" path="res://assets/spinner/12.png" id="10_8dwnc"]
+[ext_resource type="Texture2D" uid="uid://b1hyni2fqhq38" path="res://assets/spinner/13.png" id="11_3o5ht"]
+[ext_resource type="Texture2D" uid="uid://bijcq0cvprafm" path="res://assets/spinner/14.png" id="12_jxfwq"]
+[ext_resource type="Texture2D" uid="uid://radlnn1u1w7i" path="res://assets/spinner/15.png" id="13_ufgw8"]
+[ext_resource type="Texture2D" uid="uid://cnohreafse4cn" path="res://assets/spinner/16.png" id="14_7l6ry"]
+[ext_resource type="Texture2D" uid="uid://7as2w1iocup1" path="res://assets/spinner/17.png" id="15_kb1j8"]
+[ext_resource type="Texture2D" uid="uid://dg7grbat8qsxv" path="res://assets/spinner/18.png" id="16_2h1lt"]
+[ext_resource type="Texture2D" uid="uid://51x306jlf68e" path="res://assets/spinner/19.png" id="17_w6l78"]
+[ext_resource type="Texture2D" uid="uid://658ovj0qljbu" path="res://assets/spinner/20.png" id="18_l6l1d"]
+[ext_resource type="Texture2D" uid="uid://bs6b8lynwc6p5" path="res://assets/spinner/3.png" id="19_7t486"]
+[ext_resource type="Texture2D" uid="uid://baeu5coxuvw40" path="res://assets/spinner/21.png" id="20_0kqfj"]
+[ext_resource type="Texture2D" uid="uid://c51r6qr7y7ni1" path="res://assets/spinner/22.png" id="21_m7o5x"]
+[ext_resource type="Texture2D" uid="uid://bqmeevsa6q2ph" path="res://assets/spinner/23.png" id="22_iqwr8"]
+[ext_resource type="Texture2D" uid="uid://d0getftcqldmw" path="res://assets/spinner/24.png" id="23_vgtpo"]
+[ext_resource type="Texture2D" uid="uid://bkagjojfxr1hc" path="res://assets/spinner/25.png" id="24_d0jcu"]
+[ext_resource type="Texture2D" uid="uid://dtb20lw1vqe6l" path="res://assets/spinner/26.png" id="25_ack1b"]
+[ext_resource type="Texture2D" uid="uid://djl6pfvpr6jk1" path="res://assets/spinner/27.png" id="26_hdx4t"]
+[ext_resource type="Texture2D" uid="uid://17cfybwvjp6h" path="res://assets/spinner/28.png" id="27_lny4e"]
+[ext_resource type="Texture2D" uid="uid://b2plvvcbje0m8" path="res://assets/spinner/29.png" id="28_3tsl6"]
+[ext_resource type="Texture2D" uid="uid://chvlfgv0wqn2p" path="res://assets/spinner/30.png" id="29_hb23c"]
+[ext_resource type="Texture2D" uid="uid://c45tgyv8ki7l5" path="res://assets/spinner/4.png" id="30_cpbrc"]
+[ext_resource type="Texture2D" uid="uid://nrr2y5g33po8" path="res://assets/spinner/5.png" id="31_nfncm"]
+[ext_resource type="Texture2D" uid="uid://coesvk5hu70we" path="res://assets/spinner/6.png" id="32_50x8q"]
+[ext_resource type="Texture2D" uid="uid://dtkanh5abgehg" path="res://assets/spinner/7.png" id="33_icwl7"]
+[ext_resource type="Texture2D" uid="uid://dcsds5eo7ew1y" path="res://assets/spinner/8.png" id="34_lcjbj"]
+[ext_resource type="Texture2D" uid="uid://c50bd13l5yo72" path="res://assets/spinner/9.png" id="35_c1nli"]
+[ext_resource type="Texture2D" uid="uid://60j7r5wercd" path="res://assets/spinner/10.png" id="36_55sbn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0xo7i"]
+shader = ExtResource("2_rl6xj")
+shader_parameter/replace_color = Color(0.5921569, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xo7i"]
-bg_color = Color(0.16862746, 0.19215687, 0.24705882, 0.5019608)
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bhunq"]
 blend_mode = 2
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_0xo7i"]
+frames = 30
+speed_scale = 11.0
+frame_0/texture = ExtResource("7_0xo7i")
+frame_1/texture = ExtResource("8_sskcy")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("19_7t486")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("30_cpbrc")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("31_nfncm")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("32_50x8q")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("33_icwl7")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("34_lcjbj")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("35_c1nli")
+frame_8/duration = 1.0
+frame_9/texture = ExtResource("36_55sbn")
+frame_9/duration = 1.0
+frame_10/texture = ExtResource("9_5snkx")
+frame_10/duration = 1.0
+frame_11/texture = ExtResource("10_8dwnc")
+frame_11/duration = 1.0
+frame_12/texture = ExtResource("11_3o5ht")
+frame_12/duration = 1.0
+frame_13/texture = ExtResource("12_jxfwq")
+frame_13/duration = 1.0
+frame_14/texture = ExtResource("13_ufgw8")
+frame_14/duration = 1.0
+frame_15/texture = ExtResource("14_7l6ry")
+frame_15/duration = 1.0
+frame_16/texture = ExtResource("15_kb1j8")
+frame_16/duration = 1.0
+frame_17/texture = ExtResource("16_2h1lt")
+frame_17/duration = 1.0
+frame_18/texture = ExtResource("17_w6l78")
+frame_18/duration = 1.0
+frame_19/texture = ExtResource("18_l6l1d")
+frame_19/duration = 1.0
+frame_20/texture = ExtResource("20_0kqfj")
+frame_20/duration = 1.0
+frame_21/texture = ExtResource("21_m7o5x")
+frame_21/duration = 1.0
+frame_22/texture = ExtResource("22_iqwr8")
+frame_22/duration = 1.0
+frame_23/texture = ExtResource("23_vgtpo")
+frame_23/duration = 1.0
+frame_24/texture = ExtResource("24_d0jcu")
+frame_24/duration = 1.0
+frame_25/texture = ExtResource("25_ack1b")
+frame_25/duration = 1.0
+frame_26/texture = ExtResource("26_hdx4t")
+frame_26/duration = 1.0
+frame_27/texture = ExtResource("27_lny4e")
+frame_27/duration = 1.0
+frame_28/texture = ExtResource("28_3tsl6")
+frame_28/duration = 1.0
+frame_29/texture = ExtResource("29_hb23c")
+frame_29/duration = 1.0
 
 [node name="Main" type="Control" unique_id=1532918101]
 layout_mode = 3
@@ -23,6 +122,7 @@ script = ExtResource("1_vxwnn")
 standings_scene = &"res://scenes/STANDINGS.tscn"
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=2021104222]
+material = SubResource("ShaderMaterial_0xo7i")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -31,16 +131,30 @@ offset_transform_scale = Vector2(1.65, 1.65)
 mouse_filter = 2
 texture = ExtResource("2_dfr2a")
 
-[node name="Panel" type="Panel" parent="." unique_id=1463610035]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=27394104]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.5882353, 0, 0, 0.63529414)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1550057359]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_right = 40
+
+[node name="Panel" type="Panel" parent="MarginContainer" unique_id=1463610035]
+layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_0xo7i")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1758858011]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Panel" unique_id=1758858011]
 propagate_maximum_size = false
 layout_mode = 1
 anchors_preset = 15
@@ -50,15 +164,15 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="Panel/VBoxContainer" unique_id=1942741691]
+[node name="RichTextLabel3" type="RichTextLabel" parent="MarginContainer/Panel/VBoxContainer" unique_id=1942741691]
 layout_mode = 2
 theme = ExtResource("3_rl6xj")
 theme_override_font_sizes/normal_font_size = 50
-text = "Modo"
+text = "mode_str"
 fit_content = true
 horizontal_alignment = 1
 
-[node name="MenuBar" type="OptionButton" parent="Panel/VBoxContainer" unique_id=1207766765]
+[node name="MenuBar" type="OptionButton" parent="MarginContainer/Panel/VBoxContainer" unique_id=1207766765]
 clip_children = 2
 custom_minimum_size = Vector2(0, 51.49)
 layout_mode = 2
@@ -68,15 +182,15 @@ alignment = 1
 selected = 0
 allow_reselect = true
 item_count = 3
-popup/item_0/text = "Escolha o modo"
+popup/item_0/text = "chose_mode_str"
 popup/item_0/id = 0
 popup/item_0/disabled = true
-popup/item_1/text = "SILVER AGE"
+popup/item_1/text = "sage_str"
 popup/item_1/id = 1
-popup/item_2/text = "CLASSIC COUNSTRUCTED"
+popup/item_2/text = "cc_str"
 popup/item_2/id = 2
 
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/MenuBar" unique_id=179590239]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/Panel/VBoxContainer/MenuBar" unique_id=179590239]
 modulate = Color(1, 1, 1, 0.28235295)
 material = SubResource("CanvasItemMaterial_bhunq")
 layout_mode = 0
@@ -87,23 +201,24 @@ offset_bottom = 819.0
 mouse_filter = 2
 texture = ExtResource("5_0xo7i")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel/VBoxContainer" unique_id=1419603543]
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/Panel/VBoxContainer" unique_id=1419603543]
 layout_mode = 2
 theme = ExtResource("3_rl6xj")
 theme_override_font_sizes/normal_font_size = 50
-text = "Standings"
+text = "standings_str"
 fit_content = true
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="Panel/VBoxContainer" unique_id=1973202108]
+[node name="Button" type="Button" parent="MarginContainer/Panel/VBoxContainer" unique_id=1973202108]
 clip_children = 2
+custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 offset_transform_enabled = true
 theme = ExtResource("3_imghw")
-theme_override_font_sizes/font_size = 50
-text = "ESCOLHA STANDINGS.CSV"
+theme_override_font_sizes/font_size = 30
+text = "choose_standings_csv_str"
 
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/Button" unique_id=1976189358]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/Panel/VBoxContainer/Button" unique_id=1976189358]
 modulate = Color(1, 1, 1, 0.28235295)
 material = SubResource("CanvasItemMaterial_bhunq")
 layout_mode = 0
@@ -114,22 +229,24 @@ offset_bottom = 819.0
 mouse_filter = 2
 texture = ExtResource("5_0xo7i")
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="Panel/VBoxContainer" unique_id=1337752367]
+[node name="RichTextLabel2" type="RichTextLabel" parent="MarginContainer/Panel/VBoxContainer" unique_id=1337752367]
 layout_mode = 2
 theme = ExtResource("3_rl6xj")
 theme_override_font_sizes/normal_font_size = 50
-text = "Heroes"
+text = "heroes_str"
 fit_content = true
 horizontal_alignment = 1
 
-[node name="Button2" type="Button" parent="Panel/VBoxContainer" unique_id=298606858]
+[node name="Button2" type="Button" parent="MarginContainer/Panel/VBoxContainer" unique_id=298606858]
 clip_children = 2
+custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
+offset_transform_enabled = true
 theme = ExtResource("3_imghw")
-theme_override_font_sizes/font_size = 50
-text = "ESCOLHA HEROES.CSV"
+theme_override_font_sizes/font_size = 30
+text = "choose_heroes_csv_str"
 
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/Button2" unique_id=1174412884]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/Panel/VBoxContainer/Button2" unique_id=1174412884]
 modulate = Color(1, 1, 1, 0.28235295)
 material = SubResource("CanvasItemMaterial_bhunq")
 layout_mode = 0
@@ -140,15 +257,17 @@ offset_bottom = 819.0
 mouse_filter = 2
 texture = ExtResource("5_0xo7i")
 
-[node name="TextEdit" type="TextEdit" parent="Panel/VBoxContainer" unique_id=1110229630]
+[node name="store_name" type="TextEdit" parent="MarginContainer/Panel/VBoxContainer" unique_id=1110229630]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 theme = ExtResource("3_imghw")
 theme_override_font_sizes/font_size = 35
-placeholder_text = "Nome da Loja"
+placeholder_text = "store_name_str"
 emoji_menu_enabled = false
 
-[node name="ColorPickerButton" type="ColorPicker" parent="Panel/VBoxContainer" unique_id=2025072030]
+[node name="ColorPickerButton" type="ColorPicker" parent="MarginContainer/Panel/VBoxContainer" unique_id=2025072030]
+visible = false
 layout_mode = 2
 theme = ExtResource("3_imghw")
 alignment = 1
@@ -160,14 +279,14 @@ color_modes_visible = false
 sliders_visible = false
 hex_visible = false
 
-[node name="Button3" type="Button" parent="Panel/VBoxContainer" unique_id=904276183]
+[node name="Button3" type="Button" parent="MarginContainer/Panel/VBoxContainer" unique_id=904276183]
 clip_children = 2
 layout_mode = 2
 theme = ExtResource("3_imghw")
 theme_override_font_sizes/font_size = 100
-text = "PRONTO"
+text = "ready_str"
 
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/Button3" unique_id=1092103574]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/Panel/VBoxContainer/Button3" unique_id=1092103574]
 modulate = Color(1, 1, 1, 0.28235295)
 material = SubResource("CanvasItemMaterial_bhunq")
 layout_mode = 0
@@ -187,10 +306,53 @@ access = 2
 filters = PackedStringArray("*.csv")
 use_native_dialog = true
 
-[connection signal="item_selected" from="Panel/VBoxContainer/MenuBar" to="." method="_on_menu_bar_item_selected"]
-[connection signal="pressed" from="Panel/VBoxContainer/Button" to="." method="_on_button_pressed" binds= [true]]
-[connection signal="pressed" from="Panel/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="text_changed" from="Panel/VBoxContainer/TextEdit" to="." method="_on_text_edit_text_changed"]
-[connection signal="color_changed" from="Panel/VBoxContainer/ColorPickerButton" to="." method="_on_color_picker_button_color_changed"]
-[connection signal="pressed" from="Panel/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[node name="loading" type="Panel" parent="." unique_id=621572452]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="carregando" type="Label" parent="loading" unique_id=1624970277]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -74.5
+offset_top = 100.0
+offset_right = 74.5
+offset_bottom = 133.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_5snkx")
+theme_override_font_sizes/font_size = 25
+text = "Carregando"
+
+[node name="TextureRect2" type="TextureRect" parent="loading" unique_id=2030475475]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -102.0
+offset_right = 100.0
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_0xo7i")
+metadata/_edit_lock_ = true
+
+[connection signal="item_selected" from="MarginContainer/Panel/VBoxContainer/MenuBar" to="." method="_on_menu_bar_item_selected"]
+[connection signal="pressed" from="MarginContainer/Panel/VBoxContainer/Button" to="." method="_on_button_pressed" binds= [true]]
+[connection signal="pressed" from="MarginContainer/Panel/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="text_changed" from="MarginContainer/Panel/VBoxContainer/store_name" to="." method="_on_text_edit_text_changed"]
+[connection signal="color_changed" from="MarginContainer/Panel/VBoxContainer/ColorPickerButton" to="." method="_on_color_picker_button_color_changed"]
+[connection signal="pressed" from="MarginContainer/Panel/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]

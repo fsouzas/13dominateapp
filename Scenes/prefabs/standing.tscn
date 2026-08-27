@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bmgwn3b0ugk06" path="res://assets/standing_destaque/arakni_huntsman/arakni_huntsman_standing.png" id="4_awjuo"]
 [ext_resource type="Texture2D" uid="uid://iu0fw8306w3k" path="res://assets/textures/grunge_2.png" id="4_b73jd"]
 [ext_resource type="Texture2D" uid="uid://bqnlx6k84j2sp" path="res://assets/icons/iconmonstr-x-mark-1-240(1).png" id="5_awjuo"]
+[ext_resource type="Shader" uid="uid://baddxjcltsfj2" path="res://shaders/grayscale.gdshader" id="5_uruv1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6f8o3"]
 bg_color = Color(1, 1, 1, 1)
@@ -21,6 +22,11 @@ Panel/styles/panel = SubResource("StyleBoxFlat_6f8o3")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6x4rr"]
 shader = ExtResource("2_oatrf")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b73jd"]
+resource_local_to_scene = true
+shader = ExtResource("5_uruv1")
+shader_parameter/percentage = 1.0
 
 [node name="Standing" type="Control" unique_id=620729908]
 layout_mode = 3
@@ -104,6 +110,7 @@ offset_bottom = 72.0
 texture = ExtResource("4_b73jd")
 
 [node name="hero" type="TextureRect" parent="Container/Panel" unique_id=1406535703]
+material = SubResource("ShaderMaterial_b73jd")
 layout_mode = 0
 offset_left = 1.0
 offset_top = 1.0
