@@ -10,3 +10,19 @@ ready_str,Ready!,Pronto!,準備OK！
 cc_str,Classic Constructed,Classic Constructed,クラシック
 standings_title_str,STANDINGS,CLASSIFICAÇÕES,総合優勝
 sage_str,Silver Age,Silver Age,シルバーエイジ
+loading_assets_str,Loading assets,Carregando assets...,
+loading_finished,Loading complete!,Carregamento completo!,
+menu_standings,STANDINGS,CLASSIFICAÇÕES,
+sealed_str,Sealed,SELADO,
+store_str,Store name,Nome da loja,
+menu_settings,SETTINGS,OPÇÕES,
+language_str,Language,Idioma,
+theme_str,Theme,Tema,
+13dominate_theme_str,13 Dominate Theme,Tema 13 Dominate,
+usurp_theme_str,Usurp The Shadow Throne Theme,Tema Usurp The Shadow Throne,
+custom_color_str,Custom Color,Cor Customizavel,
+color1_str,Color 1,Cor 1,
+color2_str,Color 2,Cor 2,
+standings_csv_error_load,"Not a valid standings.csv. Please, try again.","Não é um standings.csv válido. Por favor, tente novamente.",
+heroes_csv_error_load,"Not a valid heroes.csv. Please, try again.","Não é um heroes.csv válido. Por favor, tente novamente.",
+csv_loaded_with_no_errors,.csv validated with success.,.csv validado com sucesso.,

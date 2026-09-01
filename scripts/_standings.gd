@@ -53,9 +53,7 @@ func _ready() -> void:
 	
 	share.set_share_target(true)
 	
-	background_img.material.set_shader_parameter("replace_color", UniversalDict.main_color)
 	$StandingTitle/VBoxContainer/AutoSizeRichTextLabel4.add_theme_color_override("default_color", UniversalDict.main_color)
-	color_transparent.color = UniversalDict.main_color
 	
 	#voltar_button.self_modulate.a = 0
 	voltar_button.disabled = true

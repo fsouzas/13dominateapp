@@ -2,6 +2,18 @@
 
 [ext_resource type="FontFile" uid="uid://douxnqekj7tg3" path="res://fonts/FuturaPTCond-ExtraBold.ttf" id="1_8jn32"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qqru0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_flrvy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_umaf0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8jn32"]
+
 [resource]
 default_font = ExtResource("1_8jn32")
 default_font_size = 60
+Button/styles/hover = SubResource("StyleBoxEmpty_qqru0")
+Button/styles/hover_pressed = SubResource("StyleBoxEmpty_flrvy")
+Button/styles/normal = SubResource("StyleBoxEmpty_umaf0")
+Button/styles/pressed = SubResource("StyleBoxEmpty_8jn32")

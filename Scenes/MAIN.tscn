@@ -1,8 +1,6 @@
 [gd_scene format=3 uid="uid://tkrlp56mt1ks"]
 
 [ext_resource type="Script" uid="uid://dnwyycwrm3nf8" path="res://scripts/_main.gd" id="1_vxwnn"]
-[ext_resource type="Texture2D" uid="uid://b4f8t4lmnidwq" path="res://assets/United_We_Stand.png" id="2_dfr2a"]
-[ext_resource type="Shader" uid="uid://b84bfd7p0bkli" path="res://shaders/color_replacement.gdshader" id="2_rl6xj"]
 [ext_resource type="Theme" uid="uid://clp285uwx2shj" path="res://themes/ui_default_menu.tres" id="3_imghw"]
 [ext_resource type="Theme" uid="uid://pwlhx337qene" path="res://themes/nome_destaque.tres" id="3_rl6xj"]
 [ext_resource type="Texture2D" uid="uid://dfr4mlpfaoo5q" path="res://assets/textures/Light-Halftone-Screen-Medium.png" id="5_0xo7i"]
@@ -38,78 +36,109 @@
 [ext_resource type="Texture2D" uid="uid://c50bd13l5yo72" path="res://assets/spinner/9.png" id="35_c1nli"]
 [ext_resource type="Texture2D" uid="uid://60j7r5wercd" path="res://assets/spinner/10.png" id="36_55sbn"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_0xo7i"]
-shader = ExtResource("2_rl6xj")
-shader_parameter/replace_color = Color(0.5921569, 0, 0, 1)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xo7i"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bhunq"]
 blend_mode = 2
 
-[sub_resource type="AnimatedTexture" id="AnimatedTexture_0xo7i"]
-frames = 30
-speed_scale = 11.0
-frame_0/texture = ExtResource("7_0xo7i")
-frame_1/texture = ExtResource("8_sskcy")
-frame_1/duration = 1.0
-frame_2/texture = ExtResource("19_7t486")
-frame_2/duration = 1.0
-frame_3/texture = ExtResource("30_cpbrc")
-frame_3/duration = 1.0
-frame_4/texture = ExtResource("31_nfncm")
-frame_4/duration = 1.0
-frame_5/texture = ExtResource("32_50x8q")
-frame_5/duration = 1.0
-frame_6/texture = ExtResource("33_icwl7")
-frame_6/duration = 1.0
-frame_7/texture = ExtResource("34_lcjbj")
-frame_7/duration = 1.0
-frame_8/texture = ExtResource("35_c1nli")
-frame_8/duration = 1.0
-frame_9/texture = ExtResource("36_55sbn")
-frame_9/duration = 1.0
-frame_10/texture = ExtResource("9_5snkx")
-frame_10/duration = 1.0
-frame_11/texture = ExtResource("10_8dwnc")
-frame_11/duration = 1.0
-frame_12/texture = ExtResource("11_3o5ht")
-frame_12/duration = 1.0
-frame_13/texture = ExtResource("12_jxfwq")
-frame_13/duration = 1.0
-frame_14/texture = ExtResource("13_ufgw8")
-frame_14/duration = 1.0
-frame_15/texture = ExtResource("14_7l6ry")
-frame_15/duration = 1.0
-frame_16/texture = ExtResource("15_kb1j8")
-frame_16/duration = 1.0
-frame_17/texture = ExtResource("16_2h1lt")
-frame_17/duration = 1.0
-frame_18/texture = ExtResource("17_w6l78")
-frame_18/duration = 1.0
-frame_19/texture = ExtResource("18_l6l1d")
-frame_19/duration = 1.0
-frame_20/texture = ExtResource("20_0kqfj")
-frame_20/duration = 1.0
-frame_21/texture = ExtResource("21_m7o5x")
-frame_21/duration = 1.0
-frame_22/texture = ExtResource("22_iqwr8")
-frame_22/duration = 1.0
-frame_23/texture = ExtResource("23_vgtpo")
-frame_23/duration = 1.0
-frame_24/texture = ExtResource("24_d0jcu")
-frame_24/duration = 1.0
-frame_25/texture = ExtResource("25_ack1b")
-frame_25/duration = 1.0
-frame_26/texture = ExtResource("26_hdx4t")
-frame_26/duration = 1.0
-frame_27/texture = ExtResource("27_lny4e")
-frame_27/duration = 1.0
-frame_28/texture = ExtResource("28_3tsl6")
-frame_28/duration = 1.0
-frame_29/texture = ExtResource("29_hb23c")
-frame_29/duration = 1.0
+[sub_resource type="SpriteFrames" id="SpriteFrames_bhunq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_0xo7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_sskcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_7t486")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_cpbrc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_nfncm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_50x8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_icwl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_lcjbj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_c1nli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_55sbn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5snkx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8dwnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3o5ht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_jxfwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ufgw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_7l6ry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_kb1j8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_2h1lt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_w6l78")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_l6l1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0kqfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_m7o5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_iqwr8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_vgtpo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_d0jcu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ack1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_hdx4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_lny4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_3tsl6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hb23c")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 30.0
+}]
 
 [node name="Main" type="Control" unique_id=1532918101]
 layout_mode = 3
@@ -120,25 +149,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_vxwnn")
 standings_scene = &"res://scenes/STANDINGS.tscn"
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=2021104222]
-material = SubResource("ShaderMaterial_0xo7i")
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-offset_transform_enabled = true
-offset_transform_scale = Vector2(1.65, 1.65)
-mouse_filter = 2
-texture = ExtResource("2_dfr2a")
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=27394104]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.5882353, 0, 0, 0.63529414)
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1550057359]
 layout_mode = 1
@@ -333,21 +343,11 @@ theme_override_fonts/font = ExtResource("7_5snkx")
 theme_override_font_sizes/font_size = 25
 text = "Carregando"
 
-[node name="TextureRect2" type="TextureRect" parent="loading" unique_id=2030475475]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -100.0
-offset_top = -102.0
-offset_right = 100.0
-offset_bottom = 102.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = SubResource("AnimatedTexture_0xo7i")
-metadata/_edit_lock_ = true
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="loading" unique_id=538089594]
+position = Vector2(363, 515)
+sprite_frames = SubResource("SpriteFrames_bhunq")
+autoplay = "default"
+frame_progress = 0.11613806
 
 [connection signal="item_selected" from="MarginContainer/Panel/VBoxContainer/MenuBar" to="." method="_on_menu_bar_item_selected"]
 [connection signal="pressed" from="MarginContainer/Panel/VBoxContainer/Button" to="." method="_on_button_pressed" binds= [true]]

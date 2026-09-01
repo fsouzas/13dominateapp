@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4f8t4lmnidwq"
-path="res://.godot/imported/United_We_Stand.png-aa02d49cc3bb70850b9249a3767fdced.ctex"
+uid="uid://bfahgdkryjbeq"
+path="res://.godot/imported/history_pack_2_key_art.jpg-6f824945265f7bc21e9817d7145b34eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/United_We_Stand.png"
-dest_files=["res://.godot/imported/United_We_Stand.png-aa02d49cc3bb70850b9249a3767fdced.ctex"]
+source_file="res://assets/bg/history_pack_2_key_art.jpg"
+dest_files=["res://.godot/imported/history_pack_2_key_art.jpg-6f824945265f7bc21e9817d7145b34eb.ctex"]
 
 [params]
 

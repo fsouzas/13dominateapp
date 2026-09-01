@@ -24,6 +24,9 @@ config/icon="uid://cxb2nsyv525hj"
 UniversalDict="*uid://c4sfw7gg6scry"
 SceneLoader="*uid://bdujg3s86gva2"
 HeroesDb="*uid://dkvluu48wwgkg"
+Background="*uid://dgos13abf4iu0"
+Notification="*uid://dnjkhfci80bi2"
+SignalBus="*uid://mnbuk7jfunfp"
 
 [display]
 
@@ -49,6 +52,7 @@ pointing/emulate_touch_from_mouse=true
 [internationalization]
 
 locale/translations=PackedStringArray("res://localization/localization.en.translation", "res://localization/localization.ja.translation", "res://localization/localization.pt_BR.translation")
+locale/test="en"
 
 [physics]
 

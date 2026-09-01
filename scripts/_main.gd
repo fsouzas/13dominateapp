@@ -17,11 +17,11 @@ func _ready() -> void:
 		%loading.queue_free()
 
 func csv_importer_standings(path):
-	standings = CSVStanding.load_csv_to_dict(path)
+	standings = CSVStanding.load_csv_to_dict(path, "standings")
 	
 
 func csv_importer_heroes(path):
-	heroes = CSVStanding.load_csv_to_dict(path)
+	heroes = CSVStanding.load_csv_to_dict(path, "heroes")
 
 func _on_file_dialog_file_selected(path: String) -> void:
 	importer_path = path
@@ -45,7 +45,7 @@ func _on_button_3_pressed() -> void:
 	
 
 func _on_text_edit_text_changed() -> void:
-	print($Panel/VBoxContainer/TextEdit.text)
+	pass
 
 
 func _on_menu_bar_item_selected(index: int) -> void:

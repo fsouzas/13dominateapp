@@ -1,13 +1,9 @@
 [gd_scene format=3 uid="uid://okffs7rdeoc1"]
 
 [ext_resource type="Script" uid="uid://bbjwb3xfv8enf" path="res://scripts/_standings.gd" id="1_nvwqc"]
-[ext_resource type="Shader" uid="uid://b84bfd7p0bkli" path="res://shaders/color_replacement.gdshader" id="2_e4oeb"]
 [ext_resource type="PackedScene" uid="uid://71i1668e0cpj" path="res://scenes/prefabs/pref_destaque.tscn" id="2_gmp82"]
-[ext_resource type="Texture2D" uid="uid://b4f8t4lmnidwq" path="res://assets/United_We_Stand.png" id="2_tnwf4"]
 [ext_resource type="PackedScene" uid="uid://bk1gvfs4kvgdy" path="res://scenes/prefabs/standing_title.tscn" id="4_4t0is"]
-[ext_resource type="Shader" uid="uid://wwvladd6hv5t" path="res://shaders/repeater.gdshader" id="4_f65ix"]
 [ext_resource type="Texture2D" uid="uid://byqd64yyvqm3c" path="res://assets/official_logos/armory_events_white-1.png" id="4_nrb24"]
-[ext_resource type="Texture2D" uid="uid://dflf3i1wxb3l2" path="res://assets/official_logos/13_dominate_logo.png" id="5_f65ix"]
 [ext_resource type="Theme" uid="uid://rb0objr2ayom" path="res://themes/ui_default.tres" id="7_2iuw1"]
 [ext_resource type="Script" uid="uid://c61h1elerxacy" path="res://addons/SharePlugin/Share.gd" id="7_2msg6"]
 [ext_resource type="Texture2D" uid="uid://v4slq6ga8xmo" path="res://assets/icons/Visible--Streamline-Core.png" id="7_dslth"]
@@ -22,25 +18,12 @@
 [ext_resource type="Theme" uid="uid://pwlhx337qene" path="res://themes/nome_destaque.tres" id="15_d4mms"]
 [ext_resource type="Texture2D" uid="uid://ce62bosh1c4sv" path="res://assets/icons/Home-4--Streamline-Core.png" id="16_t0yhn"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_w1nnr"]
-shader = ExtResource("2_e4oeb")
-shader_parameter/replace_color = Color(1, 1, 1, 1)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_f65ix"]
-shader = ExtResource("4_f65ix")
-shader_parameter/scroll_speed = 0.030000001425
-shader_parameter/angle_degrees = 45.0
-shader_parameter/repeat_x = 8.0000003325
-shader_parameter/repeat_y = 10.0000004275
-shader_parameter/row_offset = 1.0
-shader_parameter/texture_to_scroll = ExtResource("5_f65ix")
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_riqys"]
 
 [sub_resource type="Theme" id="Theme_bhunq"]
 TabContainer/styles/panel = SubResource("StyleBoxEmpty_riqys")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_cgyjo"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e4oeb"]
 resource_local_to_scene = true
 shader = ExtResource("8_w1nnr")
 shader_parameter/percentage = 1.0
@@ -107,53 +90,10 @@ share_button = NodePath("Panel/menu/share")
 save_button = NodePath("Panel/menu/salvar")
 proximo_button = NodePath("Panel/menu/proximo")
 home = NodePath("Home")
-background_img = NodePath("UnitedWeStand")
-color_transparent = NodePath("ColorRect")
+background_img = NodePath("")
+color_transparent = NodePath("")
 fileDialog = NodePath("FileDialog")
 metadata/_edit_use_anchors_ = true
-
-[node name="UnitedWeStand" type="TextureRect" parent="." unique_id=1383488353]
-z_index = -1
-material = SubResource("ShaderMaterial_w1nnr")
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -22.000122
-offset_top = -4.0000153
-offset_right = 1758.0
-offset_bottom = 279.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(1.2483492, 1.2483492)
-texture = ExtResource("2_tnwf4")
-stretch_mode = 2
-
-[node name="Control" type="ColorRect" parent="." unique_id=1041399893]
-visible = false
-material = SubResource("ShaderMaterial_f65ix")
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -432.66284
-offset_top = -232.54227
-offset_right = 341.09326
-offset_bottom = 343.16467
-grow_horizontal = 2
-grow_vertical = 2
-rotation = -0.29670596
-pivot_offset = Vector2(500, 500)
-color = Color(1, 1, 1, 0)
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1613979291]
-modulate = Color(1, 1, 1, 0.38039216)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="StandingTitle" parent="." unique_id=47154294 instance=ExtResource("4_4t0is")]
 layout_mode = 1
@@ -261,7 +201,7 @@ offset_transform_enabled = true
 offset_transform_position = Vector2(-6, -32)
 
 [node name="hero" parent="TabContainer/Standings_Result_1/standings_results/Standing/Container/Panel" parent_id_path=PackedInt32Array(620729908, 1730896966) index="1" unique_id=1406535703]
-material = SubResource("ShaderMaterial_cgyjo")
+material = SubResource("ShaderMaterial_e4oeb")
 
 [node name="dropped" parent="TabContainer/Standings_Result_1/standings_results/Standing" index="2" unique_id=170816315]
 visible = false

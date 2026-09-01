@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://dnjkhfci80bi2"]
+
+[ext_resource type="FontFile" uid="uid://yb2srsk8r8c1" path="res://fonts/FuturaPT-Heavy.ttf" id="1_1s8q7"]
+[ext_resource type="Script" uid="uid://b25oh4xnw7knd" path="res://scripts/notification.gd" id="1_epuaa"]
+[ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="2_epuaa"]
+[ext_resource type="Texture2D" uid="uid://dachtvc82g382" path="res://assets/icons/Warning-Triangle--Streamline-Core.png" id="3_i06qn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_riqys"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="Theme" id="Theme_bhunq"]
+Panel/styles/panel = SubResource("StyleBoxFlat_riqys")
+
+[node name="Notification" type="Control" unique_id=60102056]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_epuaa")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=974422113]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = -80.0
+offset_bottom = -6.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="push_notification" type="Panel" parent="MarginContainer" unique_id=1638558670]
+unique_name_in_owner = true
+layout_mode = 2
+offset_transform_enabled = true
+theme = SubResource("Theme_bhunq")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/push_notification" unique_id=788995119]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 619.0
+offset_bottom = 74.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/push_notification/HBoxContainer" unique_id=1808382752]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+
+[node name="notification_text" type="RichTextLabel" parent="MarginContainer/push_notification/HBoxContainer/MarginContainer" unique_id=1200689907]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_constants/outline_size = 0
+theme_override_fonts/normal_font = ExtResource("1_1s8q7")
+theme_override_font_sizes/normal_font_size = 30
+text = "Este é um teste de aviso!"
+scroll_active = false
+vertical_alignment = 1
+script = ExtResource("2_epuaa")
+_max_size = 30
+_outline_ratio = 0.0
+_current_font_size = 30
+_editor_defaults_set = true
+metadata/_custom_type_script = "uid://co0lo02vnu10n"
+
+[node name="notification_icon" type="TextureRect" parent="MarginContainer/push_notification/HBoxContainer" unique_id=837809219]
+unique_name_in_owner = true
+layout_mode = 2
+offset_transform_enabled = true
+texture = ExtResource("3_i06qn")
+expand_mode = 2
+stretch_mode = 3
