@@ -8,13 +8,13 @@ var heroes = {}
 @export var standings_scene: StringName
 
 func _ready() -> void:
-	
+	%carregando.text = tr("update_checking_str")
+	UpdateManager.update_avaliable.connect(_on_update_avaliable)
+	UpdateManager.update_check_finished.connect(_on_update_check_finished)
+	UpdateManager.update_error.connect(_on_update_error)
+	UpdateManager.check_for_update()
 	if HeroesDb.already_loaded == false:
-		%carregando.text = tr("update_checking_str")
-		UpdateManager.update_avaliable.connect(_on_update_avaliable)
-		UpdateManager.update_check_finished.connect(_on_update_check_finished)
-		UpdateManager.update_error.connect(_on_update_error)
-		UpdateManager.check_for_update()
+		
 		
 		HeroesDb.texture_loading_progress.connect(_on_texture_loading_progress)
 		HeroesDb.texture_loading_finished.connect(_on_texture_loading_finished)
@@ -67,9 +67,10 @@ func _on_color_picker_button_color_changed(color: Color) -> void:
 	UniversalDict.main_color = color
 
 func _on_update_avaliable(latest_version : String, download_url : String):
-	%ConfirmationDialog.visble = true
+	%ConfirmationDialog.visible = true
 
 func _on_update_check_finished(has_update: bool):
+	print("update check finished")
 	if has_update == true:
 		%carregando.text = tr("new_update_avaliable_str")
 		print(tr("new_update_avaliable_str"))

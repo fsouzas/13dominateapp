@@ -27,26 +27,25 @@ func check_for_update():
 	
 	if error != OK:
 		http.queue_free()
+		update_error.emit(tr("could_not_connect_str"))
+		print("could_not_connect_str")
 		
 func _on_github_request_completed(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray, http: HTTPRequest):
 	http.queue_free()
+
+	var response_text := body.get_string_from_utf8()
 	
-	if result != HTTPRequest.RESULT_SUCCESS:
-		update_error.emit(tr("could_not_connect_str"))
-		return
-	if response_code != 200:
-		update_error.emit(tr("could_not_connect_str"))
-		return
+	var data = JSON.parse_string(response_text)
 	
-	var data = JSON.parse_string(body.get_string_from_utf8())
 	
-	if data == null or data is Dictionary:
+	if data == null or not data is Dictionary:
 		return
 	
 	latest_version = str(data.get("tag_name","")).trim_prefix("v")
 	latest_download_url = str(data.get("html_url",""))
 	
 	if latest_version.is_empty():
+		print("latest_version_empty")
 		return
 	if is_newer_version(latest_version, current_version):
 		update_avaliable.emit(latest_version,latest_download_url)
@@ -67,7 +66,7 @@ func is_newer_version(remote_version: String, local_version: String) -> bool:
 		if i < remote_parts.size():
 			remote_number = int(remote_parts[i])
 		if i < local_parts.size():
-			local_number = int(remote_parts[i])
+			local_number = int(local_parts[i])
 		if remote_number > local_number:
 			return true
 		if remote_number < local_number:
