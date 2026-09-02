@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhks6kwo4pdm8"
-path="res://.godot/imported/Recycle-Bin-2--Streamline-Core.png-4e1d0c780e19db6e847fe1a2cd3ed607.ctex"
+uid="uid://dxvp0ubr507j"
+path="res://.godot/imported/iconmonstr-arrow-right-alt-filled-48_2.png-834f6eb93551b479f981a263c8f2ca5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons/Recycle-Bin-2--Streamline-Core.png"
-dest_files=["res://.godot/imported/Recycle-Bin-2--Streamline-Core.png-4e1d0c780e19db6e847fe1a2cd3ed607.ctex"]
+source_file="res://assets/icons/iconmonstr-arrow-right-alt-filled-48_2.png"
+dest_files=["res://.godot/imported/iconmonstr-arrow-right-alt-filled-48_2.png-834f6eb93551b479f981a263c8f2ca5a.ctex"]
 
 [params]
 

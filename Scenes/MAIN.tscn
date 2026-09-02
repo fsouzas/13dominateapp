@@ -349,6 +349,16 @@ sprite_frames = SubResource("SpriteFrames_bhunq")
 autoplay = "default"
 frame_progress = 0.11613806
 
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="." unique_id=871912430]
+unique_name_in_owner = true
+oversampling_override = 1.0
+title = "new_update_str"
+initial_position = 1
+size = Vector2i(225, 100)
+ok_button_text = "go_to_update"
+dialog_text = "new_update_avaliable"
+cancel_button_text = "cancel_str"
+
 [connection signal="item_selected" from="MarginContainer/Panel/VBoxContainer/MenuBar" to="." method="_on_menu_bar_item_selected"]
 [connection signal="pressed" from="MarginContainer/Panel/VBoxContainer/Button" to="." method="_on_button_pressed" binds= [true]]
 [connection signal="pressed" from="MarginContainer/Panel/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
@@ -356,3 +366,4 @@ frame_progress = 0.11613806
 [connection signal="color_changed" from="MarginContainer/Panel/VBoxContainer/ColorPickerButton" to="." method="_on_color_picker_button_color_changed"]
 [connection signal="pressed" from="MarginContainer/Panel/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]
+[connection signal="confirmed" from="ConfirmationDialog" to="." method="_on_confirmation_dialog_confirmed"]

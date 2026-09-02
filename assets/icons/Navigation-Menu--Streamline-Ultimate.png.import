@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjgcyc04qrrv"
-path="res://.godot/imported/Crop-Selection--Streamline-Core.png-ec782121ea809b50c830788ade8db66e.ctex"
+uid="uid://boxh5r68k05nt"
+path="res://.godot/imported/Navigation-Menu--Streamline-Ultimate.png-08055966eb200a636baa7606d835fb77.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons/Crop-Selection--Streamline-Core.png"
-dest_files=["res://.godot/imported/Crop-Selection--Streamline-Core.png-ec782121ea809b50c830788ade8db66e.ctex"]
+source_file="res://assets/icons/Navigation-Menu--Streamline-Ultimate.png"
+dest_files=["res://.godot/imported/Navigation-Menu--Streamline-Ultimate.png-08055966eb200a636baa7606d835fb77.ctex"]
 
 [params]
 

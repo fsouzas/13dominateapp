@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bapxoo6ohh47b"
-path="res://.godot/imported/Arrow-Down-2--Streamline-Core.png-07b88b84276068c13aa455b1fe9465ac.ctex"
+uid="uid://cg6elsch4utdi"
+path="res://.godot/imported/Share--Streamline-Ultimate_2.png-b5341852b1b60a340751c953bdbee257.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons/Arrow-Down-2--Streamline-Core.png"
-dest_files=["res://.godot/imported/Arrow-Down-2--Streamline-Core.png-07b88b84276068c13aa455b1fe9465ac.ctex"]
+source_file="res://assets/icons/Share--Streamline-Ultimate_2.png"
+dest_files=["res://.godot/imported/Share--Streamline-Ultimate_2.png-b5341852b1b60a340751c953bdbee257.ctex"]
 
 [params]
 

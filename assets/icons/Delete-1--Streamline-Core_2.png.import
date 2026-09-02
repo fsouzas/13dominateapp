@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vc06chsor3wa"
-path="res://.godot/imported/Wrench--Streamline-Core.png-99a4a7c5910904930d5b8bea3895c241.ctex"
+uid="uid://bggrftoroniqw"
+path="res://.godot/imported/Delete-1--Streamline-Core_2.png-911ee0e51a75fe48cfbafee4b4789789.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons/Wrench--Streamline-Core.png"
-dest_files=["res://.godot/imported/Wrench--Streamline-Core.png-99a4a7c5910904930d5b8bea3895c241.ctex"]
+source_file="res://assets/icons/Delete-1--Streamline-Core_2.png"
+dest_files=["res://.godot/imported/Delete-1--Streamline-Core_2.png-911ee0e51a75fe48cfbafee4b4789789.ctex"]
 
 [params]
 

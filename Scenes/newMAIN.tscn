@@ -278,10 +278,12 @@ text = "usurp_theme_str"
 layout_mode = 2
 
 [node name="CheckButton" type="CheckButton" parent="MarginContainer/VBoxContainer/menu_settings/menu_settings_opt" unique_id=2110893908]
+visible = false
 layout_mode = 2
 text = "custom_theme_str_check"
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="MarginContainer/VBoxContainer/menu_settings/menu_settings_opt" unique_id=419827013]
+visible = false
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme = ExtResource("1_gvsjc")
@@ -289,6 +291,7 @@ theme_override_font_sizes/normal_font_size = 30
 text = "custom_color_str"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/menu_settings/menu_settings_opt" unique_id=2004623711]
+visible = false
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/menu_settings/menu_settings_opt/HBoxContainer" unique_id=258002685]

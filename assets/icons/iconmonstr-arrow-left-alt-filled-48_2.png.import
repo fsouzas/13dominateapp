@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du2gg5bqi8gr8"
-path="res://.godot/imported/Add-1--Streamline-Core.png-463ae03b13338ef3a27a8ecf579f3121.ctex"
+uid="uid://ba16o8asknaro"
+path="res://.godot/imported/iconmonstr-arrow-left-alt-filled-48_2.png-8f12b3e93845cbe66f2df2010e1735b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons/Add-1--Streamline-Core.png"
-dest_files=["res://.godot/imported/Add-1--Streamline-Core.png-463ae03b13338ef3a27a8ecf579f3121.ctex"]
+source_file="res://assets/icons/iconmonstr-arrow-left-alt-filled-48_2.png"
+dest_files=["res://.godot/imported/iconmonstr-arrow-left-alt-filled-48_2.png-8f12b3e93845cbe66f2df2010e1735b8.ctex"]
 
 [params]
 

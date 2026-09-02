@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="13 Dominate APP (ALPHA)"
+config/name="13 Dominate Standings App"
+config/version="0.2.0"
 run/main_scene="uid://tkrlp56mt1ks"
 config/quit_on_go_back=false
 config/features=PackedStringArray("4.7", "Mobile")
@@ -27,6 +28,7 @@ HeroesDb="*uid://dkvluu48wwgkg"
 Background="*uid://dgos13abf4iu0"
 Notification="*uid://dnjkhfci80bi2"
 SignalBus="*uid://mnbuk7jfunfp"
+UpdateManager="*uid://d2xslh7pxlgsg"
 
 [display]
 

@@ -8,7 +8,14 @@ var heroes = {}
 @export var standings_scene: StringName
 
 func _ready() -> void:
+	
 	if HeroesDb.already_loaded == false:
+		%carregando.text = tr("update_checking_str")
+		UpdateManager.update_avaliable.connect(_on_update_avaliable)
+		UpdateManager.update_check_finished.connect(_on_update_check_finished)
+		UpdateManager.update_error.connect(_on_update_error)
+		UpdateManager.check_for_update()
+		
 		HeroesDb.texture_loading_progress.connect(_on_texture_loading_progress)
 		HeroesDb.texture_loading_finished.connect(_on_texture_loading_finished)
 		HeroesDb.preload_hero_textures()
@@ -59,9 +66,30 @@ func _on_menu_bar_item_selected(index: int) -> void:
 func _on_color_picker_button_color_changed(color: Color) -> void:
 	UniversalDict.main_color = color
 
+func _on_update_avaliable(latest_version : String, download_url : String):
+	%ConfirmationDialog.visble = true
+
+func _on_update_check_finished(has_update: bool):
+	if has_update == true:
+		%carregando.text = tr("new_update_avaliable_str")
+		print(tr("new_update_avaliable_str"))
+	if has_update == false:
+		%carregando.text = tr("already_current_version_str")
+		print(tr("already_current_version_str"))
+
+func _on_update_error(error: String):
+	%carregando.text = error
+	print(error)
+
 func _on_texture_loading_progress(current: int, total : int) -> void:
 	%carregando.text = tr("loading_assets_str %d / %d") % [current, total]
 func _on_texture_loading_finished() -> void:
 	%carregando.text = tr("loading_finished")
 	await get_tree().create_timer(0.2).timeout
 	%loading.queue_free()
+
+
+func _on_confirmation_dialog_confirmed() -> void:
+	if UpdateManager.latest_download_url.is_empty():
+		return
+	OS.shell_open(UpdateManager.latest_download_url)
