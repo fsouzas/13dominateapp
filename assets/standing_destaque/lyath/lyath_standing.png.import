@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgc8rnyga4djh"
-path="res://.godot/imported/lyath_standing.png-5f9dbe98b37689cba328219974ed990e.ctex"
+path.s3tc="res://.godot/imported/lyath_standing.png-5f9dbe98b37689cba328219974ed990e.s3tc.ctex"
+path.etc2="res://.godot/imported/lyath_standing.png-5f9dbe98b37689cba328219974ed990e.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/lyath/lyath_standing.png"
-dest_files=["res://.godot/imported/lyath_standing.png-5f9dbe98b37689cba328219974ed990e.ctex"]
+dest_files=["res://.godot/imported/lyath_standing.png-5f9dbe98b37689cba328219974ed990e.s3tc.ctex", "res://.godot/imported/lyath_standing.png-5f9dbe98b37689cba328219974ed990e.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

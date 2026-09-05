@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cag2sdjxx7dm"
-path="res://.godot/imported/teklovossen_front.png-89b3a8f1f96ec71b560fc50637b86d80.ctex"
+path.s3tc="res://.godot/imported/teklovossen_front.png-89b3a8f1f96ec71b560fc50637b86d80.s3tc.ctex"
+path.etc2="res://.godot/imported/teklovossen_front.png-89b3a8f1f96ec71b560fc50637b86d80.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/teklovossen/teklovossen_front.png"
-dest_files=["res://.godot/imported/teklovossen_front.png-89b3a8f1f96ec71b560fc50637b86d80.ctex"]
+dest_files=["res://.godot/imported/teklovossen_front.png-89b3a8f1f96ec71b560fc50637b86d80.s3tc.ctex", "res://.godot/imported/teklovossen_front.png-89b3a8f1f96ec71b560fc50637b86d80.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

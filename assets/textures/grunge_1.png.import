@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7llhey7nmxlx"
-path="res://.godot/imported/grunge_1.png-0c2e9877fc941b9af5f915638bd36015.ctex"
+path.s3tc="res://.godot/imported/grunge_1.png-0c2e9877fc941b9af5f915638bd36015.s3tc.ctex"
+path.etc2="res://.godot/imported/grunge_1.png-0c2e9877fc941b9af5f915638bd36015.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/textures/grunge_1.png"
-dest_files=["res://.godot/imported/grunge_1.png-0c2e9877fc941b9af5f915638bd36015.ctex"]
+dest_files=["res://.godot/imported/grunge_1.png-0c2e9877fc941b9af5f915638bd36015.s3tc.ctex", "res://.godot/imported/grunge_1.png-0c2e9877fc941b9af5f915638bd36015.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

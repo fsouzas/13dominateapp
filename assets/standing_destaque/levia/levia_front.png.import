@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b53nye63bikq6"
-path="res://.godot/imported/levia_front.png-e486cde8936434b73095d823e4d205fc.ctex"
+path.s3tc="res://.godot/imported/levia_front.png-e486cde8936434b73095d823e4d205fc.s3tc.ctex"
+path.etc2="res://.godot/imported/levia_front.png-e486cde8936434b73095d823e4d205fc.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/levia/levia_front.png"
-dest_files=["res://.godot/imported/levia_front.png-e486cde8936434b73095d823e4d205fc.ctex"]
+dest_files=["res://.godot/imported/levia_front.png-e486cde8936434b73095d823e4d205fc.s3tc.ctex", "res://.godot/imported/levia_front.png-e486cde8936434b73095d823e4d205fc.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

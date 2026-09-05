@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3xw2843kas2t"
-path="res://.godot/imported/pleiades_superstar_bg.png-d88784b4ebbbe6479207251b5f5b8f5f.ctex"
+path.s3tc="res://.godot/imported/pleiades_superstar_bg.png-d88784b4ebbbe6479207251b5f5b8f5f.s3tc.ctex"
+path.etc2="res://.godot/imported/pleiades_superstar_bg.png-d88784b4ebbbe6479207251b5f5b8f5f.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/pleiades_superstar/pleiades_superstar_bg.png"
-dest_files=["res://.godot/imported/pleiades_superstar_bg.png-d88784b4ebbbe6479207251b5f5b8f5f.ctex"]
+dest_files=["res://.godot/imported/pleiades_superstar_bg.png-d88784b4ebbbe6479207251b5f5b8f5f.s3tc.ctex", "res://.godot/imported/pleiades_superstar_bg.png-d88784b4ebbbe6479207251b5f5b8f5f.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

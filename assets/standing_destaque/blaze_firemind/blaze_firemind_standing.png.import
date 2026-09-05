@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5n7a2n50hqve"
-path="res://.godot/imported/blaze_firemind_standing.png-ccb8f5f3fa5ca5c2bdf0df232a9746aa.ctex"
+path.s3tc="res://.godot/imported/blaze_firemind_standing.png-ccb8f5f3fa5ca5c2bdf0df232a9746aa.s3tc.ctex"
+path.etc2="res://.godot/imported/blaze_firemind_standing.png-ccb8f5f3fa5ca5c2bdf0df232a9746aa.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/blaze_firemind/blaze_firemind_standing.png"
-dest_files=["res://.godot/imported/blaze_firemind_standing.png-ccb8f5f3fa5ca5c2bdf0df232a9746aa.ctex"]
+dest_files=["res://.godot/imported/blaze_firemind_standing.png-ccb8f5f3fa5ca5c2bdf0df232a9746aa.s3tc.ctex", "res://.godot/imported/blaze_firemind_standing.png-ccb8f5f3fa5ca5c2bdf0df232a9746aa.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

@@ -51,7 +51,7 @@ func _on_menu_settings_btn_pressed() -> void:
 
 		MenuState.STANDINGS:
 			tween.tween_property(%menu_settings, "position", Vector2(0, 470), 0.5)
-			tween.tween_property(%menu_standings, "position", Vector2(0, 791 - 430), 0.5) # Fixei o valor base (285) para evitar bugs de clique duplo
+			tween.tween_property(%menu_standings, "position", Vector2(0, 791 - 430), 0.5)
 			tween.tween_property(%menu_settings_opt, "modulate:a", 1, 0.5)
 			tween.tween_property(%menu_standings_opt, "modulate:a", 0, 0.5)
 			current_state = MenuState.SETTINGS

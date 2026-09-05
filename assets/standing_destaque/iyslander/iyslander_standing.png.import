@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0ad6e8n6b4wq"
-path="res://.godot/imported/iyslander_standing.png-676d8f8ad45edc8acd3c19c9b9789411.ctex"
+path.s3tc="res://.godot/imported/iyslander_standing.png-676d8f8ad45edc8acd3c19c9b9789411.s3tc.ctex"
+path.etc2="res://.godot/imported/iyslander_standing.png-676d8f8ad45edc8acd3c19c9b9789411.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/iyslander/iyslander_standing.png"
-dest_files=["res://.godot/imported/iyslander_standing.png-676d8f8ad45edc8acd3c19c9b9789411.ctex"]
+dest_files=["res://.godot/imported/iyslander_standing.png-676d8f8ad45edc8acd3c19c9b9789411.s3tc.ctex", "res://.godot/imported/iyslander_standing.png-676d8f8ad45edc8acd3c19c9b9789411.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crbqjv1rpmexj"
-path="res://.godot/imported/riptide_front.png-0b9aa09a6d994107a2eef679cfa36fda.ctex"
+path.s3tc="res://.godot/imported/riptide_front.png-0b9aa09a6d994107a2eef679cfa36fda.s3tc.ctex"
+path.etc2="res://.godot/imported/riptide_front.png-0b9aa09a6d994107a2eef679cfa36fda.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/riptide/riptide_front.png"
-dest_files=["res://.godot/imported/riptide_front.png-0b9aa09a6d994107a2eef679cfa36fda.ctex"]
+dest_files=["res://.godot/imported/riptide_front.png-0b9aa09a6d994107a2eef679cfa36fda.s3tc.ctex", "res://.godot/imported/riptide_front.png-0b9aa09a6d994107a2eef679cfa36fda.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

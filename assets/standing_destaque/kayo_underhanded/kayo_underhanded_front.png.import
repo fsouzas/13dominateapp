@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fm7ab0y4ko4b"
-path="res://.godot/imported/kayo_underhanded_front.png-251fd96eaaafc1e913efe1b6cd9bf17a.ctex"
+path.s3tc="res://.godot/imported/kayo_underhanded_front.png-251fd96eaaafc1e913efe1b6cd9bf17a.s3tc.ctex"
+path.etc2="res://.godot/imported/kayo_underhanded_front.png-251fd96eaaafc1e913efe1b6cd9bf17a.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/kayo_underhanded/kayo_underhanded_front.png"
-dest_files=["res://.godot/imported/kayo_underhanded_front.png-251fd96eaaafc1e913efe1b6cd9bf17a.ctex"]
+dest_files=["res://.godot/imported/kayo_underhanded_front.png-251fd96eaaafc1e913efe1b6cd9bf17a.s3tc.ctex", "res://.godot/imported/kayo_underhanded_front.png-251fd96eaaafc1e913efe1b6cd9bf17a.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

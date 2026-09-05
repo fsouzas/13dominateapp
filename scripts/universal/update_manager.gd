@@ -1,6 +1,6 @@
 extends Node
 
-signal update_avaliable(latest_version : String, download_url : String)
+signal update_available(latest_version : String, download_url : String)
 signal update_check_finished(has_update: bool)
 signal update_error(error : String)
 
@@ -48,7 +48,7 @@ func _on_github_request_completed(result: int, response_code: int, headers: Pack
 		print("latest_version_empty")
 		return
 	if is_newer_version(latest_version, current_version):
-		update_avaliable.emit(latest_version,latest_download_url)
+		update_available.emit(latest_version,latest_download_url)
 		update_check_finished.emit(true)
 	else:
 		update_check_finished.emit(false)

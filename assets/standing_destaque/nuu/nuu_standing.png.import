@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dj2br55mlixo6"
-path="res://.godot/imported/nuu_standing.png-4972153bb47ac658cf447ff63450f2dd.ctex"
+path.s3tc="res://.godot/imported/nuu_standing.png-4972153bb47ac658cf447ff63450f2dd.s3tc.ctex"
+path.etc2="res://.godot/imported/nuu_standing.png-4972153bb47ac658cf447ff63450f2dd.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/nuu/nuu_standing.png"
-dest_files=["res://.godot/imported/nuu_standing.png-4972153bb47ac658cf447ff63450f2dd.ctex"]
+dest_files=["res://.godot/imported/nuu_standing.png-4972153bb47ac658cf447ff63450f2dd.s3tc.ctex", "res://.godot/imported/nuu_standing.png-4972153bb47ac658cf447ff63450f2dd.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

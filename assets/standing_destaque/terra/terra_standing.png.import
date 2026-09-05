@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dysmb61mop21v"
-path="res://.godot/imported/terra_standing.png-157336ed4e2c6b541eb7c7ef1ccaa24c.ctex"
+path.s3tc="res://.godot/imported/terra_standing.png-157336ed4e2c6b541eb7c7ef1ccaa24c.s3tc.ctex"
+path.etc2="res://.godot/imported/terra_standing.png-157336ed4e2c6b541eb7c7ef1ccaa24c.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/terra/terra_standing.png"
-dest_files=["res://.godot/imported/terra_standing.png-157336ed4e2c6b541eb7c7ef1ccaa24c.ctex"]
+dest_files=["res://.godot/imported/terra_standing.png-157336ed4e2c6b541eb7c7ef1ccaa24c.s3tc.ctex", "res://.godot/imported/terra_standing.png-157336ed4e2c6b541eb7c7ef1ccaa24c.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

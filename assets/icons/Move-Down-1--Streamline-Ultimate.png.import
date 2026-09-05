@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfex0dcqsdxsy"
-path="res://.godot/imported/Move-Down-1--Streamline-Ultimate.png-f3a45eeea77aa24644b1add96ca446fa.ctex"
+path.s3tc="res://.godot/imported/Move-Down-1--Streamline-Ultimate.png-f3a45eeea77aa24644b1add96ca446fa.s3tc.ctex"
+path.etc2="res://.godot/imported/Move-Down-1--Streamline-Ultimate.png-f3a45eeea77aa24644b1add96ca446fa.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/icons/Move-Down-1--Streamline-Ultimate.png"
-dest_files=["res://.godot/imported/Move-Down-1--Streamline-Ultimate.png-f3a45eeea77aa24644b1add96ca446fa.ctex"]
+dest_files=["res://.godot/imported/Move-Down-1--Streamline-Ultimate.png-f3a45eeea77aa24644b1add96ca446fa.s3tc.ctex", "res://.godot/imported/Move-Down-1--Streamline-Ultimate.png-f3a45eeea77aa24644b1add96ca446fa.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

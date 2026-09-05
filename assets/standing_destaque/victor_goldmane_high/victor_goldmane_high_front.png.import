@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsuc5pwqtc5l0"
-path="res://.godot/imported/victor_goldmane_high_front.png-f0cf442ad1bbcc794df9c323e0295b46.ctex"
+path.s3tc="res://.godot/imported/victor_goldmane_high_front.png-f0cf442ad1bbcc794df9c323e0295b46.s3tc.ctex"
+path.etc2="res://.godot/imported/victor_goldmane_high_front.png-f0cf442ad1bbcc794df9c323e0295b46.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/victor_goldmane_high/victor_goldmane_high_front.png"
-dest_files=["res://.godot/imported/victor_goldmane_high_front.png-f0cf442ad1bbcc794df9c323e0295b46.ctex"]
+dest_files=["res://.godot/imported/victor_goldmane_high_front.png-f0cf442ad1bbcc794df9c323e0295b46.s3tc.ctex", "res://.godot/imported/victor_goldmane_high_front.png-f0cf442ad1bbcc794df9c323e0295b46.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7og0ok3kft4x"
-path="res://.godot/imported/oscilio_front.png-7cb4caf51b7cfe6a41ae7066039ada12.ctex"
+path.s3tc="res://.godot/imported/oscilio_front.png-7cb4caf51b7cfe6a41ae7066039ada12.s3tc.ctex"
+path.etc2="res://.godot/imported/oscilio_front.png-7cb4caf51b7cfe6a41ae7066039ada12.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/oscilio/oscilio_front.png"
-dest_files=["res://.godot/imported/oscilio_front.png-7cb4caf51b7cfe6a41ae7066039ada12.ctex"]
+dest_files=["res://.godot/imported/oscilio_front.png-7cb4caf51b7cfe6a41ae7066039ada12.s3tc.ctex", "res://.godot/imported/oscilio_front.png-7cb4caf51b7cfe6a41ae7066039ada12.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

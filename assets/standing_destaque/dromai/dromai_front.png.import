@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://q6eygxekk6e3"
-path="res://.godot/imported/dromai_front.png-3c7e828ae652a89c8a65f03d633f04c8.ctex"
+path.s3tc="res://.godot/imported/dromai_front.png-3c7e828ae652a89c8a65f03d633f04c8.s3tc.ctex"
+path.etc2="res://.godot/imported/dromai_front.png-3c7e828ae652a89c8a65f03d633f04c8.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/dromai/dromai_front.png"
-dest_files=["res://.godot/imported/dromai_front.png-3c7e828ae652a89c8a65f03d633f04c8.ctex"]
+dest_files=["res://.godot/imported/dromai_front.png-3c7e828ae652a89c8a65f03d633f04c8.s3tc.ctex", "res://.godot/imported/dromai_front.png-3c7e828ae652a89c8a65f03d633f04c8.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

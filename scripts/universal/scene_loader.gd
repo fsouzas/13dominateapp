@@ -4,7 +4,7 @@ signal progress_changed(progress)
 signal load_finished
 
 var loading_screen: PackedScene = null
-var loaded_resorce: PackedScene
+var loaded_resource: PackedScene
 var scene_path: String
 var progress: Array = []
 var use_sub_threads: bool = true
@@ -32,6 +32,6 @@ func _process(delta: float) -> void:
 	progress_changed.emit(progress[0])
 	match load_status:
 		ResourceLoader.THREAD_LOAD_LOADED:
-			loaded_resorce = ResourceLoader.load_threaded_get(scene_path)
-			get_tree().change_scene_to_packed(loaded_resorce)
+			loaded_resource = ResourceLoader.load_threaded_get(scene_path)
+			get_tree().change_scene_to_packed(loaded_resource)
 			load_finished.emit()

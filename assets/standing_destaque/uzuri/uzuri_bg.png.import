@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cthwlg2wtc74s"
-path="res://.godot/imported/uzuri_bg.png-25aed894a16c51db6703e73c95a17807.ctex"
+path.s3tc="res://.godot/imported/uzuri_bg.png-25aed894a16c51db6703e73c95a17807.s3tc.ctex"
+path.etc2="res://.godot/imported/uzuri_bg.png-25aed894a16c51db6703e73c95a17807.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/uzuri/uzuri_bg.png"
-dest_files=["res://.godot/imported/uzuri_bg.png-25aed894a16c51db6703e73c95a17807.ctex"]
+dest_files=["res://.godot/imported/uzuri_bg.png-25aed894a16c51db6703e73c95a17807.s3tc.ctex", "res://.godot/imported/uzuri_bg.png-25aed894a16c51db6703e73c95a17807.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

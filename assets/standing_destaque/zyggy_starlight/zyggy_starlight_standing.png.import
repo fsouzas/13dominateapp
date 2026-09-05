@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://do5fvlsstktgm"
-path="res://.godot/imported/zyggy_starlight_standing.png-bded32c53e68a032c747c3f84e60eae9.ctex"
+path.s3tc="res://.godot/imported/zyggy_starlight_standing.png-bded32c53e68a032c747c3f84e60eae9.s3tc.ctex"
+path.etc2="res://.godot/imported/zyggy_starlight_standing.png-bded32c53e68a032c747c3f84e60eae9.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/zyggy_starlight/zyggy_starlight_standing.png"
-dest_files=["res://.godot/imported/zyggy_starlight_standing.png-bded32c53e68a032c747c3f84e60eae9.ctex"]
+dest_files=["res://.godot/imported/zyggy_starlight_standing.png-bded32c53e68a032c747c3f84e60eae9.s3tc.ctex", "res://.godot/imported/zyggy_starlight_standing.png-bded32c53e68a032c747c3f84e60eae9.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

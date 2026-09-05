@@ -1,0 +1,14 @@
+{
+    "godotTools.editorPath.godot4": "d:\\SteamLibrary\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+    "cSpell.words": [
+        "onready"
+    ],
+    "files.watcherExclude": {
+        "**/.godot/**": true,
+        "**/tmp/**": true
+    },
+    "search.exclude": {
+        "**/.godot/**": true,
+        "**/tmp/**": true
+    }
+}

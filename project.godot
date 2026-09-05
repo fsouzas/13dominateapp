@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="13 Dominate Standings App"
-config/version="0.2.1"
+config/version="0.2.2"
 run/main_scene="uid://tkrlp56mt1ks"
 config/quit_on_go_back=false
 config/features=PackedStringArray("4.7", "Mobile")
 run/low_processor_mode=true
 boot_splash/show_image=false
 boot_splash/use_filter=false
-config/icon="uid://cxb2nsyv525hj"
+config/icon="uid://cch3bjxy44a7t"
 
 [autoload]
 
@@ -41,11 +41,39 @@ window/vsync/vsync_mode=0
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/GMPShared/menu/plugin.cfg", "res://addons/SharePlugin/plugin.cfg", "res://addons/font_auto_size_labels/plugin.cfg", "res://addons/rider-plugin/plugin.cfg")
+enabled=PackedStringArray("res://addons/GMPShared/menu/plugin.cfg", "res://addons/SharePlugin/plugin.cfg", "res://addons/font_auto_size_labels/plugin.cfg")
 
 [gui]
 
 theme/custom_font="uid://biqb8n4fdg554"
+
+[importer_defaults]
+
+texture={
+"compress/channel_pack": 0,
+"compress/hdr_compression": 1,
+"compress/high_quality": false,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"compress/rdo_quality_loss": 0.0,
+"compress/uastc_level": 0,
+"detect_3d/compress_to": 1,
+"mipmaps/generate": false,
+"mipmaps/limit": -1,
+"process/channel_remap/alpha": 3,
+"process/channel_remap/blue": 2,
+"process/channel_remap/green": 1,
+"process/channel_remap/red": 0,
+"process/fix_alpha_border": true,
+"process/hdr_as_srgb": false,
+"process/hdr_clamp_exposure": false,
+"process/normal_map_invert_y": false,
+"process/premult_alpha": false,
+"process/size_limit": 0,
+"roughness/mode": 0,
+"roughness/src_normal": ""
+}
 
 [input_devices]
 

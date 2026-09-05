@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qrx4m4jn26ln"
-path="res://.godot/imported/lexi_front.png-e455c9fe0a176adebe9508ea3f3a6cb5.ctex"
+path.s3tc="res://.godot/imported/lexi_front.png-e455c9fe0a176adebe9508ea3f3a6cb5.s3tc.ctex"
+path.etc2="res://.godot/imported/lexi_front.png-e455c9fe0a176adebe9508ea3f3a6cb5.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/lexi/lexi_front.png"
-dest_files=["res://.godot/imported/lexi_front.png-e455c9fe0a176adebe9508ea3f3a6cb5.ctex"]
+dest_files=["res://.godot/imported/lexi_front.png-e455c9fe0a176adebe9508ea3f3a6cb5.s3tc.ctex", "res://.godot/imported/lexi_front.png-e455c9fe0a176adebe9508ea3f3a6cb5.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

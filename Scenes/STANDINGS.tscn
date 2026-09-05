@@ -30,28 +30,23 @@
 [sub_resource type="Theme" id="Theme_bhunq"]
 TabContainer/styles/panel = SubResource("StyleBoxEmpty_riqys")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_cgyjo"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wo85m"]
 resource_local_to_scene = true
 shader = ExtResource("8_w1nnr")
 shader_parameter/percentage = 1.0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w1nnr"]
-load_path = "res://.godot/imported/Move-Left--Streamline-Core.png-96278bb1f01d2c98da84e7ea7e323111.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t0yhn"]
-load_path = "res://.godot/imported/Share-Link--Streamline-Core.png-8c17efd43992e07aaf9341a903ca9db9.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cgyjo"]
-load_path = "res://.godot/imported/Arrow-Down-2--Streamline-Core.png-07b88b84276068c13aa455b1fe9465ac.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nrb24"]
-load_path = "res://.godot/imported/Move-Right--Streamline-Core.png-8caaa0d192ad6cdf89b48d47ebe3c66d.ctex"
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ogjdc"]
 blend_mode = 2
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e4oeb"]
-load_path = "res://.godot/imported/Visible--Streamline-Core.png-986d48b21f090bb13952688813cc9410.ctex"
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e4oeb"]
 bg_color = Color(0.7411765, 0, 0, 1)
@@ -77,7 +72,7 @@ corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 
-[node name="Standings" type="Control" unique_id=454891127 node_paths=PackedStringArray("share", "mode_name", "store_name", "heroi_destaque1_front", "heroi_destaque1_bg", "heroi_destaque1_nome", "heroi_destaque_1_vitoria", "heroi_destaque2_front", "heroi_destaque2_bg", "heroi_destaque2_nome", "heroi_destaque_2_vitoria", "heroi_destaque3_front", "heroi_destaque3_bg", "heroi_destaque3_nome", "heroi_destaque_3_vitoria", "standing_less", "standing_results_1", "standings_extra", "tab", "page_numb", "fileDialog", "menu", "btn_home", "btn_salvar", "btn_compartilhar", "btn_hamburguer", "btn_voltar", "btn_proximo")]
+[node name="Standings" type="Control" unique_id=454891127 node_paths=PackedStringArray("share", "mode_name", "store_name", "heroi_1_front", "heroi_1_bg", "heroi_1_nome", "heroi_1_vitorias", "heroi_2_front", "heroi_2_bg", "heroi_2_nome", "heroi_2_vitorias", "heroi_3_front", "heroi_3_bg", "heroi_3_nome", "heroi_3_vitorias", "standing_less", "standing_results_1", "standings_extra", "tab", "page_numb", "fileDialog", "menu", "btn_home", "btn_salvar", "btn_compartilhar", "btn_hamburguer", "btn_voltar", "btn_proximo")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -87,20 +82,20 @@ grow_vertical = 2
 script = ExtResource("1_nvwqc")
 share = NodePath("Share")
 home_scene = &"res://scenes/MAIN.tscn"
-mode_name = NodePath("StandingTitle/VBoxContainer/mode_name")
+mode_name = NodePath("StandingTitle/VBoxContainer/AutoSizeRichTextLabel")
 store_name = NodePath("StandingTitle/VBoxContainer/store_name")
-heroi_destaque1_front = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/Heroi/Heroi_FRONT")
-heroi_destaque1_bg = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/Heroi/Heroi_BG")
-heroi_destaque1_nome = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/VBoxContainer/Nome")
-heroi_destaque_1_vitoria = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/VBoxContainer/HBoxContainer/Vitorias")
-heroi_destaque2_front = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/Heroi/Heroi_FRONT")
-heroi_destaque2_bg = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/Heroi/Heroi_BG")
-heroi_destaque2_nome = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/VBoxContainer/Nome")
-heroi_destaque_2_vitoria = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/VBoxContainer/HBoxContainer/Vitorias")
-heroi_destaque3_front = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque3/Heroi/Heroi_FRONT")
-heroi_destaque3_bg = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque3/Heroi/Heroi_BG")
-heroi_destaque3_nome = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque3/VBoxContainer/Nome")
-heroi_destaque_3_vitoria = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque3/VBoxContainer/HBoxContainer/Vitorias")
+heroi_1_front = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/Heroi/Heroi_FRONT")
+heroi_1_bg = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/Heroi/Heroi_BG")
+heroi_1_nome = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/VBoxContainer/Nome")
+heroi_1_vitorias = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/VBoxContainer/HBoxContainer/Vitorias")
+heroi_2_front = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/Heroi/Heroi_FRONT")
+heroi_2_bg = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/Heroi/Heroi_BG")
+heroi_2_nome = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/VBoxContainer/Nome")
+heroi_2_vitorias = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/VBoxContainer/HBoxContainer/Vitorias")
+heroi_3_front = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque3/Heroi/Heroi_FRONT")
+heroi_3_bg = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque3/Heroi/Heroi_BG")
+heroi_3_nome = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque3/VBoxContainer/Nome")
+heroi_3_vitorias = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque3/VBoxContainer/HBoxContainer/Vitorias")
 standing_less = NodePath("TabContainer/Standings_Result_1/standings_results/Standing")
 standing_results_1 = NodePath("TabContainer/Standings_Result_1/standings_results")
 standings_extra = NodePath("Standings_extra")
@@ -126,7 +121,6 @@ text = "SILVER AGE"
 _max_size = 59
 _min_size = 40
 _current_font_size = 59
-_size_just_modified_by_autosizer = true
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1831365952]
 visible = false
@@ -223,7 +217,7 @@ offset_transform_enabled = true
 offset_transform_position = Vector2(-6, -32)
 
 [node name="hero" parent="TabContainer/Standings_Result_1/standings_results/Standing/Container/Panel" parent_id_path=PackedInt32Array(620729908, 1730896966) index="1" unique_id=1406535703]
-material = SubResource("ShaderMaterial_cgyjo")
+material = SubResource("ShaderMaterial_wo85m")
 
 [node name="dropped" parent="TabContainer/Standings_Result_1/standings_results/Standing" index="2" unique_id=170816315]
 visible = false
@@ -416,7 +410,7 @@ layout_mode = 2
 theme_override_constants/separation = -40
 alignment = 2
 
-[node name="btn_home" type="TextureButton" parent="Menu/MarginContainer/hamburguer_menu" unique_id=906343351]
+[node name="btn_home" type="TextureButton" parent="Menu/MarginContainer/hamburguer_menu" unique_id=906343351 groups=["buttons"]]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 offset_transform_enabled = true
@@ -425,21 +419,21 @@ texture_normal = ExtResource("14_wo85m")
 texture_pressed = ExtResource("16_t0yhn")
 stretch_mode = 3
 
-[node name="btn_salvar" type="TextureButton" parent="Menu/MarginContainer/hamburguer_menu" unique_id=1755248600]
+[node name="btn_salvar" type="TextureButton" parent="Menu/MarginContainer/hamburguer_menu" unique_id=1755248600 groups=["buttons"]]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 offset_transform_enabled = true
 texture_normal = ExtResource("15_rbw73")
 texture_pressed = ExtResource("18_f65ix")
 
-[node name="btn_compartilhar" type="TextureButton" parent="Menu/MarginContainer/hamburguer_menu" unique_id=748146565]
+[node name="btn_compartilhar" type="TextureButton" parent="Menu/MarginContainer/hamburguer_menu" unique_id=748146565 groups=["buttons"]]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 offset_transform_enabled = true
 texture_normal = ExtResource("17_0n6hl")
 texture_pressed = ExtResource("19_cgyjo")
 
-[node name="btn_hamburguer" type="TextureButton" parent="Menu/MarginContainer/hamburguer_menu" unique_id=2094533110]
+[node name="btn_hamburguer" type="TextureButton" parent="Menu/MarginContainer/hamburguer_menu" unique_id=2094533110 groups=["buttons"]]
 layout_mode = 2
 offset_transform_enabled = true
 texture_normal = ExtResource("19_ajeld")
@@ -460,13 +454,13 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 231
 
-[node name="btn_voltar" type="TextureButton" parent="Menu/HBoxContainer" unique_id=870394120]
+[node name="btn_voltar" type="TextureButton" parent="Menu/HBoxContainer" unique_id=870394120 groups=["buttons"]]
 layout_mode = 2
 offset_transform_enabled = true
 texture_normal = ExtResource("21_urcee")
 texture_pressed = ExtResource("22_qhd8p")
 
-[node name="btn_proximo" type="TextureButton" parent="Menu/HBoxContainer" unique_id=813650390]
+[node name="btn_proximo" type="TextureButton" parent="Menu/HBoxContainer" unique_id=813650390 groups=["buttons"]]
 layout_mode = 2
 offset_transform_enabled = true
 texture_normal = ExtResource("23_ws116")

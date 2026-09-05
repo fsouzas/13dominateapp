@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxvp0ubr507j"
-path="res://.godot/imported/iconmonstr-arrow-right-alt-filled-48_2.png-834f6eb93551b479f981a263c8f2ca5a.ctex"
+path.s3tc="res://.godot/imported/iconmonstr-arrow-right-alt-filled-48_2.png-834f6eb93551b479f981a263c8f2ca5a.s3tc.ctex"
+path.etc2="res://.godot/imported/iconmonstr-arrow-right-alt-filled-48_2.png-834f6eb93551b479f981a263c8f2ca5a.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/icons/iconmonstr-arrow-right-alt-filled-48_2.png"
-dest_files=["res://.godot/imported/iconmonstr-arrow-right-alt-filled-48_2.png-834f6eb93551b479f981a263c8f2ca5a.ctex"]
+dest_files=["res://.godot/imported/iconmonstr-arrow-right-alt-filled-48_2.png-834f6eb93551b479f981a263c8f2ca5a.s3tc.ctex", "res://.godot/imported/iconmonstr-arrow-right-alt-filled-48_2.png-834f6eb93551b479f981a263c8f2ca5a.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

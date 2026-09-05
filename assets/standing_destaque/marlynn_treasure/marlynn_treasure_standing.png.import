@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kgr53fftqxyg"
-path="res://.godot/imported/marlynn_treasure_standing.png-da905a06e97b6f37e1b24dc3832dbbbf.ctex"
+path.s3tc="res://.godot/imported/marlynn_treasure_standing.png-da905a06e97b6f37e1b24dc3832dbbbf.s3tc.ctex"
+path.etc2="res://.godot/imported/marlynn_treasure_standing.png-da905a06e97b6f37e1b24dc3832dbbbf.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/marlynn_treasure/marlynn_treasure_standing.png"
-dest_files=["res://.godot/imported/marlynn_treasure_standing.png-da905a06e97b6f37e1b24dc3832dbbbf.ctex"]
+dest_files=["res://.godot/imported/marlynn_treasure_standing.png-da905a06e97b6f37e1b24dc3832dbbbf.s3tc.ctex", "res://.godot/imported/marlynn_treasure_standing.png-da905a06e97b6f37e1b24dc3832dbbbf.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

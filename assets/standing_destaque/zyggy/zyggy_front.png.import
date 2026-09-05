@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nn73wk01wwfk"
-path="res://.godot/imported/zyggy_front.png-20c62d896e98fc3039552ab6cbd77acf.ctex"
+path.s3tc="res://.godot/imported/zyggy_front.png-20c62d896e98fc3039552ab6cbd77acf.s3tc.ctex"
+path.etc2="res://.godot/imported/zyggy_front.png-20c62d896e98fc3039552ab6cbd77acf.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/zyggy/zyggy_front.png"
-dest_files=["res://.godot/imported/zyggy_front.png-20c62d896e98fc3039552ab6cbd77acf.ctex"]
+dest_files=["res://.godot/imported/zyggy_front.png-20c62d896e98fc3039552ab6cbd77acf.s3tc.ctex", "res://.godot/imported/zyggy_front.png-20c62d896e98fc3039552ab6cbd77acf.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

@@ -9,9 +9,9 @@ signal texture_loading_progress(current: int, total: int)
 signal texture_loading_finished
 
 func _ready() -> void:
-	young_heroes = load_jason_file(young_heroes_path)
+	young_heroes = load_json_file(young_heroes_path)
 
-func load_jason_file(filePath : String):
+func load_json_file(filePath : String):
 	if FileAccess.file_exists(filePath):
 		var dataFile = FileAccess.open(filePath, FileAccess.READ)
 		var parsedResult = JSON.parse_string(dataFile.get_as_text())
@@ -127,3 +127,15 @@ func _store_texture(
 
 func get_hero_textures(hero_name: String) -> Dictionary:
 	return hero_textures.get(hero_name, {})
+
+func get_heroi_front(heroi_nome: String) -> Texture2D:
+	if heroi_nome == "":
+		return HeroesDb.hero_textures["unknown"]["front"]
+	else:
+		return HeroesDb.hero_textures[heroi_nome]["front"]
+
+func get_heroi_bg(heroi_nome: String) -> Texture2D:
+	if heroi_nome == "":
+		return HeroesDb.hero_textures["unknown"]["background"]
+	else:
+		return HeroesDb.hero_textures[heroi_nome]["background"]

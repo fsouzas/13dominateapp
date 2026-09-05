@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://h5vx4lkc1mr5"
-path="res://.godot/imported/oscilio_constella_standing.png-9f9f6f45a9423def198478b3a4feadd3.ctex"
+path.s3tc="res://.godot/imported/oscilio_constella_standing.png-9f9f6f45a9423def198478b3a4feadd3.s3tc.ctex"
+path.etc2="res://.godot/imported/oscilio_constella_standing.png-9f9f6f45a9423def198478b3a4feadd3.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/oscilio_constella/oscilio_constella_standing.png"
-dest_files=["res://.godot/imported/oscilio_constella_standing.png-9f9f6f45a9423def198478b3a4feadd3.ctex"]
+dest_files=["res://.godot/imported/oscilio_constella_standing.png-9f9f6f45a9423def198478b3a4feadd3.s3tc.ctex", "res://.godot/imported/oscilio_constella_standing.png-9f9f6f45a9423def198478b3a4feadd3.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

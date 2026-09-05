@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btx5g578o7r4j"
-path="res://.godot/imported/scurv_front.png-a27203b922098e5be1a12a43cd9b0b3a.ctex"
+path.s3tc="res://.godot/imported/scurv_front.png-a27203b922098e5be1a12a43cd9b0b3a.s3tc.ctex"
+path.etc2="res://.godot/imported/scurv_front.png-a27203b922098e5be1a12a43cd9b0b3a.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/scurv/scurv_front.png"
-dest_files=["res://.godot/imported/scurv_front.png-a27203b922098e5be1a12a43cd9b0b3a.ctex"]
+dest_files=["res://.godot/imported/scurv_front.png-a27203b922098e5be1a12a43cd9b0b3a.s3tc.ctex", "res://.godot/imported/scurv_front.png-a27203b922098e5be1a12a43cd9b0b3a.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

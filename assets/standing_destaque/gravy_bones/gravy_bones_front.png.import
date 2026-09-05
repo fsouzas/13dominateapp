@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btp14lf8xtp2d"
-path="res://.godot/imported/gravy_bones_front.png-ec7b85dc745db006173f00a971f3a6dd.ctex"
+path.s3tc="res://.godot/imported/gravy_bones_front.png-ec7b85dc745db006173f00a971f3a6dd.s3tc.ctex"
+path.etc2="res://.godot/imported/gravy_bones_front.png-ec7b85dc745db006173f00a971f3a6dd.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/gravy_bones/gravy_bones_front.png"
-dest_files=["res://.godot/imported/gravy_bones_front.png-ec7b85dc745db006173f00a971f3a6dd.ctex"]
+dest_files=["res://.godot/imported/gravy_bones_front.png-ec7b85dc745db006173f00a971f3a6dd.s3tc.ctex", "res://.godot/imported/gravy_bones_front.png-ec7b85dc745db006173f00a971f3a6dd.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

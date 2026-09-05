@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://oj3ux0k0m2nw"
-path="res://.godot/imported/nc_logo_whitew4Km5-1-720x295.png-9b3b11958fc84ab68ada30a9804e56d3.ctex"
+path.s3tc="res://.godot/imported/nc_logo_whitew4Km5-1-720x295.png-9b3b11958fc84ab68ada30a9804e56d3.s3tc.ctex"
+path.etc2="res://.godot/imported/nc_logo_whitew4Km5-1-720x295.png-9b3b11958fc84ab68ada30a9804e56d3.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/official_logos/nc_logo_whitew4Km5-1-720x295.png"
-dest_files=["res://.godot/imported/nc_logo_whitew4Km5-1-720x295.png-9b3b11958fc84ab68ada30a9804e56d3.ctex"]
+dest_files=["res://.godot/imported/nc_logo_whitew4Km5-1-720x295.png-9b3b11958fc84ab68ada30a9804e56d3.s3tc.ctex", "res://.godot/imported/nc_logo_whitew4Km5-1-720x295.png-9b3b11958fc84ab68ada30a9804e56d3.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

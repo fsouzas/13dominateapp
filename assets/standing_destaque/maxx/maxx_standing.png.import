@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8vpvrijwmfr4"
-path="res://.godot/imported/maxx_standing.png-31713f6b62eb48361143e9443c8404e3.ctex"
+path.s3tc="res://.godot/imported/maxx_standing.png-31713f6b62eb48361143e9443c8404e3.s3tc.ctex"
+path.etc2="res://.godot/imported/maxx_standing.png-31713f6b62eb48361143e9443c8404e3.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/maxx/maxx_standing.png"
-dest_files=["res://.godot/imported/maxx_standing.png-31713f6b62eb48361143e9443c8404e3.ctex"]
+dest_files=["res://.godot/imported/maxx_standing.png-31713f6b62eb48361143e9443c8404e3.s3tc.ctex", "res://.godot/imported/maxx_standing.png-31713f6b62eb48361143e9443c8404e3.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

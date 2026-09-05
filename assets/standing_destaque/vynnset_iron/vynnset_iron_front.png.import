@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2uqj5dd21gnd"
-path="res://.godot/imported/vynnset_iron_front.png-b6de5a5b0d0be77bb3e70f02b0585d17.ctex"
+path.s3tc="res://.godot/imported/vynnset_iron_front.png-b6de5a5b0d0be77bb3e70f02b0585d17.s3tc.ctex"
+path.etc2="res://.godot/imported/vynnset_iron_front.png-b6de5a5b0d0be77bb3e70f02b0585d17.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/vynnset_iron/vynnset_iron_front.png"
-dest_files=["res://.godot/imported/vynnset_iron_front.png-b6de5a5b0d0be77bb3e70f02b0585d17.ctex"]
+dest_files=["res://.godot/imported/vynnset_iron_front.png-b6de5a5b0d0be77bb3e70f02b0585d17.s3tc.ctex", "res://.godot/imported/vynnset_iron_front.png-b6de5a5b0d0be77bb3e70f02b0585d17.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

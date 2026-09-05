@@ -1,6 +1,8 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
-/addons/rider-plugin/
-.idea/
 /csv_test_files/
+/ios/
+.DS_Store
+Thumbs.db
+Desktop.ini

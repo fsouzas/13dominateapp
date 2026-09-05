@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvji20mpvqvqh"
-path="res://.godot/imported/ocilio_scion_front.png-472e13edcb1179c03fa142a839b95119.ctex"
+path.s3tc="res://.godot/imported/ocilio_scion_front.png-472e13edcb1179c03fa142a839b95119.s3tc.ctex"
+path.etc2="res://.godot/imported/ocilio_scion_front.png-472e13edcb1179c03fa142a839b95119.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/oscilio_scion/ocilio_scion_front.png"
-dest_files=["res://.godot/imported/ocilio_scion_front.png-472e13edcb1179c03fa142a839b95119.ctex"]
+dest_files=["res://.godot/imported/ocilio_scion_front.png-472e13edcb1179c03fa142a839b95119.s3tc.ctex", "res://.godot/imported/ocilio_scion_front.png-472e13edcb1179c03fa142a839b95119.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

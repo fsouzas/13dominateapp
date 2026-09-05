@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bimh6xsikwraa"
-path="res://.godot/imported/tuffnut_front.png-29a281af0a6a9fdcf24de1511705f94e.ctex"
+path.s3tc="res://.godot/imported/tuffnut_front.png-29a281af0a6a9fdcf24de1511705f94e.s3tc.ctex"
+path.etc2="res://.godot/imported/tuffnut_front.png-29a281af0a6a9fdcf24de1511705f94e.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/tuffnut/tuffnut_front.png"
-dest_files=["res://.godot/imported/tuffnut_front.png-29a281af0a6a9fdcf24de1511705f94e.ctex"]
+dest_files=["res://.godot/imported/tuffnut_front.png-29a281af0a6a9fdcf24de1511705f94e.s3tc.ctex", "res://.godot/imported/tuffnut_front.png-29a281af0a6a9fdcf24de1511705f94e.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

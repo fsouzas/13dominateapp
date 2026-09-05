@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3aj3xgf3u8i0"
-path="res://.godot/imported/datadoll_front.png-e759a45309e59da22eb50db93eec1a68.ctex"
+path.s3tc="res://.godot/imported/datadoll_front.png-e759a45309e59da22eb50db93eec1a68.s3tc.ctex"
+path.etc2="res://.godot/imported/datadoll_front.png-e759a45309e59da22eb50db93eec1a68.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/datadoll/datadoll_front.png"
-dest_files=["res://.godot/imported/datadoll_front.png-e759a45309e59da22eb50db93eec1a68.ctex"]
+dest_files=["res://.godot/imported/datadoll_front.png-e759a45309e59da22eb50db93eec1a68.s3tc.ctex", "res://.godot/imported/datadoll_front.png-e759a45309e59da22eb50db93eec1a68.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

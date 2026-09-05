@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c08eqa8xxagwy"
-path="res://.godot/imported/puffin_hightail_standing.png-6cc0504cd8a307203b48a4e85c166d48.ctex"
+path.s3tc="res://.godot/imported/puffin_hightail_standing.png-6cc0504cd8a307203b48a4e85c166d48.s3tc.ctex"
+path.etc2="res://.godot/imported/puffin_hightail_standing.png-6cc0504cd8a307203b48a4e85c166d48.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/puffin_hightail/puffin_hightail_standing.png"
-dest_files=["res://.godot/imported/puffin_hightail_standing.png-6cc0504cd8a307203b48a4e85c166d48.ctex"]
+dest_files=["res://.godot/imported/puffin_hightail_standing.png-6cc0504cd8a307203b48a4e85c166d48.s3tc.ctex", "res://.godot/imported/puffin_hightail_standing.png-6cc0504cd8a307203b48a4e85c166d48.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

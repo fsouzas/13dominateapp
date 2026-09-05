@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvsh3q8r1e2al"
-path="res://.godot/imported/briar_bg.png-835d516b6a0c5899e375d47f55bb2c8c.ctex"
+path.s3tc="res://.godot/imported/briar_bg.png-835d516b6a0c5899e375d47f55bb2c8c.s3tc.ctex"
+path.etc2="res://.godot/imported/briar_bg.png-835d516b6a0c5899e375d47f55bb2c8c.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/briar/briar_bg.png"
-dest_files=["res://.godot/imported/briar_bg.png-835d516b6a0c5899e375d47f55bb2c8c.ctex"]
+dest_files=["res://.godot/imported/briar_bg.png-835d516b6a0c5899e375d47f55bb2c8c.s3tc.ctex", "res://.godot/imported/briar_bg.png-835d516b6a0c5899e375d47f55bb2c8c.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

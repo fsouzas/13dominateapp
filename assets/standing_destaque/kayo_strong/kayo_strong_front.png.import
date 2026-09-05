@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://usft0o2op48v"
-path="res://.godot/imported/kayo_strong_front.png-9ca18a51ce4330d991612cef6acf07e0.ctex"
+path.s3tc="res://.godot/imported/kayo_strong_front.png-9ca18a51ce4330d991612cef6acf07e0.s3tc.ctex"
+path.etc2="res://.godot/imported/kayo_strong_front.png-9ca18a51ce4330d991612cef6acf07e0.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/kayo_strong/kayo_strong_front.png"
-dest_files=["res://.godot/imported/kayo_strong_front.png-9ca18a51ce4330d991612cef6acf07e0.ctex"]
+dest_files=["res://.godot/imported/kayo_strong_front.png-9ca18a51ce4330d991612cef6acf07e0.s3tc.ctex", "res://.godot/imported/kayo_strong_front.png-9ca18a51ce4330d991612cef6acf07e0.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjivlr7fdpjjc"
-path="res://.godot/imported/uzuri_switchblade_front.png-c11b81ec4ad5cbfaabf1538ddf71d175.ctex"
+path.s3tc="res://.godot/imported/uzuri_switchblade_front.png-c11b81ec4ad5cbfaabf1538ddf71d175.s3tc.ctex"
+path.etc2="res://.godot/imported/uzuri_switchblade_front.png-c11b81ec4ad5cbfaabf1538ddf71d175.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/uzuri_switchblade/uzuri_switchblade_front.png"
-dest_files=["res://.godot/imported/uzuri_switchblade_front.png-c11b81ec4ad5cbfaabf1538ddf71d175.ctex"]
+dest_files=["res://.godot/imported/uzuri_switchblade_front.png-c11b81ec4ad5cbfaabf1538ddf71d175.s3tc.ctex", "res://.godot/imported/uzuri_switchblade_front.png-c11b81ec4ad5cbfaabf1538ddf71d175.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

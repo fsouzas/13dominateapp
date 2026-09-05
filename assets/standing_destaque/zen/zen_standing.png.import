@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ca8wx8bfwk8cy"
-path="res://.godot/imported/zen_standing.png-6d6819d39e7d76d36c9f1ad4dfb3f41d.ctex"
+path.s3tc="res://.godot/imported/zen_standing.png-6d6819d39e7d76d36c9f1ad4dfb3f41d.s3tc.ctex"
+path.etc2="res://.godot/imported/zen_standing.png-6d6819d39e7d76d36c9f1ad4dfb3f41d.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/zen/zen_standing.png"
-dest_files=["res://.godot/imported/zen_standing.png-6d6819d39e7d76d36c9f1ad4dfb3f41d.ctex"]
+dest_files=["res://.godot/imported/zen_standing.png-6d6819d39e7d76d36c9f1ad4dfb3f41d.s3tc.ctex", "res://.godot/imported/zen_standing.png-6d6819d39e7d76d36c9f1ad4dfb3f41d.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

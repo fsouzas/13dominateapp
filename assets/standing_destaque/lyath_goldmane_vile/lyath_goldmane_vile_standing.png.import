@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nhfw7o3ona08"
-path="res://.godot/imported/lyath_goldmane_vile_standing.png-3c45a9db42f2b14b11745b91fdd70353.ctex"
+path.s3tc="res://.godot/imported/lyath_goldmane_vile_standing.png-3c45a9db42f2b14b11745b91fdd70353.s3tc.ctex"
+path.etc2="res://.godot/imported/lyath_goldmane_vile_standing.png-3c45a9db42f2b14b11745b91fdd70353.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/lyath_goldmane_vile/lyath_goldmane_vile_standing.png"
-dest_files=["res://.godot/imported/lyath_goldmane_vile_standing.png-3c45a9db42f2b14b11745b91fdd70353.ctex"]
+dest_files=["res://.godot/imported/lyath_goldmane_vile_standing.png-3c45a9db42f2b14b11745b91fdd70353.s3tc.ctex", "res://.godot/imported/lyath_goldmane_vile_standing.png-3c45a9db42f2b14b11745b91fdd70353.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

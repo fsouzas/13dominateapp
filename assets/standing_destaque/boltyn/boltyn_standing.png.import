@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfar0pp2q8pa7"
-path="res://.godot/imported/boltyn_standing.png-741ee67a468769df08e8fb8dad691969.ctex"
+path.s3tc="res://.godot/imported/boltyn_standing.png-741ee67a468769df08e8fb8dad691969.s3tc.ctex"
+path.etc2="res://.godot/imported/boltyn_standing.png-741ee67a468769df08e8fb8dad691969.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/boltyn/boltyn_standing.png"
-dest_files=["res://.godot/imported/boltyn_standing.png-741ee67a468769df08e8fb8dad691969.ctex"]
+dest_files=["res://.godot/imported/boltyn_standing.png-741ee67a468769df08e8fb8dad691969.s3tc.ctex", "res://.godot/imported/boltyn_standing.png-741ee67a468769df08e8fb8dad691969.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

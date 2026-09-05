@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7vci2b8kk3g"
-path="res://.godot/imported/aurora_standing.png-ee55d79f9e6ed0a1eb027f670788b937.ctex"
+path.s3tc="res://.godot/imported/aurora_standing.png-ee55d79f9e6ed0a1eb027f670788b937.s3tc.ctex"
+path.etc2="res://.godot/imported/aurora_standing.png-ee55d79f9e6ed0a1eb027f670788b937.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/aurora/aurora_standing.png"
-dest_files=["res://.godot/imported/aurora_standing.png-ee55d79f9e6ed0a1eb027f670788b937.ctex"]
+dest_files=["res://.godot/imported/aurora_standing.png-ee55d79f9e6ed0a1eb027f670788b937.s3tc.ctex", "res://.godot/imported/aurora_standing.png-ee55d79f9e6ed0a1eb027f670788b937.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

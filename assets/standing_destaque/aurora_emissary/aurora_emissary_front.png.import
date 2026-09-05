@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1vhkn8g7gt80"
-path="res://.godot/imported/aurora_emissary_front.png-49467c90b154c61d3778f49705b454b3.ctex"
+path.s3tc="res://.godot/imported/aurora_emissary_front.png-49467c90b154c61d3778f49705b454b3.s3tc.ctex"
+path.etc2="res://.godot/imported/aurora_emissary_front.png-49467c90b154c61d3778f49705b454b3.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/aurora_emissary/aurora_emissary_front.png"
-dest_files=["res://.godot/imported/aurora_emissary_front.png-49467c90b154c61d3778f49705b454b3.ctex"]
+dest_files=["res://.godot/imported/aurora_emissary_front.png-49467c90b154c61d3778f49705b454b3.s3tc.ctex", "res://.godot/imported/aurora_emissary_front.png-49467c90b154c61d3778f49705b454b3.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1ieuvwa6ndf4"
-path="res://.godot/imported/dash_database_bg.png-ca9e1de487e61fb06ae1f590d0d8562a.ctex"
+path.s3tc="res://.godot/imported/dash_database_bg.png-ca9e1de487e61fb06ae1f590d0d8562a.s3tc.ctex"
+path.etc2="res://.godot/imported/dash_database_bg.png-ca9e1de487e61fb06ae1f590d0d8562a.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/dash_database/dash_database_bg.png"
-dest_files=["res://.godot/imported/dash_database_bg.png-ca9e1de487e61fb06ae1f590d0d8562a.ctex"]
+dest_files=["res://.godot/imported/dash_database_bg.png-ca9e1de487e61fb06ae1f590d0d8562a.s3tc.ctex", "res://.godot/imported/dash_database_bg.png-ca9e1de487e61fb06ae1f590d0d8562a.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bflga3wykbqqj"
-path="res://.godot/imported/arakni_web_standing.png-652d62d3260d24ca1de9daade2b4782f.ctex"
+path.s3tc="res://.godot/imported/arakni_web_standing.png-652d62d3260d24ca1de9daade2b4782f.s3tc.ctex"
+path.etc2="res://.godot/imported/arakni_web_standing.png-652d62d3260d24ca1de9daade2b4782f.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/arakni_web/arakni_web_standing.png"
-dest_files=["res://.godot/imported/arakni_web_standing.png-652d62d3260d24ca1de9daade2b4782f.ctex"]
+dest_files=["res://.godot/imported/arakni_web_standing.png-652d62d3260d24ca1de9daade2b4782f.s3tc.ctex", "res://.godot/imported/arakni_web_standing.png-652d62d3260d24ca1de9daade2b4782f.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

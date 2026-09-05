@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4v05ino2bk6g"
-path="res://.godot/imported/kassai_golden_standing.png-bf656966146a30b37bfd51b5027d39f5.ctex"
+path.s3tc="res://.godot/imported/kassai_golden_standing.png-bf656966146a30b37bfd51b5027d39f5.s3tc.ctex"
+path.etc2="res://.godot/imported/kassai_golden_standing.png-bf656966146a30b37bfd51b5027d39f5.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/standing_destaque/kassai_golden/kassai_golden_standing.png"
-dest_files=["res://.godot/imported/kassai_golden_standing.png-bf656966146a30b37bfd51b5027d39f5.ctex"]
+dest_files=["res://.godot/imported/kassai_golden_standing.png-bf656966146a30b37bfd51b5027d39f5.s3tc.ctex", "res://.godot/imported/kassai_golden_standing.png-bf656966146a30b37bfd51b5027d39f5.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
