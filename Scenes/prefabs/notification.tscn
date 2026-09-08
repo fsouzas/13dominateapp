@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dnjkhfci80bi2"]
 
 [ext_resource type="FontFile" uid="uid://yb2srsk8r8c1" path="res://fonts/FuturaPT-Heavy.ttf" id="1_1s8q7"]
-[ext_resource type="Script" uid="uid://b25oh4xnw7knd" path="res://scripts/notification.gd" id="1_epuaa"]
+[ext_resource type="Script" uid="uid://b25oh4xnw7knd" path="res://scripts/universal/notification.gd" id="1_epuaa"]
 [ext_resource type="Script" uid="uid://co0lo02vnu10n" path="res://addons/font_auto_size_labels/auto_size_rich_text_label.gd" id="2_epuaa"]
 [ext_resource type="Texture2D" uid="uid://dachtvc82g382" path="res://assets/icons/Warning-Triangle--Streamline-Core.png" id="3_i06qn"]
 

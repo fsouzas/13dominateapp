@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://okffs7rdeoc1"]
 
-[ext_resource type="Script" uid="uid://bbjwb3xfv8enf" path="res://scripts/_standings.gd" id="1_nvwqc"]
+[ext_resource type="Script" uid="uid://bbjwb3xfv8enf" path="res://scripts/Standings.gd" id="1_nvwqc"]
 [ext_resource type="PackedScene" uid="uid://71i1668e0cpj" path="res://scenes/prefabs/pref_destaque.tscn" id="2_gmp82"]
 [ext_resource type="PackedScene" uid="uid://bk1gvfs4kvgdy" path="res://scenes/prefabs/standing_title.tscn" id="4_4t0is"]
 [ext_resource type="Texture2D" uid="uid://byqd64yyvqm3c" path="res://assets/official_logos/armory_events_white-1.png" id="4_nrb24"]
@@ -72,7 +72,7 @@ corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 
-[node name="Standings" type="Control" unique_id=454891127 node_paths=PackedStringArray("share", "mode_name", "store_name", "heroi_1_front", "heroi_1_bg", "heroi_1_nome", "heroi_1_vitorias", "heroi_2_front", "heroi_2_bg", "heroi_2_nome", "heroi_2_vitorias", "heroi_3_front", "heroi_3_bg", "heroi_3_nome", "heroi_3_vitorias", "standing_less", "standing_results_1", "standings_extra", "tab", "page_numb", "fileDialog", "menu", "btn_home", "btn_salvar", "btn_compartilhar", "btn_hamburguer", "btn_voltar", "btn_proximo")]
+[node name="Standings" type="Control" unique_id=454891127 node_paths=PackedStringArray("share", "mode_name", "store_name", "heroi_1_front", "heroi_1_bg", "heroi_1_nome", "heroi_1_vitorias", "heroi_2_front", "heroi_2_bg", "heroi_2_nome", "heroi_2_vitorias", "heroi_3_front", "heroi_3_bg", "heroi_3_nome", "heroi_3_vitorias", "standing_less", "standing_results_1", "standings_extra", "tab", "page_number", "fileDialog", "menu", "btn_home", "btn_salvar", "btn_compartilhar", "btn_hamburguer", "btn_voltar", "btn_proximo")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -82,10 +82,10 @@ grow_vertical = 2
 script = ExtResource("1_nvwqc")
 share = NodePath("Share")
 home_scene = &"res://scenes/MAIN.tscn"
-mode_name = NodePath("StandingTitle/VBoxContainer/AutoSizeRichTextLabel")
+mode_name = NodePath("StandingTitle/VBoxContainer/mode_name")
 store_name = NodePath("StandingTitle/VBoxContainer/store_name")
 heroi_1_front = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/Heroi/Heroi_FRONT")
-heroi_1_bg = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/Heroi/Heroi_BG")
+heroi_1_bg = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/Heroi/Heroi_BG")
 heroi_1_nome = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/VBoxContainer/Nome")
 heroi_1_vitorias = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/VBoxContainer/HBoxContainer/Vitorias")
 heroi_2_front = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/Heroi/Heroi_FRONT")
@@ -100,7 +100,7 @@ standing_less = NodePath("TabContainer/Standings_Result_1/standings_results/Stan
 standing_results_1 = NodePath("TabContainer/Standings_Result_1/standings_results")
 standings_extra = NodePath("Standings_extra")
 tab = NodePath("TabContainer")
-page_numb = NodePath("pages")
+page_number = NodePath("pages")
 fileDialog = NodePath("FileDialog")
 menu = NodePath("Menu")
 btn_home = NodePath("Menu/MarginContainer/hamburguer_menu/btn_home")

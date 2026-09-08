@@ -82,7 +82,6 @@ pointing/emulate_touch_from_mouse=true
 [internationalization]
 
 locale/translations=PackedStringArray("res://localization/localization.en.translation", "res://localization/localization.ja.translation", "res://localization/localization.pt_BR.translation")
-locale/test="en"
 
 [physics]
 

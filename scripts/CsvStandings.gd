@@ -1,5 +1,6 @@
 class_name CSVStanding
 
+enum MergeError {OK = 0, FIRST_EMPTY = 1, SECOND_EMPTY = 2, PLAYER_ID_MISMATCH = 3}
 
 static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 	var output_dict: Dictionary = {}
@@ -47,15 +48,18 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 
 		if type == "standings":
 			SignalBus.error_msg.emit(TranslationServer.translate("standings_csv_error_load"), "error")
+			SignalBus.csv_state.emit(false)
 
 		elif type == "heroes":
 			SignalBus.error_msg.emit(TranslationServer.translate("heroes_csv_error_load"), "error")
+			SignalBus.csv_state.emit(false)
 
 		file.close()
 		return output_dict
 
 
 	SignalBus.error_msg.emit(TranslationServer.translate("csv_loaded_with_no_errors"), "correct")
+	SignalBus.csv_state.emit(true)
 
 
 	var key_index: int = headers.find("Player ID")
@@ -202,26 +206,42 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 	return output_dict
 
 
-static func merge_dicts_keep_first_order(
-		first_dict: Dictionary,
-		second_dict: Dictionary
-) -> Dictionary:
+static func merge_dicts_keep_first_order(first_dict: Dictionary, second_dict: Dictionary) -> Array:
+
+	if first_dict.is_empty():
+		return [{}, MergeError.FIRST_EMPTY]
+	if second_dict.is_empty():
+		return [{}, MergeError.SECOND_EMPTY]
+	
+	var missing_in_second: Array[String] = []
+
+	for player_id in first_dict:
+		if not second_dict.has(player_id):
+			missing_in_second.append(str(player_id))
+	
+	var missing_in_first: Array[String] = []
+
+	for player_id in second_dict:
+		if not first_dict.has(player_id):
+			missing_in_first.append(str(player_id))
+	
+	if not missing_in_second.is_empty() or not missing_in_first.is_empty():
+
+		return [{}, MergeError.PLAYER_ID_MISMATCH]
 
 	var result: Dictionary = {}
 
 	for player_id in first_dict:
 
-		var merged_data: Dictionary = \
-			first_dict[player_id].duplicate(true)
+		var merged_data: Dictionary = first_dict[player_id].duplicate(true)
 
 		if second_dict.has(player_id):
 
 			for key in second_dict[player_id]:
-				merged_data[key] = \
-					second_dict[player_id][key]
+				merged_data[key] = second_dict[player_id][key]
 
 
 		result[player_id] = merged_data
 
 
-	return result
+	return [result, MergeError.OK]
