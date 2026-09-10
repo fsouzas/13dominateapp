@@ -8,53 +8,140 @@ var heroes = {}
 var csv_check
 
 @export var standings_scene: StringName
+@onready var theme_settings: OptionButton = %theme_settings
+
 
 func _ready() -> void:
+
 	SignalBus.csv_state.connect(_on_csv_state_connected)
 
 	if HeroesDb.already_loaded == false:
-		checkUpdate()
-		preLoadAssets()
-	loadSettings()
+		loadSettings()
+		await showLoadingScreenInfo()
+		await checkUpdate()
+		await get_tree().create_timer(1).timeout
+		await preLoadAssets()
+		await clearLoadingScreen()
+		%Loading.queue_free()
+	%Loading.queue_free()
+
+	for theme_name in ThemeManager.get_theme_names():
+		var theme = ThemeManager.themes[theme_name]
+		theme_settings.add_item(tr(theme["display_name"]))
+		var index = theme_settings.item_count - 1
+		theme_settings.set_item_metadata(index, theme_name)
+	
+	var current_theme = SettingsManager.theme
+
+	for i in theme_settings.item_count:
+		if theme_settings.get_item_metadata(i) == current_theme:
+			theme_settings.select(i)
+			break
 
 func checkUpdate():
-	#UpdateManager.update_available.connect(_on_update_available)
-	#UpdateManager.update_check_finished.connect(_on_update_check_finished)
-	#UpdateManager.update_error.connect(_on_update_error)
+	%loading_str.text = tr("checking_new_update_str")
+	textAnimLoading(%loading_str)
+	await get_tree().create_timer(1).timeout
+	UpdateManager.update_available.connect(_on_update_available)
+	UpdateManager.update_check_finished.connect(_on_update_check_finished)
+	UpdateManager.update_error.connect(_on_update_error)
 	UpdateManager.check_for_update()
 
 func preLoadAssets():
-	#HeroesDb.texture_loading_progress.connect(_on_texture_loading_progress)
-	#HeroesDb.texture_loading_finished.connect(_on_texture_loading_finished)
+	HeroesDb.texture_loading_progress.connect(_on_texture_loading_progress)
+	HeroesDb.texture_loading_finished.connect(_on_texture_loading_finished, CONNECT_ONE_SHOT)
 	HeroesDb.preload_hero_textures()
+	await HeroesDb.texture_loading_finished
 	HeroesDb.already_loaded = true
+	textAnimLoading(%loading_str)
+	await get_tree().create_timer(1).timeout
 
 func loadSettings():
+	SettingsManager.load_settings()
+	print(SettingsManager.locale)
+
+func _on_update_available():
 	pass
+func _on_update_check_finished(new_update: bool):
+	if new_update:
+		%loading_str.text = tr("new_update_str")
+		textAnimLoading(%loading_str)
+	if !new_update:
+		%loading_str.text = tr("already_latest_version_str")
+		textAnimLoading(%loading_str)
+	await get_tree().create_timer(1).timeout
+
+func _on_update_error():
+	pass
+
+func _on_texture_loading_progress(current: int, _total: int):
+	%loading_bar.value = current
+	%loading_str.text = tr("loading_assets_str")
+func _on_texture_loading_finished():
+	%loading_str.text = tr("loading_assets_finished_str")
+	textAnimLoading(%loading_str)
+
+func showLoadingScreenInfo():
+	var tween = create_tween()
+	tween.set_trans(tween.TRANS_EXPO).set_ease(tween.EASE_OUT).set_parallel(true)
+	tween.tween_property(%loading_info, "modulate:a", 1, 2)
+
+	await tween.finished
+
+
+func clearLoadingScreen():
+	var tween = create_tween()
+	tween.set_trans(tween.TRANS_EXPO).set_ease(tween.EASE_OUT).set_parallel(true)
+	tween.tween_property(%Standing1Icon, "position", Vector2(104,-500), 0.5)
+	tween.tween_property(%Standing1Icon, "modulate:a", 0, 0.5)
+
+	tween.tween_property(%Stading3Icon, "position", Vector2(-800,260), 0.5)
+	tween.tween_property(%Stading3Icon, "modulate:a", 0, 0.5)
+
+	tween.tween_property(%Stading2Icon, "position", Vector2(800,257), 0.5)
+	tween.tween_property(%Stading2Icon, "modulate:a", 0, 0.5)
+
+	tween.chain().tween_property(%Loading, "modulate:a", 0, 0.5)
+
+	await tween.finished
+
+func textAnimLoading(text: Control):
+	var tween = create_tween()
+	tween.set_trans(tween.TRANS_EXPO).set_ease(tween.EASE_OUT).set_parallel(true)
+	tween.tween_property(text, "offset_transform_position", Vector2(0,0), 0.3).from(Vector2(0,-50))
+	tween.tween_property(text, "modulate:a", 1, 0.3).from(0)
 
 func csvImporterStandings(path):
 	standings = CSVStanding.load_csv_to_dict(path, "standings")
 
+	var file_name := get_file_name(path)
+
 	if not csv_check:
 		%choose_heroes_btn.disabled = true
 		%choose_standings_btn.text = tr("choose_standings_csv_str")
-		%standings_error_msg_str.text = path.get_file() + " " + tr("not_a_valid_standings_csv_str")
+		%standings_error_msg_str.text = file_name + " " + tr("not_a_valid_standings_csv_str")
 		csvErrorTextAnim(%standings_error_msg_str, false)
 	else:
 		%choose_heroes_btn.disabled = false
-		%choose_standings_btn.text = path.get_file()
+		%choose_standings_btn.text = file_name
 		csvErrorTextAnim(%standings_error_msg_str, true)
+
 	readyButtonCheck()
+
 
 func csvImporterHeroes(path):
 	heroes = CSVStanding.load_csv_to_dict(path, "heroes")
+
+	var file_name := get_file_name(path)
+
 	if not csv_check:
 		%choose_heroes_btn.text = tr("choose_heroes_csv_str")
-		%heroes_error_msg_str.text = path.get_file() + " " + tr("not_a_valid_heroes_csv_str")
+		%heroes_error_msg_str.text = file_name + " " + tr("not_a_valid_heroes_csv_str")
 		csvErrorTextAnim(%heroes_error_msg_str, false)
 	else:
-		%choose_heroes_btn.text = path.get_file()
+		%choose_heroes_btn.text = file_name
 		csvErrorTextAnim(%heroes_error_msg_str, true)
+
 	readyButtonCheck()
 
 func csvErrorTextAnim(text: Control, error_showing: bool):
@@ -130,15 +217,32 @@ func _on_menu_settings_btn_pressed() -> void:
 
 	await tween.finished
 
+func get_file_name(path: String) -> String:
+	# Normal Windows/Linux path
+	var file_name := path.get_file()
+
+	# Android URI
+	if path.begins_with("content://"):
+		var uri := path.uri_decode()
+
+		# Try to get the filename after the last slash
+		file_name = uri.get_file()
+
+		# Remove URI query parameters if present
+		file_name = file_name.split("?")[0]
+
+	return file_name
 
 func _on_choose_standings_btn_pressed() -> void:
 	$FileDialog.show()
+	
 	var path : String = await $FileDialog.file_selected
 	csvImporterStandings(path)
 
 
 func _on_choose_heroes_btn_pressed() -> void:
 	$FileDialog.show()
+	
 	var path : String = await $FileDialog.file_selected
 	csvImporterHeroes(path)
 
@@ -163,8 +267,6 @@ func _on_menu_bar_item_selected(index: int) -> void:
 func enableCsvButtons():
 	%choose_standings_btn.disabled = false
 
-func _on_store_name_text_changed() -> void:
-	UniversalDict.setStoreName(str(%store_name.text))
 
 func readyButtonCheck():
 	if standings.is_empty() or heroes.is_empty():
@@ -176,6 +278,16 @@ func _on_ready_str_pressed():
 	var result_merged: Array = CSVStanding.merge_dicts_keep_first_order(standings, heroes)
 	var armory_merged: Dictionary = result_merged[0]
 	var error_code: int = result_merged[1]
+
+	var store_name = str(%store_name.text).strip_edges()
+	
+	UniversalDict.setStoreName(store_name)
+
+	SettingsManager.store = store_name
+
+	if store_name not in SettingsManager.store_names:
+		SettingsManager.store_names.append(store_name)
+	SettingsManager.save_settings()
 
 	if error_code != CSVStanding.MergeError.OK:
 		match error_code:
@@ -189,7 +301,7 @@ func _on_ready_str_pressed():
 				%ready_error_msg_str.text = tr("error_player_id_mismatch_str")
 				csvErrorTextAnim(%ready_error_msg_str, false)
 		return
-	csvErrorTextAnim(%ready_error_msg_str, false)
+	csvErrorTextAnim(%ready_error_msg_str, true)
 	UniversalDict.setArmoryData(armory_merged)
 	SceneLoader.load_scene(standings_scene)
 
@@ -197,11 +309,21 @@ func _on_ready_str_pressed():
 func _on_language_settings_item_selected(index: int) -> void:
 	match index:
 		1:
-			UniversalDict.setLocale("pt_BR")
+			SettingsManager.locale = "pt_BR"
+			SettingsManager.save_settings()
 			get_tree().reload_current_scene()
 		2:
-			UniversalDict.setLocale("en")
+			SettingsManager.locale = "en"
+			SettingsManager.save_settings()
 			get_tree().reload_current_scene()
 		3:
-			UniversalDict.setLocale("ja")
+			SettingsManager.locale = "ja"
+			SettingsManager.save_settings()
 			get_tree().reload_current_scene()
+
+
+func _on_theme_settings_item_selected(index: int) -> void:
+	var theme_name = theme_settings.get_item_metadata(index)
+	ThemeManager.set_theme(theme_name)
+	SettingsManager.theme = theme_name
+	SettingsManager.save_settings()

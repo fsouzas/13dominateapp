@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="13 Dominate Standings App"
-config/version="0.2.2"
-run/main_scene="uid://tkrlp56mt1ks"
+config/version="0.2.3"
+run/main_scene="uid://jdbulyrefdai"
 config/quit_on_go_back=false
 config/features=PackedStringArray("4.7", "Mobile")
 run/low_processor_mode=true
@@ -25,10 +25,12 @@ config/icon="uid://cch3bjxy44a7t"
 UniversalDict="*uid://c4sfw7gg6scry"
 SceneLoader="*uid://bdujg3s86gva2"
 HeroesDb="*uid://dkvluu48wwgkg"
-Background="*uid://dgos13abf4iu0"
 Notification="*uid://dnjkhfci80bi2"
 SignalBus="*uid://mnbuk7jfunfp"
 UpdateManager="*uid://d2xslh7pxlgsg"
+ThemeManager="*uid://b3bj3c4cp2hc6"
+SettingsManager="*uid://cpsr77bg3l1m1"
+Background="*uid://dgos13abf4iu0"
 
 [display]
 

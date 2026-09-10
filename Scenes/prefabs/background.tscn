@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://dgos13abf4iu0"]
 
+[ext_resource type="Script" uid="uid://c5f2xt76tufte" path="res://scripts/universal/Background.gd" id="1_2g5gm"]
 [ext_resource type="Shader" uid="uid://n1qujb6udjfm" path="res://shaders/halftone.gdshader" id="1_rjh7v"]
-[ext_resource type="Texture2D" uid="uid://bfahgdkryjbeq" path="res://assets/bg/history_pack_2_key_art.jpg" id="1_sur6t"]
+[ext_resource type="Texture2D" uid="uid://d1cq002yuqnae" path="res://assets/bg/usurp_bg2.png" id="3_2g5gm"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2g5gm"]
 shader = ExtResource("1_rjh7v")
@@ -20,8 +21,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_2g5gm")
 
 [node name="bg" type="TextureRect" parent="." unique_id=1712523518]
+unique_name_in_owner = true
 material = SubResource("ShaderMaterial_2g5gm")
 layout_mode = 1
 anchors_preset = 8
@@ -29,17 +32,19 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -1430.2957
-offset_top = -779.5
-offset_right = 1430.2957
-offset_bottom = 779.5
+offset_left = -917.5
+offset_top = -1279.5
+offset_right = 917.5
+offset_bottom = 1279.5
 grow_horizontal = 2
 grow_vertical = 2
-pivot_offset = Vector2(1430.296, 779.5)
-texture = ExtResource("1_sur6t")
-expand_mode = 1
+scale = Vector2(0.46, 0.46)
+pivot_offset = Vector2(917.5, 1279.5)
+texture = ExtResource("3_2g5gm")
+stretch_mode = 2
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=588277300]
+[node name="color" type="ColorRect" parent="." unique_id=588277300]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

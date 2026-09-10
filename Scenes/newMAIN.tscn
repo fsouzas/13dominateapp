@@ -8,6 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://cor2woou6et37" path="res://assets/icons/File-Add-Alternate--Streamline-Core.png" id="5_qqru0"]
 [ext_resource type="FontFile" uid="uid://dgkanfofqv28r" path="res://fonts/FuturaPT-Medium.ttf" id="6_flrvy"]
 [ext_resource type="Texture2D" uid="uid://bh2jb17ptsp4c" path="res://assets/icons/Cog--Streamline-Sharp.png" id="7_xa2ph"]
+[ext_resource type="Texture2D" uid="uid://pu10aclj4ut6" path="res://assets/loading/standing_1_icon.png" id="9_jpfkp"]
+[ext_resource type="Texture2D" uid="uid://w3fwj3aw7rq4" path="res://assets/loading/stading_2_icon.png" id="10_lwhgv"]
+[ext_resource type="Texture2D" uid="uid://cbhlr41gkrylr" path="res://assets/loading/stading_3_icon.png" id="11_qxpgi"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_baanu"]
 content_margin_right = 30.0
@@ -76,6 +79,20 @@ content_margin_right = 30.0
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xa2ph"]
 content_margin_right = 30.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhunq"]
+bg_color = Color(0.49038708, 0.034113068, 0.06810727, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lwhgv"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
 [node name="NewMain" type="Control" unique_id=1479865462]
 layout_mode = 3
 anchors_preset = 15
@@ -112,7 +129,7 @@ unique_name_in_owner = true
 layout_mode = 0
 offset_top = 791.0
 offset_right = 680.0
-offset_bottom = 1578.0018
+offset_bottom = 1622.001
 offset_transform_position = Vector2(0, -51.91)
 
 [node name="menu_standings_btn" type="Button" parent="MarginContainer/menu/menu_standings" unique_id=908729484]
@@ -375,15 +392,10 @@ theme_override_font_sizes/normal_font_size = 35
 text = "theme_str"
 
 [node name="theme_settings" type="OptionButton" parent="MarginContainer/menu/menu_settings/menu_settings_opt" unique_id=829861784]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 55)
 layout_mode = 2
 theme = ExtResource("4_qqru0")
-selected = 0
-item_count = 2
-popup/item_0/text = "13_dominate_theme"
-popup/item_0/id = 0
-popup/item_1/text = "usurp_theme"
-popup/item_1/id = 1
 
 [node name="credits_btn" type="Button" parent="MarginContainer/menu/menu_settings/menu_settings_opt" unique_id=1025655071]
 custom_minimum_size = Vector2(-32.89, 30)
@@ -411,23 +423,114 @@ text = "github_repo_link_str"
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxLine_bhunq")
 
-[node name="FileDialog" type="FileDialog" parent="." unique_id=1749061083]
+[node name="Loading" type="Control" parent="." unique_id=1907517830]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Loading" unique_id=897114816]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6392157, 0.05882353, 0.101960786, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Loading" unique_id=1016937684]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 50)
+theme_override_constants/separation = 115
+alignment = 1
+
+[node name="icons" type="Control" parent="Loading/VBoxContainer" unique_id=961746517]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(-20, 0)
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="Loading/VBoxContainer/icons" unique_id=2095917827]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.0
+offset_top = -154.0
+offset_right = -53.0
+offset_bottom = -154.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.6, 0.6)
+
+[node name="Stading2Icon" type="Sprite2D" parent="Loading/VBoxContainer/icons/AspectRatioContainer" unique_id=1637664340]
+unique_name_in_owner = true
+position = Vector2(250.6, 257)
+texture = ExtResource("10_lwhgv")
+
+[node name="Stading3Icon" type="Sprite2D" parent="Loading/VBoxContainer/icons/AspectRatioContainer" unique_id=1191995638]
+unique_name_in_owner = true
+position = Vector2(-30, 260)
+texture = ExtResource("11_qxpgi")
+
+[node name="Standing1Icon" type="Sprite2D" parent="Loading/VBoxContainer/icons/AspectRatioContainer" unique_id=1263845380]
+unique_name_in_owner = true
+position = Vector2(104, 96.18)
+texture = ExtResource("9_jpfkp")
+
+[node name="loading_info" type="MarginContainer" parent="Loading/VBoxContainer" unique_id=569740802]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_right = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Loading/VBoxContainer/loading_info" unique_id=1958203240]
+layout_mode = 2
+
+[node name="loading_bar" type="ProgressBar" parent="Loading/VBoxContainer/loading_info/VBoxContainer" unique_id=339637699]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_bhunq")
+theme_override_styles/fill = SubResource("StyleBoxFlat_lwhgv")
+show_percentage = false
+
+[node name="loading_str" type="RichTextLabel" parent="Loading/VBoxContainer/loading_info/VBoxContainer" unique_id=1946563508]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 55)
+layout_mode = 2
+offset_transform_enabled = true
+theme = ExtResource("1_gvsjc")
+theme_override_font_sizes/normal_font_size = 30
+text = "loading_str"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FileDialog" type="FileDialog" parent="." unique_id=550727821]
 unique_name_in_owner = true
 oversampling_override = 1.0
 title = "Open a File"
-position = Vector2i(0, 36)
 file_mode = 0
 access = 2
 filters = PackedStringArray("*.csv")
 use_native_dialog = true
-option_count = 1
 
 [connection signal="pressed" from="MarginContainer/menu/menu_standings/menu_standings_btn" to="." method="_on_menu_standings_btn_pressed"]
 [connection signal="item_selected" from="MarginContainer/menu/menu_standings/menu_standings_opt/MenuBar" to="." method="_on_menu_bar_item_selected"]
 [connection signal="pressed" from="MarginContainer/menu/menu_standings/menu_standings_opt/choose_standings_btn" to="." method="_on_choose_standings_btn_pressed"]
 [connection signal="pressed" from="MarginContainer/menu/menu_standings/menu_standings_opt/choose_heroes_btn" to="." method="_on_choose_heroes_btn_pressed"]
-[connection signal="text_changed" from="MarginContainer/menu/menu_standings/menu_standings_opt/store_name" to="." method="_on_store_name_text_changed"]
 [connection signal="pressed" from="MarginContainer/menu/menu_standings/menu_standings_opt/ready_btn" to="." method="_on_ready_str_pressed"]
 [connection signal="pressed" from="MarginContainer/menu/menu_settings/menu_settings_btn" to="." method="_on_menu_settings_btn_pressed"]
 [connection signal="item_selected" from="MarginContainer/menu/menu_settings/menu_settings_opt/language_settings" to="." method="_on_language_settings_item_selected"]
-[connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]
+[connection signal="item_selected" from="MarginContainer/menu/menu_settings/menu_settings_opt/theme_settings" to="." method="_on_theme_settings_item_selected"]
