@@ -1,14 +1,14 @@
 {
 	"default": {
 		"display_name": "13_dominate_theme_str",
-		"primary_color": "#0000FF",
-		"secondary_color": "#0000FF",
+		"primary_color": "#a30f1a",
+		"secondary_color": "#2b313f",
 		"background_image": "res://..."
 	},
 	"usurp": {
 		"display_name": "usurp_theme_str",
-		"primary_color": "#0000FF",
-		"secondary_color": "#0000FF",
+		"primary_color": "#3f1e60",
+		"secondary_color": "#1c0d31",
 		"background_image": "res://assets/bg/usurp_bg2.png"
 	}
 }

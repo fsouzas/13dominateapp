@@ -14,9 +14,9 @@ var csv_check
 func _ready() -> void:
 
 	SignalBus.csv_state.connect(_on_csv_state_connected)
-
+	loadSettings()
+	
 	if HeroesDb.already_loaded == false:
-		loadSettings()
 		await showLoadingScreenInfo()
 		await checkUpdate()
 		await get_tree().create_timer(1).timeout
@@ -58,6 +58,57 @@ func preLoadAssets():
 
 func loadSettings():
 	SettingsManager.load_settings()
+	
+	var pre_menu_style = StyleBoxFlat.new()
+
+	pre_menu_style.bg_color = ThemeManager.get_primary_color()
+	%loading_bg.color = ThemeManager.get_primary_color()
+	%menu_standings_btn_bar.add_theme_stylebox_override("fill", pre_menu_style)
+	%menu_settings_btn_bar.add_theme_stylebox_override("fill", pre_menu_style)
+
+	var menu_style = StyleBoxFlat.new()
+	
+	menu_style.border_color = ThemeManager.get_primary_color()
+	menu_style.border_width_top = 3
+	menu_style.border_width_bottom = 3
+	menu_style.border_width_right = 3
+	menu_style.border_width_left = 3
+	menu_style.corner_radius_top_left = 10
+	menu_style.corner_radius_top_right = 10
+	menu_style.corner_radius_bottom_right = 10
+	menu_style.corner_radius_bottom_left = 10
+	menu_style.corner_detail = 8
+	menu_style.content_margin_left = 30
+	menu_style.bg_color = Color.TRANSPARENT
+
+	var menu_btn_style = StyleBoxFlat.new()
+	menu_btn_style.bg_color = ThemeManager.get_primary_color()
+	menu_btn_style.border_color = ThemeManager.get_primary_color().darkened(0.3)
+	menu_btn_style.border_width_top = 3
+	menu_btn_style.border_width_bottom = 6
+	menu_btn_style.border_width_right = 3
+	menu_btn_style.border_width_left = 3
+	menu_btn_style.corner_radius_top_left = 10
+	menu_btn_style.corner_radius_top_right = 10
+	menu_btn_style.corner_radius_bottom_right = 10
+	menu_btn_style.corner_radius_bottom_left = 10
+	menu_btn_style.corner_detail = 8
+
+	%MenuBar.add_theme_stylebox_override("pressed", menu_style)
+	%MenuBar.add_theme_stylebox_override("focus", menu_style)
+	%choose_standings_btn.add_theme_stylebox_override("pressed", menu_style)
+	%choose_heroes_btn.add_theme_stylebox_override("pressed", menu_style)
+	%store_name.add_theme_stylebox_override("focus", menu_style)
+	%ready_btn.add_theme_stylebox_override("normal", menu_btn_style)
+	%ready_btn.add_theme_stylebox_override("pressed", menu_btn_style)
+	%language_settings.add_theme_stylebox_override("pressed", menu_style)
+	%language_settings.add_theme_stylebox_override("focus", menu_style)
+	%theme_settings.add_theme_stylebox_override("pressed", menu_style)
+	%theme_settings.add_theme_stylebox_override("focus", menu_style)
+	%credits_btn.add_theme_stylebox_override("normal", menu_btn_style)
+	%github_btn.add_theme_stylebox_override("normal", menu_btn_style)
+	%credits_btn.add_theme_stylebox_override("pressed", menu_btn_style)
+	%github_btn.add_theme_stylebox_override("pressed", menu_btn_style)
 	print(SettingsManager.locale)
 
 func _on_update_available():
@@ -162,14 +213,14 @@ func _on_csv_state_connected(state: bool):
 
 func _on_menu_standings_btn_pressed() -> void:
 	var tween = create_tween().set_parallel(true).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_IN_OUT)
-	tween.tween_property($MarginContainer/menu/menu_standings/menu_standings_btn/ProgressBar, "value", 100, 0.5)
-	tween.tween_property($MarginContainer/menu/menu_settings/menu_settings_btn/ProgressBar, "value", 0, 0.5)
+	tween.tween_property(%menu_standings_btn_bar, "value", 100, 0.5)
+	tween.tween_property(%menu_settings_btn_bar, "value", 0, 0.5)
 	match current_state:
 		MenuState.STANDINGS:
 			tween.tween_property(%menu_standings, "position", Vector2(0, 791), 0.5)
 			tween.tween_property(%menu_settings_opt, "modulate:a", 0, 0.5)
 			tween.tween_property(%menu_standings_opt, "modulate:a", 0, 0.5)
-			tween.tween_property($MarginContainer/menu/menu_standings/menu_standings_btn/ProgressBar, "value", 0, 0.5)
+			tween.tween_property(%menu_standings_btn_bar, "value", 0, 0.5)
 			current_state = MenuState.CLOSED
 
 		MenuState.SETTINGS:
@@ -190,15 +241,15 @@ func _on_menu_standings_btn_pressed() -> void:
 
 func _on_menu_settings_btn_pressed() -> void:
 	var tween = create_tween().set_parallel(true).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_IN_OUT)
-	tween.tween_property($MarginContainer/menu/menu_settings/menu_settings_btn/ProgressBar, "value", 100, 0.5)
-	tween.tween_property($MarginContainer/menu/menu_standings/menu_standings_btn/ProgressBar, "value", 0, 0.5)
+	tween.tween_property(%menu_settings_btn_bar, "value", 100, 0.5)
+	tween.tween_property(%menu_standings_btn_bar, "value", 0, 0.5)
 
 	match current_state:
 		MenuState.SETTINGS:
 			tween.tween_property(%menu_settings, "position", Vector2(0, 876), 0.5)
 			tween.tween_property(%menu_standings, "position", Vector2(0, 791), 0.5)
 			tween.tween_property(%menu_settings_opt, "modulate:a", 0, 0.5)
-			tween.tween_property($MarginContainer/menu/menu_settings/menu_settings_btn/ProgressBar, "value", 0, 0.5)
+			tween.tween_property(%menu_settings_btn_bar, "value", 0, 0.5)
 			current_state = MenuState.CLOSED
 
 		MenuState.STANDINGS:
@@ -218,17 +269,13 @@ func _on_menu_settings_btn_pressed() -> void:
 	await tween.finished
 
 func get_file_name(path: String) -> String:
-	# Normal Windows/Linux path
 	var file_name := path.get_file()
 
-	# Android URI
 	if path.begins_with("content://"):
 		var uri := path.uri_decode()
 
-		# Try to get the filename after the last slash
 		file_name = uri.get_file()
 
-		# Remove URI query parameters if present
 		file_name = file_name.split("?")[0]
 
 	return file_name
@@ -326,4 +373,5 @@ func _on_theme_settings_item_selected(index: int) -> void:
 	var theme_name = theme_settings.get_item_metadata(index)
 	ThemeManager.set_theme(theme_name)
 	SettingsManager.theme = theme_name
+	get_tree().reload_current_scene()
 	SettingsManager.save_settings()

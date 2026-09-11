@@ -80,7 +80,7 @@ content_margin_right = 30.0
 content_margin_right = 30.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhunq"]
-bg_color = Color(0, 0, 0, 0.22745098)
+bg_color = Color(0.49038708, 0.034113068, 0.06810727, 1)
 corner_radius_top_left = 30
 corner_radius_top_right = 30
 corner_radius_bottom_right = 30
@@ -146,8 +146,7 @@ icon = ExtResource("3_6ij07")
 alignment = 0
 icon_alignment = 2
 
-[node name="menu_standings_btn_bar" type="ProgressBar" parent="MarginContainer/menu/menu_standings/menu_standings_btn" unique_id=1576550838]
-unique_name_in_owner = true
+[node name="ProgressBar" type="ProgressBar" parent="MarginContainer/menu/menu_standings/menu_standings_btn" unique_id=1576550838]
 z_index = -5
 layout_mode = 0
 offset_top = 2.0
@@ -182,7 +181,6 @@ text = "mode_str"
 vertical_alignment = 1
 
 [node name="MenuBar" type="OptionButton" parent="MarginContainer/menu/menu_standings/menu_standings_opt" unique_id=1958613737]
-unique_name_in_owner = true
 clip_children = 2
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
@@ -239,7 +237,7 @@ vertical_alignment = 1
 custom_minimum_size = Vector2(0, 55)
 layout_mode = 2
 theme = ExtResource("1_gvsjc")
-theme_override_font_sizes/normal_font_size = 35
+theme_override_font_sizes/normal_font_size = 30
 text = "heroes_str"
 vertical_alignment = 1
 
@@ -339,8 +337,7 @@ icon = ExtResource("7_xa2ph")
 alignment = 0
 icon_alignment = 2
 
-[node name="menu_settings_btn_bar" type="ProgressBar" parent="MarginContainer/menu/menu_settings/menu_settings_btn" unique_id=633198999]
-unique_name_in_owner = true
+[node name="ProgressBar" type="ProgressBar" parent="MarginContainer/menu/menu_settings/menu_settings_btn" unique_id=633198999]
 z_index = -5
 layout_mode = 0
 offset_top = 2.0
@@ -369,9 +366,9 @@ layout_mode = 2
 theme = ExtResource("1_gvsjc")
 theme_override_font_sizes/normal_font_size = 35
 text = "language_str"
+horizontal_alignment = 1
 
 [node name="language_settings" type="OptionButton" parent="MarginContainer/menu/menu_settings/menu_settings_opt" unique_id=329143147]
-unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 55)
 layout_mode = 2
 theme = ExtResource("4_qqru0")
@@ -401,8 +398,7 @@ layout_mode = 2
 theme = ExtResource("4_qqru0")
 
 [node name="credits_btn" type="Button" parent="MarginContainer/menu/menu_settings/menu_settings_opt" unique_id=1025655071]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(-32.89, 50)
+custom_minimum_size = Vector2(-32.89, 30)
 layout_mode = 2
 offset_transform_scale = Vector2(0.5, 1)
 theme = ExtResource("4_qqru0")
@@ -413,8 +409,7 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_flrvy")
 text = "credits_str"
 
 [node name="github_btn" type="Button" parent="MarginContainer/menu/menu_settings/menu_settings_opt" unique_id=393914639]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(-32.89, 50)
+custom_minimum_size = Vector2(-32.89, 30)
 layout_mode = 2
 offset_transform_scale = Vector2(0.5, 1)
 theme = ExtResource("4_qqru0")
@@ -437,8 +432,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="loading_bg" type="ColorRect" parent="Loading" unique_id=897114816]
-unique_name_in_owner = true
+[node name="ColorRect" type="ColorRect" parent="Loading" unique_id=897114816]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

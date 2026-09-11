@@ -4,6 +4,9 @@ extends Node
 
 @export var home_scene: StringName
 
+@export var standings_string: RichTextLabel
+@export var standings_string_shadow: RichTextLabel
+
 @export var mode_name : AutoSizeRichTextLabel
 @export var store_name : AutoSizeRichTextLabel
 
@@ -63,10 +66,14 @@ func setup_share():
 	share.set_share_target(true)
 
 func share_screenshot():
-	share.share_viewport(get_viewport(), "shared_title", "shared_subject", "Standings de hoje!")
+	share.share_viewport(get_viewport(), "shared_title", "shared_subject", tr("share_standings_msg_str"))
 
 func setup_theme():
-	$StandingTitle/VBoxContainer/AutoSizeRichTextLabel4.add_theme_color_override("default_color", UniversalDict.main_color)
+	standings_string.add_theme_color_override("default_color", ThemeManager.get_secondary_color())
+	standings_string_shadow.add_theme_color_override("default_color", ThemeManager.get_primary_color().darkened(0.3))
+
+	if ThemeManager.get_current_theme_name() == "usurp":
+		%UsurpCrown.visible = true
 
 func setup_header():
 	mode_name.text = UniversalDict.mode_selected.to_upper()

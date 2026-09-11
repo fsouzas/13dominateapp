@@ -65,9 +65,6 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 	var key_index: int = headers.find("Player ID")
 
 	if key_index == -1:
-		push_error(
-				"Error: 'Player ID' column not found in CSV headers."
-		)
 
 		file.close()
 		return output_dict
@@ -79,14 +76,12 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 
 			var row: PackedStringArray = file.get_csv_line()
 
-			# Ignore empty lines
 			if row.is_empty() or (
 					row.size() == 1 and
 					row[0].strip_edges() == ""
 			):
 				continue
 
-			# Make sure Player ID exists
 			if key_index >= row.size():
 				continue
 
@@ -97,7 +92,6 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 
 			var row_data: Dictionary = {}
 
-			# Copy every column except Player ID
 			for i in range(headers.size()):
 
 				if i == key_index:
@@ -108,7 +102,6 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 				else:
 					row_data[headers[i]] = ""
 
-			# Store using Player ID as key
 			output_dict[player_id] = row_data
 
 
@@ -120,9 +113,6 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 		var rank_index: int = headers.find("Rank")
 
 		if rank_index == -1:
-			push_error(
-					"Error: 'Rank' column not found in standings.csv."
-			)
 
 			file.close()
 			return output_dict

@@ -69,7 +69,6 @@ func preload_hero_textures() -> void:
 
 	for path in paths:
 
-		# Already cached
 		if ResourceLoader.has_cached(path):
 			_store_texture(
 					path,

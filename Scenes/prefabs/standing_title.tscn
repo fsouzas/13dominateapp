@@ -22,11 +22,16 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = -88
 
-[node name="mode_name" type="RichTextLabel" parent="VBoxContainer" unique_id=1408285383]
-custom_minimum_size = Vector2(0, 150)
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=11071950]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="mode_name" type="RichTextLabel" parent="VBoxContainer/MarginContainer" unique_id=1408285383]
+custom_minimum_size = Vector2(0, 90)
 layout_mode = 2
 theme_override_fonts/normal_font = ExtResource("1_5fhhb")
-theme_override_font_sizes/normal_font_size = 116
+theme_override_font_sizes/normal_font_size = 70
 text = "MODE"
 scroll_active = false
 horizontal_alignment = 1
@@ -34,13 +39,15 @@ vertical_alignment = 1
 script = ExtResource("2_oc8pe")
 _max_size = 116
 _outline_ratio = 0.0
-_current_font_size = 116
+_current_font_size = 70
 _editor_defaults_set = true
 metadata/_custom_type_script = "uid://co0lo02vnu10n"
 
-[node name="AutoSizeRichTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=851884308]
+[node name="standings_str" type="RichTextLabel" parent="VBoxContainer" unique_id=851884308]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 32.775)
 theme_override_colors/default_color = Color(0.16862746, 0.19215687, 0.24705882, 1)
 theme_override_constants/outline_size = 0
 theme_override_fonts/normal_font = ExtResource("3_lyv5b")
@@ -56,12 +63,12 @@ _current_font_size = 76
 _editor_defaults_set = true
 metadata/_custom_type_script = "uid://co0lo02vnu10n"
 
-[node name="AutoSizeRichTextLabel4" type="RichTextLabel" parent="VBoxContainer" unique_id=1598075167]
+[node name="standings_shadow_str" type="RichTextLabel" parent="VBoxContainer" unique_id=1598075167]
 z_index = -1
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 offset_transform_enabled = true
-offset_transform_position = Vector2(0, -7.595)
+offset_transform_position = Vector2(0, 26.57)
 theme_override_colors/default_color = Color(0.6389745, 0.058573715, 0.10132287, 1)
 theme_override_constants/outline_size = 0
 theme_override_fonts/normal_font = ExtResource("3_lyv5b")
@@ -78,10 +85,10 @@ _editor_defaults_set = true
 metadata/_custom_type_script = "uid://co0lo02vnu10n"
 
 [node name="store_name" type="RichTextLabel" parent="VBoxContainer" unique_id=1915711791]
-custom_minimum_size = Vector2(0, 100)
+custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 offset_transform_enabled = true
-offset_transform_position = Vector2(0, 36)
+offset_transform_position = Vector2(0, 50)
 theme_override_constants/outline_size = 0
 theme_override_fonts/normal_font = ExtResource("4_oc8pe")
 theme_override_font_sizes/normal_font_size = 36
