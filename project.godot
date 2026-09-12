@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="13 Dominate Standings App"
-config/version="0.2.3"
+config/name="13 Dominate Standings"
+config/version="0.2.4"
 run/main_scene="uid://jdbulyrefdai"
 config/quit_on_go_back=false
 config/features=PackedStringArray("4.7", "Mobile")

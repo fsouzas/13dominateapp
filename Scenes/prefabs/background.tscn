@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dgos13abf4iu0"]
 
 [ext_resource type="Script" uid="uid://c5f2xt76tufte" path="res://scripts/universal/Background.gd" id="1_2g5gm"]
-[ext_resource type="Texture2D" uid="uid://d1cq002yuqnae" path="res://assets/bg/usurp_bg2.png" id="3_2g5gm"]
+[ext_resource type="Texture2D" uid="uid://cv5i1uta7u1l0" path="res://assets/bg/usurp_bg2_00000.png" id="2_rjh7v"]
 
 [node name="Background" type="Control" unique_id=1683727022]
 z_index = -99
@@ -29,12 +29,12 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.565, 0.565)
 pivot_offset = Vector2(917.5, 1279.5)
-texture = ExtResource("3_2g5gm")
+texture = ExtResource("2_rjh7v")
 stretch_mode = 2
 
 [node name="color" type="ColorRect" parent="." unique_id=588277300]
 unique_name_in_owner = true
-modulate = Color(1, 1, 1, 0.76862746)
+modulate = Color(1, 1, 1, 0.5411765)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

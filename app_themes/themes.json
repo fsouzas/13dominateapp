@@ -3,12 +3,12 @@
 		"display_name": "13_dominate_theme_str",
 		"primary_color": "#a30f1a",
 		"secondary_color": "#2b313f",
-		"background_image": "res://..."
+		"background_image": "res://assets/bg/default_bg_2.png"
 	},
 	"usurp": {
 		"display_name": "usurp_theme_str",
-		"primary_color": "#3f1e60",
+		"primary_color": "#741DCC",
 		"secondary_color": "#1c0d31",
-		"background_image": "res://assets/bg/usurp_bg2.png"
+		"background_image": "res://assets/bg/usurp_bg2_00000.png"
 	}
 }

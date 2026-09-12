@@ -6,6 +6,7 @@ var current_state: MenuState = MenuState.CLOSED
 var standings = {}
 var heroes = {}
 var csv_check
+var github_download_link
 
 @export var standings_scene: StringName
 @onready var theme_settings: OptionButton = %theme_settings
@@ -111,8 +112,11 @@ func loadSettings():
 	%github_btn.add_theme_stylebox_override("pressed", menu_btn_style)
 	print(SettingsManager.locale)
 
-func _on_update_available():
-	pass
+func _on_update_available(latest_version : String, download_url : String):
+	%update_popup.visible = true
+	%update_avaliable_str.text = tr("update_avaliable_str") +" "+ latest_version
+	github_download_link = download_url
+
 func _on_update_check_finished(new_update: bool):
 	if new_update:
 		%loading_str.text = tr("new_update_str")
@@ -375,3 +379,23 @@ func _on_theme_settings_item_selected(index: int) -> void:
 	SettingsManager.theme = theme_name
 	get_tree().reload_current_scene()
 	SettingsManager.save_settings()
+
+
+func _on_cancel_btn_pressed() -> void:
+	%update_popup.queue_free()
+
+
+func _on_download_btn_pressed() -> void:
+	OS.shell_open(github_download_link)
+
+
+func _on_github_btn_pressed() -> void:
+	OS.shell_open("https://github.com/fsouzas/13dominateapp")
+
+
+func _on_credits_btn_pressed() -> void:
+	%credits_popup.visible = true
+
+
+func _on_credits_close_pressed() -> void:
+	%credits_popup.visible = false

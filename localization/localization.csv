@@ -36,7 +36,10 @@ error_heroes_csv_str;Error with heroes.csv;Erro com heroes.csv;
 error_player_id_mismatch_str;The PLAYERs ID on each .csv doesn't match;Os IDs dos JOGADORES em cada .csv não são iguais.;
 share_standings_msg_str;Today's standings!;As classificações de hoje!;
 loading_str;Loading...;Carregando...;
-choose_language_str;Choose language;Escolha o idioma
-13_dominate_theme_str;13 Dominate Theme (Default);Tema 13 Dominate (Padrão)
-credits_str;Credits;Créditos
-github_repo_link_str;Link for the Github Repo;Link para o repo do Github
+choose_language_str;Choose language;Escolha o idioma;
+13_dominate_theme_str;13 Dominate Theme (Default);Tema 13 Dominate (Padrão);
+credits_str;Credits;Créditos;
+github_repo_link_str;Link for the Github Repo;Link para o repo do Github;
+update_avaliable_str;New update avaliable: ;Nova atualização disponível: ;
+download_str;Go to the Github Page;Ir até a pagina do Github;
+cancel_str;Cancel;Cancelar
