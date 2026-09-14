@@ -78,7 +78,7 @@ func setup_theme():
 func setup_header():
 	mode_name.text = UniversalDict.mode_selected.to_upper()
 	var date := Time.get_date_dict_from_system()
-	match UniversalDict.locale:
+	match UniversalDict.getLocale():
 		"en":
 			store_name.text = UniversalDict.store_name.to_upper() + " %02d/%02d/%d" % [date.month, date.day, date.year]
 		"ja":
@@ -137,6 +137,9 @@ func taking_screenshot():
 	fileDialog.current_file = image_name
 	fileDialog.show()
 	await fileDialog.file_selected
+	if fileDialog.canceled:
+		menu.visible = true
+		return
 	image.save_png(save_path)
 	menu.visible = true
 
@@ -263,3 +266,7 @@ func disableButtons():
 
 func enableButtons():
 	get_tree().set_group("buttons", "disabled", false)
+
+
+func _on_file_dialog_canceled() -> void:
+	menu.visible = true

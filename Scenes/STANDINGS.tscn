@@ -92,7 +92,7 @@ store_name = NodePath("StandingTitle/VBoxContainer/store_name")
 heroi_1_front = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/Heroi/Heroi_FRONT")
 heroi_1_bg = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/Heroi/Heroi_BG")
 heroi_1_nome = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/VBoxContainer/Nome")
-heroi_1_vitorias = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/VBoxContainer/HBoxContainer/Vitorias")
+heroi_1_vitorias = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque/VBoxContainer/HBoxContainer/Vitorias")
 heroi_2_front = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/Heroi/Heroi_FRONT")
 heroi_2_bg = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/Heroi/Heroi_BG")
 heroi_2_nome = NodePath("TabContainer/Standings_Result_1/Destaques/Destaque2/VBoxContainer/Nome")
@@ -492,6 +492,7 @@ texture_pressed = ExtResource("24_mk2gp")
 [connection signal="pressed" from="Panel/menu/proximo" to="." method="_on_proximo_pressed"]
 [connection signal="pressed" from="hide" to="." method="_on_hide_pressed"]
 [connection signal="pressed" from="Home" to="." method="_on_home_pressed"]
+[connection signal="canceled" from="FileDialog" to="." method="_on_file_dialog_canceled"]
 [connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]
 [connection signal="pressed" from="Menu/MarginContainer/hamburguer_menu/btn_home" to="." method="_on_btn_home_pressed"]
 [connection signal="pressed" from="Menu/MarginContainer/hamburguer_menu/btn_salvar" to="." method="_on_btn_salvar_pressed"]

@@ -4,10 +4,11 @@ var armory_data = {}
 var store_name = " "
 var mode_selected = " "
 var standing_size : int
-var locale
+var locale : String
 
 func _ready() -> void:
-	locale = TranslationServer.get_locale().left(2)
+	#locale = TranslationServer.get_locale()
+	pass
 
 func setArmoryData(armory: Dictionary):
 	armory_data = armory
@@ -34,9 +35,8 @@ func getModeSelected():
 	pass
 
 func setLocale(language: String):
-	locale =  language
+	locale = language
 	TranslationServer.set_locale(language)
 
-func getLocale():
-	pass
-
+func getLocale() -> String:
+	return locale

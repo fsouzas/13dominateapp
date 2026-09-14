@@ -12,7 +12,7 @@ func load_settings():
         config.load(save_path)
 
         locale = config.get_value("general", "locale", locale)
-        TranslationServer.set_locale(locale)
+        UniversalDict.setLocale(locale)
 
         theme = config.get_value("appearance", "theme", theme)
         ThemeManager.set_theme(theme)

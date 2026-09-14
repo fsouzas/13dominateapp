@@ -138,3 +138,6 @@ func get_heroi_bg(heroi_nome: String) -> Texture2D:
 		return HeroesDb.hero_textures["unknown"]["background"]
 	else:
 		return HeroesDb.hero_textures[heroi_nome]["background"]
+
+func get_heroi_color(heroi_nome: String) -> Color:
+	return Color.from_string(str(HeroesDb.young_heroes[heroi_nome]["color"]), Color.MIDNIGHT_BLUE)

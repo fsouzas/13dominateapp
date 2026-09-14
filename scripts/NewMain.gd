@@ -361,14 +361,17 @@ func _on_language_settings_item_selected(index: int) -> void:
 	match index:
 		1:
 			SettingsManager.locale = "pt_BR"
+			UniversalDict.setLocale("pt_BR")
 			SettingsManager.save_settings()
 			get_tree().reload_current_scene()
 		2:
 			SettingsManager.locale = "en"
+			UniversalDict.setLocale("en")
 			SettingsManager.save_settings()
 			get_tree().reload_current_scene()
 		3:
 			SettingsManager.locale = "ja"
+			UniversalDict.setLocale("ja")
 			SettingsManager.save_settings()
 			get_tree().reload_current_scene()
 

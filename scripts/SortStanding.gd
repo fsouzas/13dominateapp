@@ -45,7 +45,6 @@ static func add_standing(standing_last_size_temp, standings_result_size, standin
 		temp_standing_less.get_child(1).get_child(0).get_child(1).text = str(i + 1)
 		temp_standing_less.get_child(1).get_child(1).get_child(2).text = UniversalDict.armory_data.values()[i]["Name"].to_upper()
 		temp_standing_less.get_child(1).get_child(1).get_child(3).get_child(0).text = UniversalDict.armory_data.values()[i]["Wins"].to_upper()
-		temp_standing_less.get_child(1).get_child(0).self_modulate = Color.from_string(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["color"], Color.MIDNIGHT_BLUE)
-		temp_standing_less.get_child(1).get_child(1).self_modulate = Color.from_string(HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["color"], Color.MIDNIGHT_BLUE)
-		temp_standing_less.visible = true
+		temp_standing_less.get_child(1).get_child(0).self_modulate = HeroesDb.get_heroi_color(UniversalDict.armory_data.values()[i]["Hero"])
+		temp_standing_less.get_child(1).get_child(1).self_modulate = HeroesDb.get_heroi_color(UniversalDict.armory_data.values()[i]["Hero"])
 		temp_standing_less.show()
