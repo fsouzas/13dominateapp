@@ -3,7 +3,6 @@ extends Node
 signal progress_changed(progress)
 signal load_finished
 
-var loading_screen: PackedScene = null
 var loaded_resource: PackedScene
 var scene_path: String
 var progress: Array = []
@@ -14,11 +13,6 @@ func _ready() -> void:
 	
 func load_scene(_scene_path: String) -> void:
 	scene_path = _scene_path
-	
-	#var new_load_screen = loading_screen.instantiate()
-	#add_child(new_load_screen)
-	#progress_changed.connect(new_load_screen._on_progress_changed)
-	#load_finished.connect(new_load_screen._on_load_finished)
 	
 	start_load()
 	
@@ -34,4 +28,5 @@ func _process(delta: float) -> void:
 		ResourceLoader.THREAD_LOAD_LOADED:
 			loaded_resource = ResourceLoader.load_threaded_get(scene_path)
 			get_tree().change_scene_to_packed(loaded_resource)
+			set_process(false)
 			load_finished.emit()

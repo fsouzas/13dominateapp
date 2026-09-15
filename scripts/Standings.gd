@@ -4,6 +4,8 @@ extends Node
 
 @export var home_scene: StringName
 
+@export var usurp_logo: Sprite2D
+
 @export var standings_string: RichTextLabel
 @export var standings_string_shadow: RichTextLabel
 
@@ -72,8 +74,31 @@ func setup_theme():
 	standings_string.add_theme_color_override("default_color", ThemeManager.get_secondary_color())
 	standings_string_shadow.add_theme_color_override("default_color", ThemeManager.get_primary_color().darkened(0.3))
 
-	if ThemeManager.get_current_theme_name() == "usurp":
-		%UsurpCrown.visible = true
+	if UniversalDict.mode_selected == tr("pre_release_usurp_str"):
+		usurp_logo.visible = true
+		mode_name.modulate = Color.TRANSPARENT
+		check_usurp_winner(UniversalDict.getArmoryData().values()[0]["Hero"])
+
+
+func check_usurp_winner(winner_hero: String):
+	match winner_hero:
+		"Malice":
+			ThemeManager.set_background_image("res://assets/bg/malice_bg2_00000.png")
+			ThemeManager.set_primary_color(Color.html("6B9B35"))
+			standings_string.add_theme_color_override("default_color", Color.html("040F13"))
+			standings_string_shadow.add_theme_color_override("default_color",Color.html("6B9B35").darkened(0.3))
+		"Levia":
+			ThemeManager.set_background_image("res://assets/bg/levia_bg_00000.png")
+			ThemeManager.set_primary_color(Color.html("a30f1a"))
+			standings_string.add_theme_color_override("default_color", Color.html("050C14"))
+			standings_string_shadow.add_theme_color_override("default_color",Color.html("a30f1a").darkened(0.3))
+		"Baalghor, Omen of the End":
+			print("Baalghor")
+		"Viserai, Between Worlds":
+			ThemeManager.set_background_image("res://assets/bg/viserai_bg_00000.png")
+			ThemeManager.set_primary_color(Color.html("741DCC"))
+			standings_string.add_theme_color_override("default_color", Color.html("1c0d31"))
+			standings_string_shadow.add_theme_color_override("default_color",Color.html("741DCC").darkened(0.3))
 
 func setup_header():
 	mode_name.text = UniversalDict.mode_selected.to_upper()

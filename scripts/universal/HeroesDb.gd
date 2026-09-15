@@ -1,6 +1,6 @@
 extends Node
 
-var young_heroes
+var young_heroes: Dictionary = {}
 var young_heroes_path = "res://database/young_heros_db.json"
 var already_loaded : bool = false
 var hero_textures: Dictionary = {}

@@ -4,6 +4,8 @@ var theme_path := "res://app_themes/themes.json"
 var themes: Dictionary = {}
 var current_theme: String = "default"
 signal theme_changed
+signal bg_changed(bg_path: String)
+signal primary_color_changed(color: Color)
 
 func _ready() -> void:
 	load_themes()
@@ -56,3 +58,12 @@ func get_theme_names() -> Array:
 
 func get_current_theme_name():
 	return current_theme
+
+func set_primary_color(color: Color):
+	primary_color_changed.emit(color)
+
+func set_secondary_color(color: Color):
+	pass
+
+func set_background_image(bg_path: String):
+	bg_changed.emit(bg_path)

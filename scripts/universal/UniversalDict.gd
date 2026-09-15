@@ -13,8 +13,9 @@ func _ready() -> void:
 func setArmoryData(armory: Dictionary):
 	armory_data = armory
 
-func getArmoryData():
-	pass
+func getArmoryData() -> Dictionary:
+	return armory_data
+
 
 func setStoreName(store: String):
 	if store == null:
