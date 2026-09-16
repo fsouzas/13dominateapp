@@ -45,9 +45,10 @@ extends Node
 @export var btn_hamburguer : TextureButton
 @export var btn_voltar : TextureButton
 @export var btn_proximo : TextureButton
-var mudando_pagina: bool = false
 
-var save_path : String
+var _pending_screenshot: Image
+
+var mudando_pagina: bool = false
 
 var hamburguer_open: bool = false
 
@@ -113,7 +114,6 @@ func setup_header():
 
 func setup_destaques():
 	var jogadores := UniversalDict.armory_data.values()
-
 	setup_destaque(jogadores[0], heroi_1_front, heroi_1_bg, heroi_1_nome, heroi_1_vitorias)
 	setup_destaque(jogadores[1], heroi_2_front, heroi_2_bg, heroi_2_nome, heroi_2_vitorias)
 	setup_destaque(jogadores[2], heroi_3_front, heroi_3_bg, heroi_3_nome, heroi_3_vitorias)
@@ -151,22 +151,19 @@ func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_GO_BACK_REQUEST:
 		SceneLoader.load_scene(home_scene)
 
-func _on_file_dialog_file_selected(path: String) -> void:
-	save_path = path
-
 func taking_screenshot():
 	menu.visible = false
+
 	await RenderingServer.frame_post_draw
+
 	var image = get_viewport().get_texture().get_image()
-	var image_name = str(UniversalDict.mode_selected + Time.get_date_string_from_system())
-	fileDialog.current_file = image_name
+
+	var image_name := str(UniversalDict.mode_selected + Time.get_date_string_from_system())
+	fileDialog.current_file = image_name + ".png"
+	
+	_pending_screenshot = image
+	
 	fileDialog.show()
-	await fileDialog.file_selected
-	if fileDialog.canceled:
-		menu.visible = true
-		return
-	image.save_png(save_path)
-	menu.visible = true
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:
@@ -294,4 +291,19 @@ func enableButtons():
 
 
 func _on_file_dialog_canceled() -> void:
+	_pending_screenshot = null
+	menu.visible = true
+
+
+func _on_file_dialog_file_selected(path: String) -> void:
+	if _pending_screenshot == null:
+		return
+	
+	var error := _pending_screenshot.save_png(path)
+
+	if error != OK:
+		print("Failed to save screenshot. Error: " + str(error))
+	
+	_pending_screenshot = null
+
 	menu.visible = true

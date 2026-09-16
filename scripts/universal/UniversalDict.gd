@@ -23,7 +23,7 @@ func setStoreName(store: String):
 	else:
 		store_name = store
 
-func getStoreName(_store: String):
+func getStoreName():
 	pass
 
 func setModeSelected(mode: String):

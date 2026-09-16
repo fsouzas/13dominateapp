@@ -124,6 +124,7 @@ text = "SILVER AGE"
 _max_size = 59
 _min_size = 40
 _current_font_size = 59
+_size_just_modified_by_autosizer = true
 
 [node name="usurp_logo" parent="StandingTitle/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(47154294, 11071950) index="1" unique_id=1025434255]
 visible = false

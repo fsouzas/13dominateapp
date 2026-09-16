@@ -43,3 +43,4 @@ github_repo_link_str;Link for the Github Repo;Link para o repo do Github;
 update_avaliable_str;New update avaliable: ;Nova atualização disponível: ;
 download_str;Go to the Github Page;Ir até a pagina do Github;
 cancel_str;Cancel;Cancelar
+not_enough_players_str;Not enough players to generate a standing.;Não há jogadores o suficiente para gerar as classificações.

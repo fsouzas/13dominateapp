@@ -23,7 +23,6 @@ func _ready() -> void:
 		await get_tree().create_timer(1).timeout
 		await preLoadAssets()
 		await clearLoadingScreen()
-		%Loading.queue_free()
 	%Loading.queue_free()
 
 	for theme_name in ThemeManager.get_theme_names():
@@ -332,13 +331,6 @@ func _on_ready_str_pressed():
 
 	var store_name = str(%store_name.text).strip_edges()
 	
-	UniversalDict.setStoreName(store_name)
-
-	SettingsManager.store = store_name
-
-	if store_name not in SettingsManager.store_names:
-		SettingsManager.store_names.append(store_name)
-	SettingsManager.save_settings()
 
 	if error_code != CSVStanding.MergeError.OK:
 		match error_code:
@@ -352,6 +344,18 @@ func _on_ready_str_pressed():
 				%ready_error_msg_str.text = tr("error_player_id_mismatch_str")
 				csvErrorTextAnim(%ready_error_msg_str, false)
 		return
+	if armory_merged.size() < 3:
+		%ready_error_msg_str.text = tr("not_enough_players_str")
+		csvErrorTextAnim(%ready_error_msg_str, false)
+	
+	UniversalDict.setStoreName(store_name)
+
+	SettingsManager.store = store_name
+
+	if store_name not in SettingsManager.store_names:
+		SettingsManager.store_names.append(store_name)
+	
+	SettingsManager.save_settings()
 	csvErrorTextAnim(%ready_error_msg_str, true)
 	UniversalDict.setArmoryData(armory_merged)
 	SceneLoader.load_scene(standings_scene)

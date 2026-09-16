@@ -128,16 +128,28 @@ func get_hero_textures(hero_name: String) -> Dictionary:
 	return hero_textures.get(hero_name, {})
 
 func get_heroi_front(heroi_nome: String) -> Texture2D:
-	if heroi_nome == "":
-		return HeroesDb.hero_textures["unknown"]["front"]
-	else:
-		return HeroesDb.hero_textures[heroi_nome]["front"]
+	return _get_heroi_texture(heroi_nome, "front")
 
 func get_heroi_bg(heroi_nome: String) -> Texture2D:
-	if heroi_nome == "":
-		return HeroesDb.hero_textures["unknown"]["background"]
-	else:
-		return HeroesDb.hero_textures[heroi_nome]["background"]
+	return _get_heroi_texture(heroi_nome, "background")
 
 func get_heroi_color(heroi_nome: String) -> Color:
 	return Color.from_string(str(HeroesDb.young_heroes[heroi_nome]["color"]), Color.MIDNIGHT_BLUE)
+
+func get_heroi_standing(heroi_nome: String) -> Texture2D:
+	return _get_heroi_texture(heroi_nome, "standing")
+
+func _get_heroi_texture(hero_name: String, texture_type: String) -> Texture2D:
+	if hero_name.is_empty():
+		return hero_textures["unknown"][texture_type]
+	if not hero_textures.has(hero_name):
+		return hero_textures["unknown"][texture_type]
+	if not hero_textures[hero_name].has(texture_type):
+		return hero_textures["unknown"][texture_type]
+	
+	var texture: Texture2D = hero_textures[hero_name][texture_type]
+
+	if texture == null:
+		return hero_textures["unknown"][texture_type]
+	
+	return texture

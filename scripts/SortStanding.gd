@@ -8,7 +8,7 @@ static func sort_standing(main: Node, standing : Node, standings_extra : VBoxCon
 	else:
 		UniversalDict.standing_size = 13
 		add_standing(standing_last_size, UniversalDict.standing_size, standing, main_standings_result)
-		while UniversalDict.standing_size <= UniversalDict.armory_data.size() :
+		while UniversalDict.standing_size < UniversalDict.armory_data.size() :
 			standing_last_size = UniversalDict.standing_size
 			if UniversalDict.armory_data.size() > (UniversalDict.standing_size + 19):
 				UniversalDict.standing_size += 19 
@@ -18,33 +18,43 @@ static func sort_standing(main: Node, standing : Node, standings_extra : VBoxCon
 			var standings_extra_temp: Node = standings_extra.duplicate()
 			main.add_child(standings_extra_temp)
 			add_standing(standing_last_size,UniversalDict.standing_size, standing, standings_extra_temp)
-			#Por algum motivo só saí do loop se eu fizer isso senão ele vai criar standings vazios até o fim dos tempos.
-			if UniversalDict.standing_size >= UniversalDict.armory_data.size():
-				break
 	
 
 static func add_standing(standing_last_size_temp, standings_result_size, standing_temp, main_standings_result_temp):
 	for i in range(standing_last_size_temp, standings_result_size):
+		var player_data: Dictionary = UniversalDict.armory_data.values()[i]
+		var hero_name: String = player_data["Hero"]
+		
 		var temp_standing_less: Node = standing_temp.duplicate()
 		main_standings_result_temp.add_child(temp_standing_less)
-		if HeroesDb.young_heroes[UniversalDict.armory_data.values()[i]["Hero"]]["standing"] == "":
-			temp_standing_less.get_child(1).get_child(1).get_child(1).texture = HeroesDb.hero_textures["unknown"]["standing"]
-			pass
-		else:
-			temp_standing_less.get_child(1).get_child(1).get_child(1).texture =HeroesDb.hero_textures[UniversalDict.armory_data.values()[i]["Hero"]]["standing"]
-			pass
-		if UniversalDict.armory_data.values()[i]["Rank"] == "Dropped":
+
+		var hero_texture: TextureRect = temp_standing_less.get_child(1).get_child(1).get_child(1)
+
+		hero_texture.texture = HeroesDb.get_heroi_standing(hero_name)
+
+		if player_data["Rank"] == "Dropped":
 			temp_standing_less.get_child(2).show()
-			var shader_main_mat = temp_standing_less.get_child(1).get_child(1).get_child(1).material as ShaderMaterial
+			var shader_main_mat = hero_texture.material as ShaderMaterial
 			var shader_mat = shader_main_mat.duplicate()
-			temp_standing_less.get_child(1).get_child(1).get_child(1).material = shader_mat
+			hero_texture.material = shader_mat
 			shader_mat.set_shader_parameter("percentage", 0)
-			
-		temp_standing_less.get_child(1).get_child(0).get_child(0).texture = load("res://assets/textures/grunge_"+str(randi_range(1,6))+".png")
-		temp_standing_less.get_child(1).get_child(1).get_child(0).texture = load("res://assets/textures/grunge_"+str(randi_range(1,6))+".png")
-		temp_standing_less.get_child(1).get_child(0).get_child(1).text = str(i + 1)
-		temp_standing_less.get_child(1).get_child(1).get_child(2).text = UniversalDict.armory_data.values()[i]["Name"].to_upper()
-		temp_standing_less.get_child(1).get_child(1).get_child(3).get_child(0).text = UniversalDict.armory_data.values()[i]["Wins"].to_upper()
-		temp_standing_less.get_child(1).get_child(0).self_modulate = HeroesDb.get_heroi_color(UniversalDict.armory_data.values()[i]["Hero"])
-		temp_standing_less.get_child(1).get_child(1).self_modulate = HeroesDb.get_heroi_color(UniversalDict.armory_data.values()[i]["Hero"])
+		
+		var grunge_texture1 := temp_standing_less.get_child(1).get_child(0).get_child(0)
+		var grunge_texture2 := temp_standing_less.get_child(1).get_child(1).get_child(0)
+
+		var player_position := temp_standing_less.get_child(1).get_child(0).get_child(1)
+		var player_name := temp_standing_less.get_child(1).get_child(1).get_child(2)
+		var player_wins := temp_standing_less.get_child(1).get_child(1).get_child(3).get_child(0)
+		var player_color1 := temp_standing_less.get_child(1).get_child(0)
+		var player_color2 := temp_standing_less.get_child(1).get_child(1)
+
+
+		grunge_texture1.texture = load("res://assets/textures/grunge_"+str(randi_range(1,6))+".png")
+		grunge_texture2.texture = load("res://assets/textures/grunge_"+str(randi_range(1,6))+".png")
+
+		player_position.text = str(i + 1)
+		player_name.text = player_data["Name"].to_upper()
+		player_wins.text = player_data["Wins"].to_upper()
+		player_color1.self_modulate = HeroesDb.get_heroi_color(hero_name)
+		player_color2.self_modulate = HeroesDb.get_heroi_color(hero_name)
 		temp_standing_less.show()
