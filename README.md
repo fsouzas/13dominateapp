@@ -81,3 +81,10 @@ Please include what happened and, if possible, the steps needed to reproduce the
 - Suggest previously entered store names with autocomplete.
 
 Have another idea? Feel free to suggest a feature.
+
+## Final Thanks / Agradecimentos Finais
+
+- Muito obrigado a comunidade da (13) Dominate por me dar o apoio.
+Principalmente aos amigos Adriano Elias e Gabriel Bueno por ajudarem a testar o aplicativo desde junho/2026.
+
+- Many thanks to the (13) Dominate community for their support. Especially my friends: Adriano Elias and Gabriel Bueno for helping me to test the app since jun/2026.
