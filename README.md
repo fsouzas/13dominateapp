@@ -85,6 +85,6 @@ Have another idea? Feel free to suggest a feature.
 ## Final Thanks / Agradecimentos Finais
 
 - Muito obrigado a comunidade da (13) Dominate por me dar o apoio.
-Principalmente aos amigos Adriano Elias e Gabriel Bueno por ajudarem a testar o aplicativo desde junho/2026.
+Principalmente aos amigos Adriano Elias, Gabriel Bueno e Robert Zimmerli por ajudarem a testar o aplicativo desde junho/2026.
 
-- Many thanks to the (13) Dominate community for their support. Especially my friends: Adriano Elias and Gabriel Bueno for helping me to test the app since jun/2026.
+- Many thanks to the (13) Dominate community for their support. Especially my friends: Adriano Elias, Gabriel Bueno and Robert Zimmerli for helping me to test the app since jun/2026.
