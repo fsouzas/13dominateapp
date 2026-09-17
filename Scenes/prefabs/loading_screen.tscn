@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cymwmcx8if8i5"]
+
+[ext_resource type="Script" uid="uid://sekux8h2itja" path="res://scripts/universal/loading_screen.gd" id="1_sprym"]
+[ext_resource type="Shader" uid="uid://cwht1gdyauvam" path="res://shaders/halftone_transition.gdshader" id="2_sprym"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sprym"]
+shader = ExtResource("2_sprym")
+shader_parameter/TransparentDot = false
+shader_parameter/AspectRatio = 0.7
+shader_parameter/Dots = 55.07
+shader_parameter/_min = 0.37
+shader_parameter/_max = 0.875
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/progress = 0.0
+
+[node name="LoadingScreen" type="CanvasLayer" unique_id=1224989004]
+layer = 100
+script = ExtResource("1_sprym")
+
+[node name="transition" type="ColorRect" parent="." unique_id=214136983]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_sprym")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

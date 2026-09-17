@@ -147,11 +147,6 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uo0ed"]
-content_margin_left = 15.0
-content_margin_right = 15.0
-content_margin_bottom = 20.0
-
 [node name="NewMain" type="Control" unique_id=1479865462]
 layout_mode = 3
 anchors_preset = 15
@@ -610,35 +605,36 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="update_popup" unique_id=584001585]
-material = SubResource("ShaderMaterial_1cbid")
+[node name="MarginContainer" type="MarginContainer" parent="update_popup" unique_id=494303875]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 44.0
-offset_top = 420.0
-offset_right = -51.0
-offset_bottom = -363.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 408
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 450
+
+[node name="Panel" type="Panel" parent="update_popup/MarginContainer" unique_id=584001585]
+material = SubResource("ShaderMaterial_1cbid")
+layout_mode = 2
 theme = ExtResource("4_qqru0")
 theme_override_styles/panel = SubResource("StyleBoxFlat_riqys")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="update_popup/Panel" unique_id=49064880]
+[node name="VBoxContainer" type="VBoxContainer" parent="update_popup/MarginContainer/Panel" unique_id=49064880]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 32.0
-offset_right = -34.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="update_avaliable_str" type="RichTextLabel" parent="update_popup/Panel/VBoxContainer" unique_id=619118393]
+[node name="update_avaliable_str" type="RichTextLabel" parent="update_popup/MarginContainer/Panel/VBoxContainer" unique_id=619118393]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(-400, 90)
+custom_minimum_size = Vector2(0, 90)
 layout_mode = 2
 theme_override_constants/outline_size = 0
 theme_override_fonts/normal_font = ExtResource("12_lwhgv")
@@ -654,19 +650,19 @@ _current_font_size = 2
 _editor_defaults_set = true
 metadata/_custom_type_script = "uid://co0lo02vnu10n"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="update_popup/Panel/VBoxContainer" unique_id=1265615289]
+[node name="HBoxContainer" type="HBoxContainer" parent="update_popup/MarginContainer/Panel/VBoxContainer" unique_id=1265615289]
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 theme_override_constants/separation = 30
 alignment = 1
 
-[node name="download_btn" type="Button" parent="update_popup/Panel/VBoxContainer/HBoxContainer" unique_id=926632448]
+[node name="download_btn" type="Button" parent="update_popup/MarginContainer/Panel/VBoxContainer/HBoxContainer" unique_id=926632448]
 layout_mode = 2
 theme = ExtResource("4_qqru0")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_uo0ed")
 text = "download_str"
 
-[node name="cancel_btn" type="Button" parent="update_popup/Panel/VBoxContainer/HBoxContainer" unique_id=814591056]
+[node name="cancel_btn" type="Button" parent="update_popup/MarginContainer/Panel/VBoxContainer/HBoxContainer" unique_id=814591056]
 layout_mode = 2
 theme = ExtResource("4_qqru0")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_1cbid")
@@ -682,22 +678,25 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="credits_popup" unique_id=43135835]
-material = SubResource("ShaderMaterial_uo0ed")
+[node name="MarginContainer" type="MarginContainer" parent="credits_popup" unique_id=679899412]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 20.0
-offset_top = 266.0
-offset_right = -21.0
-offset_bottom = -236.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 180
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 250
+
+[node name="Panel" type="Panel" parent="credits_popup/MarginContainer" unique_id=43135835]
+material = SubResource("ShaderMaterial_uo0ed")
+layout_mode = 2
 theme = ExtResource("4_qqru0")
 theme_override_styles/panel = SubResource("StyleBoxFlat_qxpgi")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="credits_popup/Panel" unique_id=1045024692]
+[node name="VBoxContainer" type="VBoxContainer" parent="credits_popup/MarginContainer/Panel" unique_id=1045024692]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -706,7 +705,7 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="credits_str" type="RichTextLabel" parent="credits_popup/Panel/VBoxContainer" unique_id=1526106211]
+[node name="credits_str" type="RichTextLabel" parent="credits_popup/MarginContainer/Panel/VBoxContainer" unique_id=1526106211]
 custom_minimum_size = Vector2(0, 90)
 layout_mode = 2
 theme_override_constants/outline_size = 0
@@ -723,13 +722,17 @@ _current_font_size = 2
 _editor_defaults_set = true
 metadata/_custom_type_script = "uid://co0lo02vnu10n"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="credits_popup/Panel/VBoxContainer" unique_id=1196521700]
+[node name="MarginContainer" type="MarginContainer" parent="credits_popup/MarginContainer/Panel/VBoxContainer" unique_id=98296452]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 20
+
+[node name="ScrollContainer" type="ScrollContainer" parent="credits_popup/MarginContainer/Panel/VBoxContainer/MarginContainer" unique_id=1196521700]
 custom_minimum_size = Vector2(0, 500)
 layout_mode = 2
 theme_override_colors/scroll_hint_horizontal_color = Color(1, 1, 1, 1)
-theme_override_styles/panel = SubResource("StyleBoxEmpty_uo0ed")
 
-[node name="Label" type="Label" parent="credits_popup/Panel/VBoxContainer/ScrollContainer" unique_id=605713901]
+[node name="Label" type="Label" parent="credits_popup/MarginContainer/Panel/VBoxContainer/MarginContainer/ScrollContainer" unique_id=605713901]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("6_flrvy")
@@ -1448,7 +1451,7 @@ are property of Legend Story Studios.
 "
 vertical_alignment = 1
 
-[node name="credits_close" type="Button" parent="credits_popup/Panel" unique_id=1412662235]
+[node name="credits_close" type="Button" parent="credits_popup/MarginContainer/Panel" unique_id=1412662235]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 1
@@ -1471,6 +1474,6 @@ icon = ExtResource("13_qxpgi")
 [connection signal="item_selected" from="MarginContainer/menu/menu_settings/menu_settings_opt/theme_settings" to="." method="_on_theme_settings_item_selected"]
 [connection signal="pressed" from="MarginContainer/menu/menu_settings/menu_settings_opt/credits_btn" to="." method="_on_credits_btn_pressed"]
 [connection signal="pressed" from="MarginContainer/menu/menu_settings/menu_settings_opt/github_btn" to="." method="_on_github_btn_pressed"]
-[connection signal="pressed" from="update_popup/Panel/VBoxContainer/HBoxContainer/download_btn" to="." method="_on_download_btn_pressed"]
-[connection signal="pressed" from="update_popup/Panel/VBoxContainer/HBoxContainer/cancel_btn" to="." method="_on_cancel_btn_pressed"]
-[connection signal="pressed" from="credits_popup/Panel/credits_close" to="." method="_on_credits_close_pressed"]
+[connection signal="pressed" from="update_popup/MarginContainer/Panel/VBoxContainer/HBoxContainer/download_btn" to="." method="_on_download_btn_pressed"]
+[connection signal="pressed" from="update_popup/MarginContainer/Panel/VBoxContainer/HBoxContainer/cancel_btn" to="." method="_on_cancel_btn_pressed"]
+[connection signal="pressed" from="credits_popup/MarginContainer/Panel/credits_close" to="." method="_on_credits_close_pressed"]

@@ -2,22 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dachtvc82g382"
-path.s3tc="res://.godot/imported/Warning-Triangle--Streamline-Core.png-def77db42c9a262de464706d6a14f058.s3tc.ctex"
-path.etc2="res://.godot/imported/Warning-Triangle--Streamline-Core.png-def77db42c9a262de464706d6a14f058.etc2.ctex"
+uid="uid://d38o4r7cgk8mi"
+path="res://.godot/imported/photo_2026-09-17_05-33-27.jpg-11121a3962ee35676390e92798f48f66.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icons/Warning-Triangle--Streamline-Core.png"
-dest_files=["res://.godot/imported/Warning-Triangle--Streamline-Core.png-def77db42c9a262de464706d6a14f058.s3tc.ctex", "res://.godot/imported/Warning-Triangle--Streamline-Core.png-def77db42c9a262de464706d6a14f058.etc2.ctex"]
+source_file="res://screenshots/photo_2026-09-17_05-33-27.jpg"
+dest_files=["res://.godot/imported/photo_2026-09-17_05-33-27.jpg-11121a3962ee35676390e92798f48f66.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

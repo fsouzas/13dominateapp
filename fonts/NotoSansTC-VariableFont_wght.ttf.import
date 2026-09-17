@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dr2mtpscpgntj"
-path="res://.godot/imported/FuturaPTCond-MediumObl.ttf-30eef912982c83ce95b9396788b5128d.fontdata"
+uid="uid://t5lqula6lgin"
+path="res://.godot/imported/NotoSansTC-VariableFont_wght.ttf-03f556cb2a2fafe05892c4bc19fe362d.fontdata"
 
 [deps]
 
-source_file="res://fonts/FuturaPTCond-MediumObl.ttf"
-dest_files=["res://.godot/imported/FuturaPTCond-MediumObl.ttf-30eef912982c83ce95b9396788b5128d.fontdata"]
+source_file="res://fonts/NotoSansTC-VariableFont_wght.ttf"
+dest_files=["res://.godot/imported/NotoSansTC-VariableFont_wght.ttf-03f556cb2a2fafe05892c4bc19fe362d.fontdata"]
 
 [params]
 
@@ -22,7 +22,7 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
-hinting=1
+hinting=3
 subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0

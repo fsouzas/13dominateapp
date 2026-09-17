@@ -16,6 +16,7 @@ func _ready() -> void:
 
 	SignalBus.csv_state.connect(_on_csv_state_connected)
 	loadSettings()
+	%version.text = ProjectSettings.get_setting("application/config/version","0.0.0")
 	
 	if HeroesDb.already_loaded == false:
 		await showLoadingScreenInfo()
@@ -215,6 +216,7 @@ func _on_csv_state_connected(state: bool):
 	csv_check = state
 
 func _on_menu_standings_btn_pressed() -> void:
+	Input.vibrate_handheld(50,0.2)
 	var tween = create_tween().set_parallel(true).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_IN_OUT)
 	tween.tween_property(%menu_standings_btn_bar, "value", 100, 0.5)
 	tween.tween_property(%menu_settings_btn_bar, "value", 0, 0.5)
@@ -243,6 +245,7 @@ func _on_menu_standings_btn_pressed() -> void:
 
 
 func _on_menu_settings_btn_pressed() -> void:
+	Input.vibrate_handheld(50,0.2)
 	var tween = create_tween().set_parallel(true).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_IN_OUT)
 	tween.tween_property(%menu_settings_btn_bar, "value", 100, 0.5)
 	tween.tween_property(%menu_standings_btn_bar, "value", 0, 0.5)
@@ -284,6 +287,7 @@ func get_file_name(path: String) -> String:
 	return file_name
 
 func _on_choose_standings_btn_pressed() -> void:
+	Input.vibrate_handheld(50,0.2)
 	$FileDialog.show()
 	
 	var path : String = await $FileDialog.file_selected
@@ -291,12 +295,14 @@ func _on_choose_standings_btn_pressed() -> void:
 
 
 func _on_choose_heroes_btn_pressed() -> void:
+	Input.vibrate_handheld(50,0.2)
 	$FileDialog.show()
 	
 	var path : String = await $FileDialog.file_selected
 	csvImporterHeroes(path)
 
 func _on_menu_bar_item_selected(index: int) -> void:
+	Input.vibrate_handheld(50,0.2)
 	match index:
 		1:
 			UniversalDict.setModeSelected(tr("sage_str"))
@@ -325,6 +331,7 @@ func readyButtonCheck():
 		%ready_btn.disabled = false
 
 func _on_ready_str_pressed():
+	Input.vibrate_handheld(50,0.2)
 	var result_merged: Array = CSVStanding.merge_dicts_keep_first_order(standings, heroes)
 	var armory_merged: Dictionary = result_merged[0]
 	var error_code: int = result_merged[1]
@@ -389,20 +396,25 @@ func _on_theme_settings_item_selected(index: int) -> void:
 
 
 func _on_cancel_btn_pressed() -> void:
+	Input.vibrate_handheld(50,0.2)
 	%update_popup.queue_free()
 
 
 func _on_download_btn_pressed() -> void:
+	Input.vibrate_handheld(50,0.2)
 	OS.shell_open(github_download_link)
 
 
 func _on_github_btn_pressed() -> void:
+	Input.vibrate_handheld(50,0.2)
 	OS.shell_open("https://github.com/fsouzas/13dominateapp")
 
 
 func _on_credits_btn_pressed() -> void:
+	Input.vibrate_handheld(50,0.2)
 	%credits_popup.visible = true
 
 
 func _on_credits_close_pressed() -> void:
+	Input.vibrate_handheld(50,0.2)
 	%credits_popup.visible = false

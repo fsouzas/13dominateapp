@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://b2rqsuah4svpo"
-path="res://.godot/imported/FuturaPTCond-Bold.ttf-cce098081552a3bfd9cb191dfe61fa4f.fontdata"
+uid="uid://cjdq7j56lmq5k"
+path="res://.godot/imported/OpenSans-VariableFont_wdth,wght.ttf-7cd8160bc9221b1f02276278a74ee648.fontdata"
 
 [deps]
 
-source_file="res://fonts/FuturaPTCond-Bold.ttf"
-dest_files=["res://.godot/imported/FuturaPTCond-Bold.ttf-cce098081552a3bfd9cb191dfe61fa4f.fontdata"]
+source_file="res://fonts/OpenSans-VariableFont_wdth,wght.ttf"
+dest_files=["res://.godot/imported/OpenSans-VariableFont_wdth,wght.ttf-7cd8160bc9221b1f02276278a74ee648.fontdata"]
 
 [params]
 
@@ -22,7 +22,7 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
-hinting=1
+hinting=3
 subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0
