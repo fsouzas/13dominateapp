@@ -78,7 +78,7 @@ func setup_theme():
 	if UniversalDict.mode_selected == tr("pre_release_usurp_str"):
 		usurp_logo.visible = true
 		mode_name.modulate = Color.TRANSPARENT
-		check_usurp_winner(UniversalDict.getArmoryData().values()[0]["Hero"])
+		check_usurp_winner(UniversalDict.getArmoryData().values()[0]["hero"])
 
 
 func check_usurp_winner(winner_hero: String):
@@ -119,14 +119,17 @@ func setup_destaques():
 	setup_destaque(jogadores[2], heroi_3_front, heroi_3_bg, heroi_3_nome, heroi_3_vitorias)
 
 func setup_destaque(jogador: Dictionary, front: TextureRect, background: TextureRect, nome: AutoSizeRichTextLabel, vitorias: RichTextLabel):
-	nome.text = format_nome_jogador(jogador["Name"])
-	vitorias.text = jogador["Wins"].to_upper()
+	nome.text = format_nome_jogador(jogador["name"])
+	vitorias.text = jogador["wins"].to_upper()
 	
-	background.texture = HeroesDb.get_heroi_bg(jogador["Hero"])
-	front.texture = HeroesDb.get_heroi_front(jogador["Hero"])
+	background.texture = HeroesDb.get_heroi_bg(jogador["hero"])
+	front.texture = HeroesDb.get_heroi_front(jogador["hero"])
 
 func format_nome_jogador(nome: String) -> String:
 	var partes := nome.to_upper().split(" ")
+
+	if partes.size() >= 3 and partes[1].length() <= 3:
+		return partes[0] + " " + partes[1] + " " + partes[2]
 
 	if partes.size() >= 2:
 		return partes[0] + " " + partes[1]

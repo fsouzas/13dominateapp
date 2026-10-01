@@ -1,6 +1,67 @@
 class_name CSVStanding
 
 enum MergeError {OK = 0, FIRST_EMPTY = 1, SECOND_EMPTY = 2, PLAYER_ID_MISMATCH = 3}
+const HEADER_ALIAS := {
+	#standings.csv
+	"Rank": "rank",
+	"Classement": "rank",
+	"Rang": "rank",
+	"Posizione": "rank",
+	"ランキング": "rank",
+	"Clasificación": "rank",
+
+	"Name": "name",
+	"Nom": "name",
+	#"Name": "name",
+	"Nome": "name",
+	"名前": "name",
+	"Nombre": "name",
+
+	"Player ID": "player_id",
+	"Identifiant du joueur": "player_id",
+	"Spieler-ID": "player_id",
+	"ID giocatore": "player_id",
+	"プレイヤーID": "player_id",
+	"ID del jugador": "player_id",
+
+	"Wins": "wins",
+	"Victoires": "wins",
+	"Siege": "wins",
+	"Vittorie": "wins",
+	"勝利数": "wins",
+	"Victorias": "wins",
+
+	#heroes.csv
+	"Player Name": "player_name",
+	"Nom du joueur": "player_name",
+	"Spielername": "player_name",
+	"Nome del giocatore": "player_name",
+	"プレイヤー名": "player_name",
+	"Nombre del jugador": "player_name",
+
+	"Country/Region": "country_region",
+	"Pays/Région": "country_region",
+	"Land/Region": "country_region",
+	"Nazione/Regione": "country_region",
+	"国/地域": "country_region",
+	"País/Región": "country_region",
+
+	"Hero": "hero",
+	"Héros": "hero",
+	"Held": "hero",
+	"Eroe": "hero",
+	"ヒーロー": "hero",
+	"Héroe": "hero",
+}
+
+const DROPPED_ALIAS := {
+	"Dropped": "dropped",
+	"Abandonné": "dropped",
+	"Gedroppt": "dropped",
+	"Droppato": "dropped",
+	"退出済み": "dropped",
+	"Dropeado": "dropped",
+}
 
 static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 	var output_dict: Dictionary = {}
@@ -9,38 +70,47 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 
 	if file == null:
 		push_error("Failed to open file: " + file_path)
+		print(output_dict)
 		return output_dict
 
 	var headers: PackedStringArray = file.get_csv_line()
+	var normalized_headers: PackedStringArray = []
+
+	for header in headers:
+		if HEADER_ALIAS.has(header):
+			normalized_headers.append(HEADER_ALIAS.get(header))
+		else:
+			normalized_headers.append("")
 
 	var required: Array[String] = []
 
 	if type == "standings":
 		required = [
-			"Rank",
-			"Name",
-			"Player ID",
-			"Wins"
+			"rank",
+			"name",
+			"player_id",
+			"wins"
 		]
 
 	elif type == "heroes":
 		required = [
-			"Player Name",
-			"Player ID",
-			"Country/Region",
-			"Hero"
+			"player_name",
+			"player_id",
+			"country_region",
+			"hero"
 		]
 
 	else:
 		push_error("Unknown CSV type: " + type)
 		file.close()
+		print(output_dict)
 		return output_dict
 
 
 	var missing: Array[String] = []
 
 	for element in required:
-		if not headers.has(element):
+		if not normalized_headers.has(element):
 			missing.append(element)
 
 
@@ -55,6 +125,7 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 			SignalBus.csv_state.emit(false)
 
 		file.close()
+		print(output_dict)
 		return output_dict
 
 
@@ -62,11 +133,12 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 	SignalBus.csv_state.emit(true)
 
 
-	var key_index: int = headers.find("Player ID")
+	var key_index: int = normalized_headers.find("player_id")
 
 	if key_index == -1:
 
 		file.close()
+		print(output_dict)
 		return output_dict
 
 
@@ -92,29 +164,34 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 
 			var row_data: Dictionary = {}
 
-			for i in range(headers.size()):
+			for i in range(normalized_headers.size()):
 
 				if i == key_index:
 					continue
 
+				if normalized_headers[i] == "":
+					continue
+
 				if i < row.size():
-					row_data[headers[i]] = row[i].strip_edges()
+					row_data[normalized_headers[i]] = row[i].strip_edges()
 				else:
-					row_data[headers[i]] = ""
+					row_data[normalized_headers[i]] = ""
 
 			output_dict[player_id] = row_data
 
 
 		file.close()
+		print(output_dict)
 		return output_dict
 
 	if type == "standings":
 
-		var rank_index: int = headers.find("Rank")
+		var rank_index: int = normalized_headers.find("rank")
 
 		if rank_index == -1:
 
 			file.close()
+			print(output_dict)
 			return output_dict
 
 
@@ -140,12 +217,20 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 
 			var row_data: Dictionary = {}
 
-			for i in range(headers.size()):
+			for i in range(normalized_headers.size()):
+				
+				if normalized_headers[i] == "":
+					continue
 
 				if i < row.size():
-					row_data[headers[i]] = row[i].strip_edges()
+					var value: String = row[i].strip_edges()
+
+					if normalized_headers[i] == "rank" and DROPPED_ALIAS.has(value):
+						value = DROPPED_ALIAS.get(value)
+
+					row_data[normalized_headers[i]] = value
 				else:
-					row_data[headers[i]] = ""
+					row_data[normalized_headers[i]] = ""
 
 			row_data["_player_id"] = player_id
 
@@ -157,9 +242,12 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 		for row_data in all_rows:
 
 			var player_id: String = row_data["_player_id"]
-			var rank: String = str(row_data["Rank"]).strip_edges()
+			var rank: String = str(row_data["rank"]).strip_edges()
 
-			if rank.to_lower() == "dropped":
+			if DROPPED_ALIAS.has(rank):
+				rank = DROPPED_ALIAS.get(rank)
+
+			if rank == "dropped":
 				continue
 
 			if rank.is_valid_int():
@@ -173,7 +261,7 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 			var player_id: String = row_data["_player_id"]
 
 			var rank: String = str(
-					row_data["Rank"]
+					row_data["rank"]
 			).strip_edges()
 
 			row_data.erase("_player_id")
@@ -181,18 +269,18 @@ static func load_csv_to_dict(file_path: String, type: String) -> Dictionary:
 
 			if numeric_rank_by_player.has(player_id):
 
-				row_data["Rank"] = numeric_rank_by_player[player_id]
+				row_data["rank"] = numeric_rank_by_player[player_id]
 
 			else:
 
-				row_data["Rank"] = rank
+				row_data["rank"] = rank
 
 
 			output_dict[player_id] = row_data
 
 
 	file.close()
-
+	print(output_dict)
 	return output_dict
 
 

@@ -186,6 +186,9 @@ func csvImporterStandings(path):
 
 func csvImporterHeroes(path):
 	heroes = CSVStanding.load_csv_to_dict(path, "heroes")
+	HeroesDb.normalize_heros_names(heroes)
+
+
 
 	var file_name := get_file_name(path)
 
@@ -327,6 +330,7 @@ func enableCsvButtons():
 func readyButtonCheck():
 	if standings.is_empty() or heroes.is_empty():
 		%ready_btn.disabled = true
+		print("standings or heroes is empty")
 	else:
 		%ready_btn.disabled = false
 

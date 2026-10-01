@@ -23,7 +23,7 @@ static func sort_standing(main: Node, standing : Node, standings_extra : VBoxCon
 static func add_standing(standing_last_size_temp, standings_result_size, standing_temp, main_standings_result_temp):
 	for i in range(standing_last_size_temp, standings_result_size):
 		var player_data: Dictionary = UniversalDict.armory_data.values()[i]
-		var hero_name: String = player_data["Hero"]
+		var hero_name: String = player_data["hero"]
 		
 		var temp_standing_less: Node = standing_temp.duplicate()
 		main_standings_result_temp.add_child(temp_standing_less)
@@ -32,7 +32,7 @@ static func add_standing(standing_last_size_temp, standings_result_size, standin
 
 		hero_texture.texture = HeroesDb.get_heroi_standing(hero_name)
 
-		if player_data["Rank"] == "Dropped":
+		if player_data["rank"] == "Dropped":
 			temp_standing_less.get_child(2).show()
 			var shader_main_mat = hero_texture.material as ShaderMaterial
 			var shader_mat = shader_main_mat.duplicate()
@@ -53,8 +53,8 @@ static func add_standing(standing_last_size_temp, standings_result_size, standin
 		grunge_texture2.texture = load("res://assets/textures/grunge_"+str(randi_range(1,6))+".png")
 
 		player_position.text = str(i + 1)
-		player_name.text = player_data["Name"].to_upper()
-		player_wins.text = player_data["Wins"].to_upper()
+		player_name.text = player_data["name"].to_upper()
+		player_wins.text = player_data["wins"].to_upper()
 		player_color1.self_modulate = HeroesDb.get_heroi_color(hero_name)
 		player_color2.self_modulate = HeroesDb.get_heroi_color(hero_name)
 		temp_standing_less.show()
