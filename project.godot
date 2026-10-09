@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="13 Dominate Standings"
-config/version="1.0.0"
+config/version="1.1.1"
 run/main_scene="uid://jdbulyrefdai"
 config/quit_on_go_back=false
 config/features=PackedStringArray("4.7", "Mobile")
@@ -82,7 +82,7 @@ pointing/emulate_touch_from_mouse=true
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://localization/localization.en.translation", "res://localization/localization.ja.translation", "res://localization/localization.pt_BR.translation")
+locale/translations=PackedStringArray("res://localization/localization.en.translation", "res://localization/localization.ja.translation", "res://localization/localization.pt_BR.translation", "res://localization/localization.fr.translation")
 locale/fallback=""
 
 [physics]

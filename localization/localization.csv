@@ -1,46 +1,46 @@
-id;en;pt_BR;ja
-mode_str;Mode;Modo;モード
-chose_mode_str;Choose Mode;Escolha o Modo;モードを選択
-standings_str;Standings;Classificações;総合優勝
-choose_standings_csv_str;Choose a STANDINGS.CSV;ESCOLHA UM STANDINGS.CSV;「STANDINGS.CSV」ファイルを選択してください
-not_a_valid_standings_csv_str;Not a valid standings.csv.;Não é um standings.csv válido.;
-heroes_str;Heroes;Heróis;ヒーロー
-choose_heroes_csv_str;Choose a HEROES.CSV;ESCOLHA UM HEROES.CSV;「HEROES.CSV」ファイルを選択してください
-not_a_valid_heroes_csv_str;Not a valid heroes.csv.;Não é um heroes.csv válido.;
-store_name_str;Store name;Nome da loja;店舗名
-ready_str;Ready!;Pronto!;準備OK！
-cc_str;CLASSIC CONSTRUCTED;CLASSIC CONSTRUCTED;クラシック
-standings_title_str;STANDINGS;CLASSIFICAÇÕES;総合優勝
-sage_str;SILVER AGE;SILVER AGE;シルバーエイジ
-loading_assets_str;Loading assets;Carregando assets...;
-loading_assets_finished_str;Loading complete!;Carregamento completo!;
-menu_standings;STANDINGS;CLASSIFICAÇÕES;
-sealed_str;SEALED;SELADO;
-draft_str;DRAFT;DRAFT;
-store_str;Store name;Nome da loja;
-pre_release_usurp_str;USURP THE SHADOW THRONE;USURP THE SHADOW THRONE;
-menu_settings;SETTINGS;OPÇÕES;
-language_str;Language;Idioma;
-theme_str;Theme;Tema;
-13dominate_theme_str;13 Dominate Theme;Tema 13 Dominate;
-usurp_theme_str;Usurp The Shadow Throne Theme;Tema Usurp The Shadow Throne;
-custom_color_str;Custom Color;Cor Customizavel;
-color1_str;Color 1;Cor 1;
-color2_str;Color 2;Cor 2;
-heroes_csv_error_load;Not a valid heroes.csv. Please, try again.;Não é um heroes.csv válido. Por favor, tente novamente.;
-checking_new_update_str;Checking for new updates...;Verificando por novas atualizações...;
-new_update_str;New update detected.;Nova atualização disponível.;
-already_latest_version_str;Already with the latest version;Aplicativo já com a última versão.;
-error_standings_csv_str;Error with standings.csv;Erro com standings.csv;
-error_heroes_csv_str;Error with heroes.csv;Erro com heroes.csv;
-error_player_id_mismatch_str;The PLAYERs ID on each .csv doesn't match;Os IDs dos JOGADORES em cada .csv não são iguais.;
-share_standings_msg_str;Today's standings!;As classificações de hoje!;
-loading_str;Loading...;Carregando...;
-choose_language_str;Choose language;Escolha o idioma;
-13_dominate_theme_str;13 Dominate Theme (Default);Tema 13 Dominate (Padrão);
-credits_str;Credits;Créditos;
-github_repo_link_str;Link for the Github Repo;Link para o repo do Github;
-update_avaliable_str;New update avaliable: ;Nova atualização disponível: ;
-download_str;Go to the Github Page;Ir até a pagina do Github;
-cancel_str;Cancel;Cancelar
-not_enough_players_str;Not enough players to generate a standing.;Não há jogadores o suficiente para gerar as classificações.
+id;en;pt_BR;ja;fr
+mode_str;Mode;Modo;モード;Mode
+chose_mode_str;Choose Mode;Escolha o Modo;モードを選択;Choisir mode
+standings_str;Standings;Classificações;総合優勝;Classement
+choose_standings_csv_str;Choose a STANDINGS.CSV;ESCOLHA UM STANDINGS.CSV;「STANDINGS.CSV」ファイルを選択してください;Choisir un fichier standings.csv
+not_a_valid_standings_csv_str;Not a valid standings.csv.;Não é um standings.csv válido.;;standings.csv non valide
+heroes_str;Heroes;Heróis;ヒーロー;Heros
+choose_heroes_csv_str;Choose a HEROES.CSV;ESCOLHA UM HEROES.CSV;「HEROES.CSV」ファイルを選択してください;Choisir un fichier heroes.csv
+not_a_valid_heroes_csv_str;Not a valid heroes.csv.;Não é um heroes.csv válido.;;heroes.csv non valide
+store_name_str;Store name;Nome da loja;店舗名;Nom du magasin
+ready_str;Ready!;Pronto!;準備OK！;Prêt!
+cc_str;CLASSIC CONSTRUCTED;CLASSIC CONSTRUCTED;クラシック;CLASSIC CONSTRUCTED
+standings_title_str;STANDINGS;CLASSIFICAÇÕES;総合優勝;CLASSEMENTS
+sage_str;SILVER AGE;SILVER AGE;シルバーエイジ;SILVER AGE
+loading_assets_str;Loading assets;Carregando assets...;;Chargement des assets
+loading_assets_finished_str;Loading complete!;Carregamento completo!;;Chargement terminé!
+menu_standings;STANDINGS;CLASSIFICAÇÕES;;CLASSEMENT
+sealed_str;SEALED;SELADO;;SCELLÉ
+draft_str;DRAFT;DRAFT;;DRAFT
+store_str;Store name;Nome da loja;;Nom du magasin
+pre_release_usurp_str;USURP THE SHADOW THRONE;USURP THE SHADOW THRONE;;USURP THE SHADOW THRONE
+menu_settings;SETTINGS;OPÇÕES;;SETTINGS
+language_str;Language;Idioma;;Langue
+theme_str;Theme;Tema;;Thème
+13dominate_theme_str;13 Dominate Theme;Tema 13 Dominate;;Thème de 13 Dominate
+usurp_theme_str;Usurp The Shadow Throne Theme;Tema Usurp The Shadow Throne;;Thème de Usurp The Shadow Throne
+custom_color_str;Custom Color;Cor Customizavel;;Couleur personnalisé
+color1_str;Color 1;Cor 1;;Couleur 1
+color2_str;Color 2;Cor 2;;Couleur 2
+heroes_csv_error_load;Not a valid heroes.csv. Please, try again.;Não é um heroes.csv válido. Por favor, tente novamente.;;heroes.csv n'est pas valide. Essayez à nouveau.
+checking_new_update_str;Checking for new updates...;Verificando por novas atualizações...;;Recherche de mises à jour...
+new_update_str;New update detected.;Nova atualização disponível.;;Nouvelle mise à jour trouvée
+already_latest_version_str;Already with the latest version;Aplicativo já com a última versão.;;Dernière version déjà installée
+error_standings_csv_str;Error with standings.csv;Erro com standings.csv;;Erreur avec standing.csv
+error_heroes_csv_str;Error with heroes.csv;Erro com heroes.csv;;Erreur avec heroes.csv
+error_player_id_mismatch_str;The PLAYERs ID on each .csv doesn't match;Os IDs dos JOGADORES em cada .csv não são iguais.;;L'ID des joueurs entre les csv ne se correspondent pas
+share_standings_msg_str;Today's standings!;As classificações de hoje!;;Le classement du jour!
+loading_str;Loading...;Carregando...;;Chargement...
+choose_language_str;Choose language;Escolha o idioma;;Choisissez une langue
+13_dominate_theme_str;13 Dominate Theme (Default);Tema 13 Dominate (Padrão);;Thème 13 Dominate par défaut
+credits_str;Credits;Créditos;;Crédits
+github_repo_link_str;Link for the Github Repo;Link para o repo do Github;;Lien pour le Repo Github
+update_avaliable_str;New update avaliable: ;Nova atualização disponível: ;;Nouvelle mise à jour disponible: 
+download_str;Go to the Github Page;Ir até a pagina do Github;;Aller à la page Github
+cancel_str;Cancel;Cancelar;;Annuler
+not_enough_players_str;Not enough players to generate a standing.;Não há jogadores o suficiente para gerar as classificações.;;Pas suffisament de joueurs pour générer le classement.

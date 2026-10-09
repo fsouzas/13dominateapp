@@ -389,6 +389,11 @@ func _on_language_settings_item_selected(index: int) -> void:
 			UniversalDict.setLocale("ja")
 			SettingsManager.save_settings()
 			get_tree().reload_current_scene()
+		4:
+			SettingsManager.locale = "fr"
+			UniversalDict.setLocale("fr")
+			SettingsManager.save_settings()
+			get_tree().reload_current_scene()
 
 
 func _on_theme_settings_item_selected(index: int) -> void:

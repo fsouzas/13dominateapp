@@ -18,6 +18,7 @@ An Android app for generating standings using `standings.csv` and `heroes.csv` e
 
 ![English](https://img.shields.io/badge/English-Supported-brightgreen?style=for-the-badge)
 ![Português](https://img.shields.io/badge/Português_BR-DISPONÍVEL-brightgreen?style=for-the-badge)
+![Français](https://img.shields.io/badge/Français-Disponible-brightgreen?style=for-the-badge)
 ![Japanese](https://img.shields.io/badge/日本語-Partial-yellow?style=for-the-badge)
 ## Features
 
@@ -81,6 +82,10 @@ Please include what happened and, if possible, the steps needed to reproduce the
 - Suggest previously entered store names with autocomplete.
 
 Have another idea? Feel free to suggest a feature.
+
+## Translations
+
+- French: The.Cy
 
 ## Final Thanks / Agradecimentos Finais
 

@@ -32,7 +32,7 @@ static func add_standing(standing_last_size_temp, standings_result_size, standin
 
 		hero_texture.texture = HeroesDb.get_heroi_standing(hero_name)
 
-		if player_data["rank"] == "Dropped":
+		if player_data["rank"] == "dropped":
 			temp_standing_less.get_child(2).show()
 			var shader_main_mat = hero_texture.material as ShaderMaterial
 			var shader_mat = shader_main_mat.duplicate()
