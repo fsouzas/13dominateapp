@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="13 Dominate Standings"
-config/version="1.1.1"
+config/version="1.1.2"
 run/main_scene="uid://jdbulyrefdai"
 config/quit_on_go_back=false
 config/features=PackedStringArray("4.7", "Mobile")
@@ -30,6 +30,7 @@ ThemeManager="*uid://b3bj3c4cp2hc6"
 SettingsManager="*uid://cpsr77bg3l1m1"
 UpdateManager="*uid://cwirmv1qqdncc"
 Background="*uid://dgos13abf4iu0"
+WebFilePicker="*uid://debbwaavk0xpl"
 
 [display]
 
@@ -92,5 +93,5 @@ locale/fallback=""
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="mobile"
+renderer/rendering_method="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true

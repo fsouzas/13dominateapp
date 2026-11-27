@@ -162,11 +162,17 @@ func taking_screenshot():
 	var image = get_viewport().get_texture().get_image()
 
 	var image_name := str(UniversalDict.mode_selected + Time.get_date_string_from_system())
-	fileDialog.current_file = image_name + ".png"
+	if OS.has_feature("web"):
+		var png_bytes: PackedByteArray = image.save_png_to_buffer()
+		JavaScriptBridge.download_buffer(png_bytes, image_name + ".png", "image/png")
+	else: 
+		fileDialog.current_file = image_name + ".png"
 	
-	_pending_screenshot = image
+		_pending_screenshot = image
 	
-	fileDialog.show()
+		fileDialog.show()
+	
+	menu.visible = true
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:

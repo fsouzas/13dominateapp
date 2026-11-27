@@ -13,7 +13,8 @@ var github_download_link
 
 
 func _ready() -> void:
-
+	
+	WebFilePicker.file_ready.connect(_on_web_file_ready)
 	SignalBus.csv_state.connect(_on_csv_state_connected)
 	loadSettings()
 	%version.text = ProjectSettings.get_setting("application/config/version","0.0.0")
@@ -166,10 +167,10 @@ func textAnimLoading(text: Control):
 	tween.tween_property(text, "offset_transform_position", Vector2(0,0), 0.3).from(Vector2(0,-50))
 	tween.tween_property(text, "modulate:a", 1, 0.3).from(0)
 
-func csvImporterStandings(path):
+func csvImporterStandings(path, display_name := ""):
 	standings = CSVStanding.load_csv_to_dict(path, "standings")
 
-	var file_name := get_file_name(path)
+	var file_name := display_name if display_name != "" else get_file_name(path)
 
 	if not csv_check:
 		%choose_heroes_btn.disabled = true
@@ -184,13 +185,13 @@ func csvImporterStandings(path):
 	readyButtonCheck()
 
 
-func csvImporterHeroes(path):
+func csvImporterHeroes(path, display_name := ""):
 	heroes = CSVStanding.load_csv_to_dict(path, "heroes")
 	HeroesDb.normalize_heros_names(heroes)
 
 
 
-	var file_name := get_file_name(path)
+	var file_name := display_name if display_name != "" else get_file_name(path)
 
 	if not csv_check:
 		%choose_heroes_btn.text = tr("choose_heroes_csv_str")
@@ -291,18 +292,24 @@ func get_file_name(path: String) -> String:
 
 func _on_choose_standings_btn_pressed() -> void:
 	Input.vibrate_handheld(50,0.2)
-	$FileDialog.show()
-	
-	var path : String = await $FileDialog.file_selected
-	csvImporterStandings(path)
+	if OS.has_feature("web"):
+		WebFilePicker.open_picker("standings")
+	else:
+		$FileDialog.show()
+		
+		var path : String = await $FileDialog.file_selected
+		csvImporterStandings(path)
 
 
 func _on_choose_heroes_btn_pressed() -> void:
 	Input.vibrate_handheld(50,0.2)
-	$FileDialog.show()
-	
-	var path : String = await $FileDialog.file_selected
-	csvImporterHeroes(path)
+	if OS.has_feature("web"):
+		WebFilePicker.open_picker("heroes")
+	else:
+		$FileDialog.show()
+		
+		var path : String = await $FileDialog.file_selected
+		csvImporterHeroes(path)
 
 func _on_menu_bar_item_selected(index: int) -> void:
 	Input.vibrate_handheld(50,0.2)
@@ -427,3 +434,11 @@ func _on_credits_btn_pressed() -> void:
 func _on_credits_close_pressed() -> void:
 	Input.vibrate_handheld(50,0.2)
 	%credits_popup.visible = false
+
+func _on_web_file_ready(target: String, path: String, display_name: String) -> void:
+	match target:
+		"heroes":
+			csvImporterHeroes(path)
+		"standings":
+			csvImporterStandings(path)
+	

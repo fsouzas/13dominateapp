@@ -13,6 +13,21 @@
 		"standing": "res://assets/standing_destaque/unknown/unknown_standing.png",
 		"color": "2b313f"
 	},
+	"alpha_one": {
+		"names": {
+			"en": "α-01, First Cogwarden",
+			"fr": "α-01, première gardecog",
+			"de": "",
+			"it": "",
+			"ja": "",
+			"es": "第一機巧機士、α-01",
+			"zh": "械卫之首阿尔法-01"
+		},
+		"background": "",
+		"front": "",
+		"standing": "",
+		"color": "2b313f"
+	},
 	"arakni": {
 		"names": {
 			"en": "Arakni",
@@ -97,6 +112,20 @@
 		"standing": "res://assets/standing_destaque/azalea/azalea_standing.png",
 		"color": "3a1a1a"
 	},
+	"azalea_lone_vigilante": {
+		"names": {
+			"en": "Azalea, Lone Vigilante",
+			"fr": "Azalée, justicière solitaire",
+			"de": "",
+			"it": "",
+			"ja": "",
+			"es": "孤高の自警者、アザレア"
+		},
+		"background": "",
+		"front": "",
+		"standing": "",
+		"color": "3a1a1a"
+	},
 	"baalghor_omen_of_the_end": {
 		"names": {
 			"en": "Baalghor, Omen of the End",
@@ -109,6 +138,20 @@
 		"background": "res://assets/standing_destaque/baalghor/baalghor_bg.png",
 		"front": "res://assets/standing_destaque/baalghor/baalghor_front.png",
 		"standing": "res://assets/standing_destaque/baalghor/baalghor_standing.png",
+		"color": "17113d"
+	},
+	"babza": {
+		"names": {
+			"en": "Babaza",
+			"fr": "",
+			"de": "",
+			"it": "",
+			"ja": "ババザ",
+			"es": ""
+		},
+		"background": "",
+		"front": "",
+		"standing": "",
 		"color": "17113d"
 	},
 	"benji_the_piercing_wind": {
@@ -349,6 +392,20 @@
 		"standing": "res://assets/standing_destaque/dr_mortimer/dr_mortimer_standing.png",
 		"color": "222a28"
 	},
+	"mortimer_living_virus": {
+		"names": {
+			"en": "Mortimer, Living Virus",
+			"fr": "Mortimer, virus vivant",
+			"de": "",
+			"it": "",
+			"ja": "生けるウイルス、モーティマー",
+			"es": ""
+		},
+		"background": "",
+		"front": "",
+		"standing": "",
+		"color": "222a28"
+	},
 	"dromai": {
 		"names": {
 			"en": "Dromai",
@@ -492,6 +549,20 @@
 	"groundbreaker_crix": {
 		"names": {
 			"en": "Groundbreaker Crix",
+			"fr": "",
+			"de": "",
+			"it": "",
+			"ja": "",
+			"es": ""
+		},
+		"background": "",
+		"front": "",
+		"standing": "",
+		"color": ""
+	},
+	"huxley": {
+		"names": {
+			"en": "Huxley",
 			"fr": "",
 			"de": "",
 			"it": "",
@@ -680,10 +751,10 @@
 			"ja": "",
 			"es": ""
 		},
-		"background": "",
-		"front": "",
-		"standing": "",
-		"color": ""
+		"background": "res://assets/standing_destaque/killjoy/killjoy_bg.png",
+		"front": "res://assets/standing_destaque/killjoy/killjoy_front.png",
+		"standing": "res://assets/standing_destaque/killjoy/killjoy_standing.png",
+		"color": "191111"
 	},
 	"levia": {
 		"names": {
@@ -776,6 +847,20 @@
 			"de": "",
 			"it": "",
 			"ja": "",
+			"es": ""
+		},
+		"background": "",
+		"front": "",
+		"standing": "",
+		"color": ""
+	},
+	"min_half_genius": {
+		"names": {
+			"en": "Min, Half-Genius",
+			"fr": "Min, demi-génie",
+			"de": "",
+			"it": "",
+			"ja": "半天才、ミン",
 			"es": ""
 		},
 		"background": "",
@@ -1189,6 +1274,20 @@
 		"standing": "res://assets/standing_destaque/viserai_between/viserai_between_standing.png",
 		"color": "24184b"
 	},
+	"vyle": {
+		"names": {
+			"en": "Vyle",
+			"fr": "",
+			"de": "",
+			"it": "",
+			"ja": "",
+			"es": ""
+		},
+		"background": "",
+		"front": "",
+		"standing": "",
+		"color": "24184b"
+	},
 	"vynnset": {
 		"names": {
 			"en": "Vynnset",
@@ -1240,10 +1339,10 @@
 			"ja": "",
 			"es": ""
 		},
-		"background": "",
-		"front": "",
-		"standing": "",
-		"color": ""
+		"background": "res://assets/standing_destaque/zane/zane_bg.png",
+		"front": "res://assets/standing_destaque/zane/zane_front.png",
+		"standing": "res://assets/standing_destaque/zane/zane_standing.png",
+		"color": "1D2348"
 	},
 	"zen": {
 		"names": {
@@ -1257,6 +1356,20 @@
 		"background": "res://assets/standing_destaque/zen/zen_bg.png",
 		"front": "res://assets/standing_destaque/zen/zen_front.png",
 		"standing": "res://assets/standing_destaque/zen/zen_standing.png",
+		"color": "99a8ba"
+	},
+	"zuul": {
+		"names": {
+			"en": "Zuul",
+			"fr": "",
+			"de": "",
+			"it": "",
+			"ja": "ズール",
+			"es": ""
+		},
+		"background": "",
+		"front": "",
+		"standing": "",
 		"color": "99a8ba"
 	},
 	"zyggy": {
@@ -1327,6 +1440,34 @@
 		"background": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_bg.png",
 		"front": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_front.png",
 		"standing": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_standing.png",
+		"color": "432887"
+	},
+	"azalea_ace": {
+		"names": {
+			"en": "Azalea, Ace of Spades",
+			"fr": "Azalée, as de pique",
+			"de": "",
+			"it": "",
+			"ja": "スペードのエース、アザレア",
+			"es": ""
+		},
+		"background": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_bg.png",
+		"front": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_front.png",
+		"standing": "res://assets/standing_destaque/aurora_legacy/aurora_legacy_standing.png",
+		"color": "432887"
+	},
+	"babaza_bloodbeat": {
+		"names": {
+			"en": "Babaza, Bloodbeat Heartfather",
+			"fr": "Babaza, patriarche-cœur des Battesang",
+			"de": "",
+			"it": "",
+			"ja": "血律の心父、ババザ",
+			"es": ""
+		},
+		"background": "",
+		"front": "",
+		"standing": "",
 		"color": "432887"
 	},
 	"betsy_skin_in_the_game": {
@@ -1467,6 +1608,20 @@
 		"background": "res://assets/standing_destaque/hala_bladesaint/hala_bladesaint_bg.png",
 		"front": "res://assets/standing_destaque/hala_bladesaint/hala_bladesaint_front.png",
 		"standing": "res://assets/standing_destaque/hala_bladesaint/hala_bladesaint_standing.png",
+		"color": "634E29"
+	},
+	"huxley_racketeer": {
+		"names": {
+			"en": "Huxley, Racketeer",
+			"fr": "Huxley, racketeur",
+			"de": "",
+			"it": "",
+			"ja": "強請屋、ハクスリー",
+			"es": ""
+		},
+		"background": "",
+		"front": "",
+		"standing": "",
 		"color": "634E29"
 	},
 	"ira_scarlet_revenger": {
@@ -1707,6 +1862,20 @@
 		"standing": "res://assets/standing_destaque/riptide_lurker/riptide_lurker_standing.png",
 		"color": "363a24"
 	},
+	"min_genius": {
+		"names": {
+			"en": "Min, Genius",
+			"fr": "Min, génie",
+			"de": "",
+			"it": "",
+			"ja": "",
+			"es": ""
+		},
+		"background": "res://assets/standing_destaque/riptide_lurker/riptide_lurker_bg.png",
+		"front": "res://assets/standing_destaque/riptide_lurker/riptide_lurker_front.png",
+		"standing": "res://assets/standing_destaque/riptide_lurker/riptide_lurker_standing.png",
+		"color": "363a24"
+	},
 	"ser_boltyn_breaker_of_dawn": {
 		"names": {
 			"en": "Ser Boltyn, Breaker of Dawn",
@@ -1804,6 +1973,34 @@
 		"front": "res://assets/standing_destaque/vynnset_iron/vynnset_iron_front.png",
 		"standing": "res://assets/standing_destaque/vynnset_iron/vynnset_iron_standing.png",
 		"color": "2e4552"
+	},
+	"vyle_catalyst": {
+		"names": {
+			"en": "Vyle, Catalyst of Collapse",
+			"fr": "Vyle, cataliste d’effondrement",
+			"de": "",
+			"it": "",
+			"ja": "崩壊の触媒、ヴァイル",
+			"es": ""
+		},
+		"background": "",
+		"front": "",
+		"standing": "",
+		"color": "2e4552"
+	},
+	"zuul_clubcaste": {
+		"names": {
+			"en": "Zuul, Clubcaste",
+			"fr": "Zuul, caste du gourdin",
+			"de": "",
+			"it": "",
+			"ja": "棍棒位階のズール",
+			"es": ""
+		},
+		"background": "res://assets/standing_destaque/zuul_clubcaste/zuul_club_bg.png",
+		"front": "res://assets/standing_destaque/zuul_clubcaste/zuul_club_front.png",
+		"standing": "res://assets/standing_destaque/zuul_clubcaste/zuul_club_standing].png",
+		"color": "75312D"
 	},
 	"zyggy_starlight": {
 		"names": {

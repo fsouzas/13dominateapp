@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bh2jb17ptsp4c"
-path="res://.godot/imported/Cog--Streamline-Sharp.png-614c6e07ff75dee1357fcaf6c11a9980.ctex"
+path.s3tc="res://.godot/imported/Cog--Streamline-Sharp.png-614c6e07ff75dee1357fcaf6c11a9980.s3tc.ctex"
+path.etc2="res://.godot/imported/Cog--Streamline-Sharp.png-614c6e07ff75dee1357fcaf6c11a9980.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/icons/Cog--Streamline-Sharp.png"
-dest_files=["res://.godot/imported/Cog--Streamline-Sharp.png-614c6e07ff75dee1357fcaf6c11a9980.ctex"]
+dest_files=["res://.godot/imported/Cog--Streamline-Sharp.png-614c6e07ff75dee1357fcaf6c11a9980.s3tc.ctex", "res://.godot/imported/Cog--Streamline-Sharp.png-614c6e07ff75dee1357fcaf6c11a9980.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

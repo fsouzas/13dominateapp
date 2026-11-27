@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dj1rm0be807er"
-path="res://.godot/imported/usurp_the_shadow_throne_logo.png-c09b5abeb4137ff82490315a44aee04c.ctex"
+path.s3tc="res://.godot/imported/usurp_the_shadow_throne_logo.png-c09b5abeb4137ff82490315a44aee04c.s3tc.ctex"
+path.etc2="res://.godot/imported/usurp_the_shadow_throne_logo.png-c09b5abeb4137ff82490315a44aee04c.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/logos/usurp_the_shadow_throne_logo.png"
-dest_files=["res://.godot/imported/usurp_the_shadow_throne_logo.png-c09b5abeb4137ff82490315a44aee04c.ctex"]
+dest_files=["res://.godot/imported/usurp_the_shadow_throne_logo.png-c09b5abeb4137ff82490315a44aee04c.s3tc.ctex", "res://.godot/imported/usurp_the_shadow_throne_logo.png-c09b5abeb4137ff82490315a44aee04c.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
